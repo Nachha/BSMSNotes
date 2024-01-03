@@ -1,0 +1,186 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amssymb}
+
+\begin{document}
+\begin{center}
+    \begin{LARGE}
+        \textbf{Linear Algebra}
+    \end{LARGE}
+\end{center}
+
+\section{Introduction to Linear Systems}
+\index{Introduction to Linear Systems}
+They are system of equations that have variables that are linear.
+Example: $$x + y = 2$$ and $$2x - y = 1$$
+
+Normally the coefficients are real numbers, but they can be complex numbers as well. \\[1pt]
+System of linear equations of $m$ equations and $n$ variables:
+    $$
+    a_{1,1} x_1 + a_{1,2} x_2 + \cdots + a_{1,n} x_n = b_1
+    $$
+    $$
+    a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n = b_2
+    $$
+    $$
+    \vdots
+    $$
+    $$
+    a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n = b_m
+    $$
+
+What a linear equation in $n$ variables represents is a given space in $\mathbb{R}^n$.
+
+\begin{paragraph}{Question:}
+What it the line passing through $(1,1)$ and $(-1,-3)$?
+\end{paragraph}     
+\begin{paragraph}{Answer:}
+    We will use first principles to find the equation of the line.\\[1pt]
+    Let the equation of the line be $y = mx + c$.
+    
+    We know that $(1,1)$ and $(-1,-3)$ lie on the line.\\[1pt]
+    $$1 = m*1 + c \dots (1)$$
+    $$-3 = m*(-1) + c \dots (2)$$
+
+    Subtracting $(2)$ from $(1)$, we get:
+    $$4 = 2m$$
+    $$m = 2$$
+
+    Substituting $m = 2$ in $(1)$, we get:
+    $$1 = 2 + c$$
+    $$c = -1$$
+    
+\end{paragraph}
+
+\subsection*{Matrix}
+Group of numbers(or equations, expressions, etc.) in rows and columns.
+\begin{paragraph}{Example:}
+
+    $$A = \begin{pmatrix}
+        1 & 0 & -1 & 4 \\
+        2 & 9 & 3 & 5 \\
+        5 & 2 & 10 & 6 
+    \end{pmatrix}$$
+The above matrix has 3 rows and 4 columns.\\[1pt]
+Entry in 2nd row, 3rd column $ = 3$
+
+It can also be represented as $$A = (a_{ij})$$ 
+where $a_{ij}$ refers to the element in A at the $i$th row and $j$th column
+
+\end{paragraph}
+
+\begin{paragraph}{Special Matrices:} Some special matrices:
+
+    $\cdot$ \textbf{Zero Matrix:} 
+    
+    $$ A = O_{m \times n} = \begin{bmatrix}
+        0 & . & . & . & 0 \\
+        \cdot &&&& \cdot \\
+        \cdot &&&& \cdot \\
+        0 & . & . & . & 0
+    \end{bmatrix}$$
+    
+    $\cdot$ \textbf{Square Matrix:} here $m = n$
+        $$A_3 = \begin{bmatrix}
+            a & b & c \\
+            d & e & f \\
+            g & h & i
+        \end{bmatrix}$$
+
+    $\cdot$ \textbf{Identity Matrix:} A square matrix with all diagonal element equal to 1 and non-diagonal elements equal to 0.
+        $$ I_n = \begin{bmatrix}
+            1 &&&&& 0 \\
+            &1&&&&\\
+            &&.&&&\\
+            &&&.&&\\
+            &&&&.&\\
+            0&&&&&1
+        \end{bmatrix}$$
+
+    $\cdot$ \textbf{Diagonal Matrix:} A square matrix with all non-diagonal elements equal to 0.
+        $$ D_n = \begin{bmatrix}
+            d_1 &&&&& 0 \\
+            &d_2&&&&\\
+            &&.&&&\\
+            &&&.&&\\
+            &&&&.&\\
+            0&&&&&d_n
+        \end{bmatrix}$$
+        where $d_i$ are generally non-zero, but not necessarily.
+        
+    $\cdot$ \textbf{Upper Triangular Matrix:} A square matrix with all non-diagonal elements below the diagonal equal to 0
+        $$ B = \begin{bmatrix}
+            b_1 &&&&& \star \\
+            &b_2&&&&\\
+            &&.&&&\\
+            &&&.&&\\
+            &&&&.&\\
+            0&&&&&d_n
+        \end{bmatrix}$$
+        where $\star$ can be any number.
+
+    $\cdot$ \textbf{Lower Triangular Matrix:} A square matrix with all non-diagonal elements above the diagonal equal to 0
+        $$ C = \begin{bmatrix}
+            c_1 &&&&& 0 \\
+            &c_2&&&&\\
+            &&.&&&\\
+            &&&.&&\\
+            &&&&.&\\
+            \star&&&&&c_n
+        \end{bmatrix}$$
+        where $\star$ can be any number.
+\end{paragraph}
+
+\subsection*{Augmented Matrix}
+Given a system of linear equations:
+    $$
+    3x_1 - 2x_2 + 4x_3 = 0
+    $$
+    $$
+    2x_1 + x_2 + 3x_3 = 1
+    $$
+    $$
+    5x_1 + x_2 - 2x_3 = -1
+    $$
+    
+The augmented matrix is:
+$$
+\begin{bmatrix}
+    3 & -2 & 4 & : & 0 \\
+    2 & 1 & 3 & : & 1 \\
+    5 & 1 & -2 & : & -1 
+\end{bmatrix}
+$$    
+
+for a system of $m$ equations and $n$ variables:
+
+    $$
+    a_{1,1} x_1 + a_{1,2} x_2 + \cdots + a_{1,n} x_n = b_1
+    $$
+    $$
+    a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n = b_2
+    $$
+    $$
+    \vdots
+    $$
+    $$
+    a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n = b_m
+    $$
+
+The augmented matrix would be:
+$$
+\begin{bmatrix}
+    a_{1,1} & a_{1,2} & \cdots & a_{1,n} & : & b_1 \\
+    a_{2,1} & a_{2,2} & \cdots & a_{2,n} & : & b_2 \\
+    \vdots & \vdots & \ddots & \vdots & \vdots & \vdots \\
+    a_{m,1} & a_{m,2} & \cdots & a_{m,n} & : & b_m
+\end{bmatrix}
+$$
+
+\subsection*{Elementary Row Operations}
+\begin{itemize}
+    \item Interchange two rows: if $R_i$ and $R_j$ are two rows of a matrix $A$, then $R_i \leftrightarrow R_j$ 
+    \item Multiply a row by a constant: if $R_i$ is a row of a matrix $A$ and $c$ is a constant, $R_i \rightarrow cR_i$
+    \item Multiply a row by a constant and add it to another row: if $R_i$ and $R_j$ are two rows of a matrix $A$ and $c$ is a constant, $R_i \rightarrow R_i + cR_j$
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amssymb}
+\usepackage{tikz}
+
+\begin{document}
+\begin{center}
+    \begin{LARGE}
+        \textbf{Calculus II}
+    \end{LARGE}
+\end{center}
+
+\section{Vector Calculus}
+\index{Vector Calculus}
+
+$\mathbb{R}$ represents the set of real numbers.\\[1pt]
+$\mathbb{R}^2$ represents a 2 dimensional real plane. \\[1pt]
+$$\mathbb{R}^2 = \{(x,y) \mid x,y \in \mathbb{R}\}$$
+
+%\begin{picture}
+
+\begin{tikzpicture}
+    \draw[<->] [black, ultra thin] (-3,0) -- (3,0);
+    \draw[<->] [black, ultra thin] (0,-2) -- (0,2);
+    \filldraw[black] (0,0) circle (1pt) node[anchor=north west] {O};
+    \draw[->][black, thick] (0,0) -- (1,1) node[anchor=south west] {$(1,1)$} node[anchor=south east] {$\vec{v}$};
+    \draw[->][black, thick] (0,0) -- (1,0) node[anchor=south west] {$(1,0)$} node[anchor=north] {$\vec{u}$};
+    \draw[->][black, thick] (1,1) -- (1,0);
+    \filldraw[black] (1,0.75) circle (0.05pt) node[anchor=west] {$\vec{v} - \vec{u}$};
+\end{tikzpicture}\\[1pt]
+Normally elements of $\mathbb{R}$ are known as scalers.\\[1pt]
+We can 
+
+$\cdot$ add (or subtract) two vectors
+
+$\cdot$ if $c \in \mathbb{R}$ and $v \in \mathbb{R}^2$,  $c\vec{v}$ 
+
+$\cdot$ $u = (u_1, u_2)$ and $v = (v_1, v_2)$ $$u.v = u_1.v_1 + u_2.v_2$$
+
+\subsection*{Theorem}
+$$u.v = |u||v| \cos(\theta)$$
+where $\theta$ is the angle between $\vec{u}$ and $\vec{v}$
+and $|u|$ is the length of vector $\vec{u}$
+
+\begin{tikzpicture}
+    \draw[->][black] (0,0) -- (1,1.5) node[anchor=south east] {$\vec{u}$};
+    \draw [black] (1,1.5) -- (2,3);
+    \draw[->] [black] (0,0) -- (2.5, 0.25) node[anchor=north] {$\vec{v}$};
+    \draw [black] (2.5,  0.25) -- (5, 0.5);
+    \draw[->] [black] (2,3) -- (3.5, 1.75) node[anchor=south west] {$\vec{w}$};
+    \draw [black] (3.5, 1.75) -- (5, 0.5);
+    \draw[black] (0.5, 0.05) arc (5.71:56.3:0.5);
+    \draw[black] (0.6, 0.11) node[anchor=south] {$\theta$};
+\end{tikzpicture}
+
+$$ w^2 = u^2 + v^2 - 2|u||v| \cos(\theta) \dots(1)$$
+$$\vec{w} = \vec{v} - \vec{u}$$
+$$ w = (v_1 - u_1, v_2 - u_2)$$
+$$ w^2 = (v_1 - u_1)^2 + (v_2 - u_2)^2$$
+$$ w^2 = v_1^2 - 2v_1u_1 + u_1^2 + v_2^2 - 2v_2u_2 + u_2^2$$
+$$ w^2 = v^2 + u^2 - 2v_1u_1 - 2v_2u_2 \dots (2)$$
+
+now, as $(1) = (2)$
+
+$$ u^2 + v^2 - 2|u||v| \cos(\theta) = v^2 + u^2 - 2v_1u_1 - 2v_2u_2$$
+$$|u||v| \cos(\theta) = v_1u_1 + v_2u_2$$
+$$|u||v| \cos(\theta) = \vec{u}.\vec{v}$$
+Hence proved.
+
+\subsubsection*{Unit Vectors}
+If $\vec{v} \in \mathbb{R}^2$ is a vector.
+then, $$\hat{v} = \frac{\vec{v}}{|\vec{v}|}$$
+
+\subsubsection*{projections}
+If $\vec{u}$ and $\vec{v}$ are vectors in $\mathbb{R}^2$ and $\theta$ is the angle between them:
+
+\begin{tikzpicture}
+    \draw[black] (0,0) -- (2,1.5) node[anchor=south east] {$\vec{u}$};
+    \draw[->] [black] (2,1.5) -- (4, 3);
+    \draw[black] (0,0) -- (3, 0) node[anchor=north east] {$\vec{v}$};
+    \draw[->] [black] (3,0) -- (6,0);
+    \draw[black, loosely dashed] (4,3) -- (4,0);
+    \draw[black] (3.8, 0) -- (3.8, 0.2);
+    \draw[black] (4, 0.2) -- (3.8, 0.2);
+
+\end{tikzpicture}
+
+let $\vec{w}$ be the projection of $\vec{u}$ on $\vec{v}$
+
+$$\vec{w} = |u| \cos(\theta) \hat{v}$$
+$$\vec{w} = \frac{|u| \cos(\theta)|v|\vec{v} }{|v|^2}$$
+$$\vec{w} = \frac{\vec{u}.\vec{v}}{|\vec{v}|^2} \vec{v}$$
+
+\end{document}
