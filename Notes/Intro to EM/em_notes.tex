@@ -63,7 +63,7 @@ where $\sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$ is the
 
 \paragraph{Vectors} A vector is a quantity that is said to transform like a displacement.\\[1pt]
 
-\subsection*{Operations on Vectors}
+\subsection{Operations on Vectors}
 \begin{itemize}
     \item \textbf{Addition}: $\vec{A} + \vec{B} = \vec{C}$
     
@@ -96,7 +96,7 @@ where $\sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$ is the
     \end{itemize}
 
         Cross product is a vector. It is anti-commutative and distributive.
-    \subsection*{Component form of a Vector: }
+    \subsection{Component form of a Vector: }
     A vector $\vec{A}$ can be written as:
     $$\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}$$
     where $\hat{i}, \hat{j}, \hat{k}$ are unit vectors along the $x, y, z$ axes respectively.
@@ -115,8 +115,60 @@ where $\sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$ is the
                 B_x & B_y & B_z
             \end{vmatrix}$$
     \end{itemize}
-    \subsection*{Triple Product: }
+    \subsection{Triple Product: }
     \paragraph*{Scalar Triple Product: } $\vec{A}.(\vec{B} \times \vec{C}) = \vec{B}.(\vec{C} \times \vec{A}) = \vec{C}.(\vec{A} \times \vec{B})$
     Geometrically the scalar triple product is the volume of the parallelopiped formed by the three vectors.
     \paragraph*{Vector Triple Product: } $\vec{A} \times (\vec{B} \times \vec{C}) = \vec{B}(\vec{A}.\vec{C}) - \vec{C}(\vec{A}.\vec{B})$
-\end{document}
+
+\section{Differential Calculus}
+\subsection{"Ordinary" Derivative: } $\frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
+Geometrically, the derivative is the slope of the tangent to the curve at a point.
+
+\subsection{Gradient:} Consider a scalar, T, which exists at every point in space. 
+$$d T = \left(\frac{\partial T}{\partial x}\right)dx + \left(\frac{\partial T}{\partial y}\right)dy + \left(\frac{\partial T}{\partial z}\right)dz$$
+This can the written in the dot product form as:
+$$d T = \left(\frac{\partial T}{\partial x}\hat{x} + \frac{\partial T}{\partial y}\hat{y} + \frac{\partial T}{\partial z}\hat{z} \right) \cdot (dx \hat{x} + dy \hat{y} + dz \hat{z} )$$
+this is denoted as:
+$$d T = \nabla T \cdot d\vec{r}$$
+Here, we treat $\nabla$ as an operator. It takes a scalar and returns a vector.
+
+\paragraph*{The $\nabla$ operator: } $$\nabla = \hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}$$
+
+\subsection{Divergence: } Consider a vector, $\vec{A}$, which exists at every point in space. The divergence of $\vec{A}$ is defined as:
+$$ \nabla \cdot \vec{A} = \left(\hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}{}\right) \cdot \left(A_x \hat{x} + A_y \hat{y} + A_z \hat{z}\right)$$
+$$ \nabla \cdot \vec{A} = \frac{\partial A_x}{\partial x} + \frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}$$
+
+It behaves like a dot product, and is a scalar.
+
+\subsection{Curl: } Consider a vector, $\vec{A}$, which exists at every point in space. The curl of $\vec{A}$ is defined as:
+$$\nabla \times \vec{A}  = \begin{vmatrix}
+    \hat{x} & \hat{y} & \hat{z} \\
+    \partial/\partial x & \partial/\partial y & \partial/\partial z \\    
+    A_x & A_y & A_z 
+\end{vmatrix}$$
+
+It behaves like a cross product, and is a vector.
+
+\subsection{Second Derivatives: }
+\begin{itemize}
+    \item \textbf{Divergence of a Gradient: } $\nabla \cdot \left(\nabla T\right)$
+    $$ \nabla \cdot \left(\nabla T\right)  = \left(\hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}\right) \cdot \left(\frac{\partial T}{\partial x} \hat{x} + \frac{\partial T}{\partial y} \hat{y} + \frac{\partial T}{\partial z} \hat{z}\right)$$
+    $$ \nabla \cdot \left(\nabla T\right)  = \left(\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2}\right)$$
+    It is denoted by $\nabla^2 T$ and is called the Laplacian of $T$.
+    \paragraph*{Note:} Laplacian of a vector is theoretically not defined. But when $\nabla^2 \vec{A}$ is written, it means:
+    $$\nabla^2 \vec{A} = \left(\nabla^2 A_x\right) \hat{x} + \left(\nabla^2 A_y\right) \hat{y} + \left(\nabla^2 A_z\right) \hat{z}$$
+    \item \textbf{Curl of a Gradient: } $\nabla \times \left(\nabla T\right)$ 
+    $$\nabla \times \left(\nabla T\right) = 0$$
+    Curl of a gradient is always zero.
+    \item \textbf{Gradient of Divergence: } $\nabla \left(\nabla \cdot \vec{A}\right)$
+    \item \textbf{Divergence of Curl: } $\nabla \cdot \left(\nabla \times \vec{A}\right)$
+    $$\nabla \cdot \left(\nabla \times \vec{A}\right) = 0$$
+    Divergence of a Curl is always zero.
+    \item \textbf{Curl of Curl: } $\nabla \times \left(\nabla \times \vec{A}\right)$
+    $$\nabla \times \left(\nabla \times \vec{A}\right) = \nabla \left(\nabla \cdot \vec{A}\right) - \nabla^2 \vec{A}$$
+\end{itemize}
+
+\section{Integral Calculus}
+
+
+\end{document} 
