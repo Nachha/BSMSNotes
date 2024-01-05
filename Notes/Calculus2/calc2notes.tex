@@ -34,7 +34,8 @@ $\cdot$ add (or subtract) two vectors
 
 $\cdot$ if $c \in \mathbb{R}$ and $v \in \mathbb{R}^2$,  $c\vec{v}$ 
 
-$\cdot$ $u = (u_1, u_2)$ and $v = (v_1, v_2)$ $$u.v = u_1.v_1 + u_2.v_2$$
+\subsection*{Dot Product}
+$u = (u_1, u_2)$ and $v = (v_1, v_2)$ $$u.v = u_1.v_1 + u_2.v_2$$
 
 \subsection*{Theorem}
 $$u.v = |u||v| \cos(\theta)$$
@@ -64,13 +65,17 @@ now, as $(1) = (2)$
 $$ u^2 + v^2 - 2|u||v| \cos(\theta) = v^2 + u^2 - 2v_1u_1 - 2v_2u_2$$
 $$|u||v| \cos(\theta) = v_1u_1 + v_2u_2$$
 $$|u||v| \cos(\theta) = \vec{u}.\vec{v}$$
-Hence proved.
+Hence proved.\\[1pt]
+
+Extending the above theorem to $\mathbb{R}^n$:
+Consider $\vec{u} = (u_1, u_2, \dots, u_n), \vec{v} = (v_1, v_2, \dots, v_n) \in \mathbb{R}$
+$$\vec{u}.\vec{v} = u_1v_1 + u_2v_2 + \dots + u_nv_n$$
 
 \subsubsection*{Unit Vectors}
 If $\vec{v} \in \mathbb{R}^2$ is a vector.
 then, $$\hat{v} = \frac{\vec{v}}{|\vec{v}|}$$
 
-\subsubsection*{projections}
+\subsubsection*{Projections}
 If $\vec{u}$ and $\vec{v}$ are vectors in $\mathbb{R}^2$ and $\theta$ is the angle between them:
 
 \begin{tikzpicture}
@@ -89,5 +94,20 @@ let $\vec{w}$ be the projection of $\vec{u}$ on $\vec{v}$
 $$\vec{w} = |u| \cos(\theta) \hat{v}$$
 $$\vec{w} = \frac{|u| \cos(\theta)|v|\vec{v} }{|v|^2}$$
 $$\vec{w} = \frac{\vec{u}.\vec{v}}{|\vec{v}|^2} \vec{v}$$
+
+\subsection*{Cross Product}
+Consider the vectors, $u,v$. Then the cross-product of $u$ and $v$ is defined as:
+$$u \times v = |u||v|\sin(\theta) \hat{n}$$
+where $\hat{n}$ is the unit vector perpendicular to the plane containing $u$ and $v$, and also $(\vec{u}, \vec{v}, \hat{n})$ form a right handed system.
+
+\paragraph*{Properties of Cross Product: }
+\begin{itemize}
+    \item $\vec{u} \times \vec{v} = - (\vec{v} \times \vec{u})$
+    \item $(r\vec{u}) \times (s \vec{v}) = rs \vec{u} \times \vec{v}$
+    \item $ \vec{u} \times (\vec{v} + \vec{w}) = \vec{u} \times \vec{v} + \vec{u} \times \vec{w}$
+\end{itemize}
+
+
+
 
 \end{document}
