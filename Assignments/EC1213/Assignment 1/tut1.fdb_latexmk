@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1704658831 "/mnt/sda1/nachi/Notes/BSMSNotes/Assignments/EC1213/Assignment 1/tut1.tex" "tut1.pdf" "tut1" 1704658832 0
+["pdflatex"] 1704658872 "/mnt/sda1/nachi/Notes/BSMSNotes/Assignments/EC1213/Assignment 1/tut1.tex" "tut1.pdf" "tut1" 1704658873 0
   "/etc/texmf/web2c/texmf.cnf" 1700483544 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/mnt/sda1/nachi/Notes/BSMSNotes/Assignments/EC1213/Assignment 1/tut1.tex" 1704658830 185 64d486340c49ad572b7078eabb3c04bd ""
+  "/mnt/sda1/nachi/Notes/BSMSNotes/Assignments/EC1213/Assignment 1/tut1.tex" 1704658872 187 57d6335f829be0c6aa90a3ec761a4327 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
@@ -21,8 +21,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1693172360 40357 c95f5d5e031b5c7040b426833c11f2e0 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700483574 4643645 d2d1d8b8ba87ed005f4aaf1ce646a79e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700483597 7908202 39eeb4e2a2fba6a9d84a57a463b82dd6 ""
-  "tut1.aux" 1704658832 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "tut1.tex" 1704658830 185 64d486340c49ad572b7078eabb3c04bd ""
+  "tut1.aux" 1704658873 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "tut1.tex" 1704658872 187 57d6335f829be0c6aa90a3ec761a4327 ""
   (generated)
   "tut1.aux"
   "tut1.log"
