@@ -170,5 +170,73 @@ It behaves like a cross product, and is a vector.
 
 \section{Integral Calculus}
 
+\subsection{Line Integral: }
+Consider a vector field $\vec{V}$ and a curve $C$ joining points $a$ and $b$. The line integral of $\vec{V}$ along $C$ is defined as:
+$$\int_{aP}^{b} \vec{V} \cdot d\vec{l}$$
+where $d\vec{l}$ is the differential displacement along the curve $C$.
+
+when $C$ is a closed figure, it is written as:
+$$\oint \vec{V} \cdot d\vec{l}$$
+\subsection{Surface Integral: }
+Consider a vector field $\vec{V}$ and a surface $S$. The surface integral of $\vec{V}$ over $S$ is defined as:
+$$\int_{S} \vec{V}\cdot \vec{da}$$
+where $\vec{da}$ is the differential area vector of the surface $S$.
+
+When $S$ is a closed surface:
+$$\oint \vec{V}\cdot\vec{da}$$
+
+\subsection{Volume Integral: }
+Consider a scalar field $T$ and a volume $V$. The volume integral of $T$ over $V$ is defined as:
+$$\int_{V} T dV$$
+\\
+If we consider a vector field $\vec{A}$, then:
+$$\int \vec{A} dV$$
+$$\hat{x} \int A_x dV + \hat{y} \int A_y dV + \hat{z} \int A_z dV$$
+
+In Cartesian coordinates:
+$$dV = dx dy dz$$
+
+In Spherical Polar coordinates:
+$$dV = r^2 \sin(\theta) dr d\theta d\phi$$
+
+\subsection{Fundamental Theorem of Calculus: }
+If $f(x)$ is a continuous function and $F(x)$ is the anti-derivative of $f(x)$, then:
+$$\int_{a}^{b} f(x) = F(b) - F(a)$$
+\\
+
+\begin{itemize}
+    \item \textbf{Fundamental Theorem for Gradients: }
+
+Consider a scalar field $T$ and a curve $C$, from $\vec{a}$ to $\vec{b}$, then:
+$$\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = T(\vec{b}) - T(\vec{a})$$
+If the curve is a closed curve, then:
+$$\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = 0$$
+
+\item \textbf{Fundamental Theorem for Divergence: } a.k.a Gauss' Theorem, Green's Theorem or divergence theorem.
+Consider a vector field $\vec{A}$ and a volume $V$, then:
+$$\int_{V}\left(\vec{\nabla} \cdot \vec{v}\right) = \oint \vec{v}.\vec{ds}$$
+where $ds$  is the differential area vector of the surface $S$.
+
+\item \textbf{Fundamental Theorem for Curl: } a.k.a Stokes' Theorem.
+Consider a vector field $\vec{A}$ and a surface $S$, then:
+$$\int_{S}\left(\vec{\nabla} \times \vec{v}\right) \vec{da}= \oint \vec{v}.\vec{dl}$$
+where $dl$  is the differential displacement vector along the boundary curve $C$ of the surface $S$.
+
+\end{itemize}
+
+\section{Dirac Delta Function: }
+\subsection{One-Dimensional Dirac Delta Function: }
+It is a function that is zero everywhere except at $x = 0$ and has an integral of 1. It is defined as:
+$$\delta(x) = \begin{cases}
+    \infty & x = 0 \\
+    0 & x \neq 0
+\end{cases}$$
+and
+$$\int_{-\infty}^{\infty} \delta(x) dx = 1$$
+Mathematically, it is not a function. i.e. don't tell your maths profs that its a function.
+
+\subsection{Three-Dimensional Dirac Delta Function: }
+It is a function that is zero everywhere except at $\vec{r} = \vec{r_0}$ . It is defined as:
+
 
 \end{document} 
