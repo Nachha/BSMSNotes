@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1704453183 "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Calculus2/calc2notes.tex" "calc2notes.pdf" "calc2notes" 1704453186 0
+["pdflatex"] 1704792732 "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Calculus2/calc2notes.tex" "calc2notes.pdf" "calc2notes" 1704792733 0
   "/etc/texmf/web2c/texmf.cnf" 1700483544 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Calculus2/calc2notes.tex" 1704453182 4574 21abee2a83c2efa909f40bac042f2430 ""
+  "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Calculus2/calc2notes.tex" 1704792729 5069 543c18c8513c1ce834a49c0ad903d75e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -23,6 +23,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1673816307 1016 1c2b89187d12a2768764b83b4945667c ""
@@ -116,8 +117,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1693172360 40357 c95f5d5e031b5c7040b426833c11f2e0 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700483574 4643645 d2d1d8b8ba87ed005f4aaf1ce646a79e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700483597 7908202 39eeb4e2a2fba6a9d84a57a463b82dd6 ""
-  "calc2notes.aux" 1704453185 135 6f6d6fa406474a05b37c76da31f12046 "pdflatex"
-  "calc2notes.tex" 1704453182 4574 21abee2a83c2efa909f40bac042f2430 ""
+  "calc2notes.aux" 1704792732 760 91f76bcefce9c162205c98b1336f7cbe "pdflatex"
+  "calc2notes.tex" 1704792729 5069 543c18c8513c1ce834a49c0ad903d75e ""
   (generated)
   "calc2notes.aux"
   "calc2notes.log"
