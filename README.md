@@ -1,7 +1,13 @@
 # BSMSNotes
 
-Confidential notes made by me. Not to be shared to random people
+This is a Github repository made by me. It contains the notes of MT1213, MT1223 and PH1213 courses of the second semester
+I have randomly decided to publish it on Github
 
-Especially not for BSMS 2028 batch of IISER Pune.
+Do whatever you like with these files. IDC
+
+IF YOU HAVE ANY COMPLAINTS, FORK IT AND MAKE WHATEVER CHANGES YOU LIKE. 
+Any complaints made will be ignored because these are my notes.
+
+
 
 

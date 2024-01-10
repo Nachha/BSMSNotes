@@ -236,7 +236,84 @@ $$\int_{-\infty}^{\infty} \delta(x) dx = 1$$
 Mathematically, it is not a function. i.e. don't tell your maths profs that its a function.
 
 \subsection{Three-Dimensional Dirac Delta Function: }
-It is a function that is zero everywhere except at $\vec{r} = \vec{r_0}$ . It is defined as:
+It is a function that is zero everywhere except at $\vec{r} = \vec{r_0}$ and has a volume integral of 1. It is defined as:
+
+$$\delta^3(\vec{r}) = \begin{cases}
+    \infty & (x,y,z) = (0,0,0) \\
+    0 & \text{everywhere else}
+\end{cases}$$
+$$\delta^3(\vec{r}) = \delta(x)\delta(y)\delta(z)$$
+and
+$$\int_{\text{all space}} \delta^3\left(\vec{r}\right) d\tau = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\delta(x)\delta(y)\delta(z) dx dy dz$$
+
+Generalizing the function:
+$$\int_{\text{all space}} f(r)\delta^3\left(r-a\right) d\tau = f(a)$$
+
+\section{Electrostatics}
+\subsection{Electric Field}
+\begin{center}
+\begin{tikzpicture}
+    \draw[->] [black] (0,0) -- (0, 5);
+    \draw[->] [black] (0,0) -- (5, 0);
+    \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
+    \draw[->] [black] (2,2) -- (4,4);
+    \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
+    \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
+    \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R} - \vec{R_1}$ = $\vec{r_1}$};
+    \draw[->] [black] (3,3.5) -- (4,4);
+\end{tikzpicture}
+\end{center}
+The Electric Field at $\vec{R}$ due to $q_1$ is given by:
+$$\vec{E} = \frac{1}{4\pi\epsilon_0} \frac{q_1}{r_1^2} \hat{r_1}$$
+
+If there is another charge present:
+\begin{center}
+\begin{tikzpicture}
+    \draw[->] [black] (0,0) -- (0, 5);
+    \draw[->] [black] (0,0) -- (5, 0);
+    \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
+    \draw[->] [black] (2,2) -- (4,4);
+    \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
+    \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
+    \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R_1} - \vec{R}$ = $\vec{r_1}$};
+    \draw[->] [black] (3,3.5) -- (4,4);
+    \draw[black] (0, 0) -- (2,0.75) node[anchor=north west] {$\vec{R_2}$};
+    \draw[black, ->] (2,0.75) -- (4,1.5) node[anchor=north west] {$q_2$};
+    \draw[black] (4,1.5) -- (4,2.75) node[anchor=west] {$\vec{R_2} - \vec{R}$ = $\vec{r_2}$};
+    \draw[->] [black] (4,2.75) -- (4,4);
+
+\end{tikzpicture}
+\end{center}
+$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left(\frac{q_1}{r_1^2}\hat{r_1} + \frac{q_2}{r_1^2}\hat{r_2}\right)$$
+
+\subsubsection*{Principle of Superposition:}
+The net electric field at $\vec{R}$ due to $n$ charges is given by:
+
+$$E = \frac{1}{4\pi\epsilon_0} \left( \sum_{i = 1}^{n} \frac{q_i}{r_i^2}\hat{r_i} \right)$$
+
+\subsubsection*{Question:}
+\begin{tikzpicture}
+    \draw[<->, black] (-2.5,0) -- (2.5,0);
+    \draw[->, black] (0,0) -- (0, 4);
+    \draw[->, black] (0,0) -- (0, 3) node[anchor=south west] {z};
+    \draw[-, black] (0,0) -- (1,0) node[anchor=south] {d/2};
+    \draw[-, black] (0,0) -- (-1,0) node[anchor=south] {d/2};
+\end{tikzpicture}
+
+Consider two charges, $q$, placed at $r = \pm \frac{d}{2}$ respectively. Find the electric field at $z$.
+
+\subsubsection*{Answer}
+$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{q}{\left(\frac{d}{2}\right)^2 + z^2} \hat{r_1} + \frac{q}{\left(\frac{d}{2}\right)^2 + + z^2} \hat{r_2} \right)$$
+$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2 + \frac{d^2}{4}}\right) \left(\frac{z}{\sqrt{z^2 + \frac{d^2}{4}}}\hat{z}\right)$$
+$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2qz}{\left(z^2 + \frac{d^2}{4}\right)^{\frac{3}{2}}}\right) \hat{z}$$
+
+now, if $z$ is very large (but not infinity):
+
+$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2}\right)\left(1 + \frac{d^2}{4z^2}\right)^{\frac{-3}{2}} \hat{z}$$
+this can be approximated to:
+$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2}\right)\left(1 - \frac{3d^2}{8z^2}\right) \hat{z}$$
+
+
 
 
 \end{document} 
