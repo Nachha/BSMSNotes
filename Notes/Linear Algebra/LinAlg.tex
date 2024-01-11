@@ -11,22 +11,22 @@
 \section{Introduction to Linear Systems}
 \index{Introduction to Linear Systems}
 They are system of equations that have variables that are linear.
-Example: $$x + y = 2$$ and $$2x - y = 1$$
+Example: \[x + y = 2\] and \[2x - y = 1\]
 
 Normally the coefficients are real numbers, but they can be complex numbers as well. \\[1pt]
 System of linear equations of $m$ equations and $n$ variables:
-    $$
+    \[
     a_{1,1} x_1 + a_{1,2} x_2 + \cdots + a_{1,n} x_n = b_1
-    $$
-    $$
+    \]
+    \[
     a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n = b_2
-    $$
-    $$
+    \]
+    \[
     \vdots
-    $$
-    $$
+    \]
+    \[
     a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n = b_m
-    $$
+    \]
 
 What a linear equation in $n$ variables represents is a given space in $\mathbb{R}^n$.
 
@@ -38,16 +38,16 @@ What it the line passing through $(1,1)$ and $(-1,-3)$?
     Let the equation of the line be $y = mx + c$.
     
     We know that $(1,1)$ and $(-1,-3)$ lie on the line.\\[1pt]
-    $$1 = m*1 + c \dots (1)$$
-    $$-3 = m*(-1) + c \dots (2)$$
+    \[1 = m*1 + c \dots (1)\]
+    \[-3 = m*(-1) + c \dots (2)\]
 
     Subtracting $(2)$ from $(1)$, we get:
-    $$4 = 2m$$
-    $$m = 2$$
+    \[4 = 2m\]
+    \[m = 2\]
 
     Substituting $m = 2$ in $(1)$, we get:
-    $$1 = 2 + c$$
-    $$c = -1$$
+    \[1 = 2 + c\]
+    \[c = -1\]
     
 \end{paragraph}
 
@@ -57,15 +57,15 @@ Group of numbers(or equations, expressions, etc.) in rows and columns.
 \end{paragraph}
 \begin{paragraph}{Example:}
 
-    $$A = \begin{pmatrix}
+    \[A = \begin{pmatrix}
         1 & 0 & -1 & 4 \\
         2 & 9 & 3 & 5 \\
         5 & 2 & 10 & 6 
-    \end{pmatrix}$$
+    \end{pmatrix}\]
 The above matrix has 3 rows and 4 columns.\\[1pt]
 Entry in 2nd row, 3rd column $ = 3$
 
-It can also be represented as $$A = (a_{ij})$$ 
+It can also be represented as \[A = (a_{ij})\] 
 where $a_{ij}$ refers to the element in A at the $i$th row and $j$th column
 
 \end{paragraph}
@@ -75,61 +75,61 @@ where $a_{ij}$ refers to the element in A at the $i$th row and $j$th column
 
     \item \textbf{Zero Matrix:} 
     
-    $$ A = O_{m \times n} = \begin{bmatrix}
+    \[ A = O_{m \times n} = \begin{bmatrix}
         0 & . & . & . & 0 \\
         \cdot &&&& \cdot \\
         \cdot &&&& \cdot \\
         0 & . & . & . & 0
-    \end{bmatrix}$$
+    \end{bmatrix}\]
     
     \item \textbf{Square Matrix:} here $m = n$
-        $$A_3 = \begin{bmatrix}
+        \[A_3 = \begin{bmatrix}
             a & b & c \\
             d & e & f \\
             g & h & i
-        \end{bmatrix}$$
+        \end{bmatrix}\]
 
     \item \textbf{Identity Matrix:} A square matrix with all diagonal element equal to 1 and non-diagonal elements equal to 0.
-        $$ I_n = \begin{bmatrix}
+        \[ I_n = \begin{bmatrix}
             1 &&&&& 0 \\
             &1&&&&\\
             &&.&&&\\
             &&&.&&\\
             &&&&.&\\
             0&&&&&1
-        \end{bmatrix}$$
+        \end{bmatrix}\]
 
     \item \textbf{Diagonal Matrix:} A square matrix with all non-diagonal elements equal to 0.
-        $$ D_n = \begin{bmatrix}
+        \[ D_n = \begin{bmatrix}
             d_1 &&&&& 0 \\
             &d_2&&&&\\
             &&.&&&\\
             &&&.&&\\
             &&&&.&\\
             0&&&&&d_n
-        \end{bmatrix}$$
+        \end{bmatrix}\]
         where $d_i$ are generally non-zero, but not necessarily.
         
     \item \textbf{Upper Triangular Matrix:} A square matrix with all non-diagonal elements below the diagonal equal to 0
-        $$ B = \begin{bmatrix}
+        \[ B = \begin{bmatrix}
             b_1 &&&&& \star \\
             &b_2&&&&\\
             &&.&&&\\
             &&&.&&\\
             &&&&.&\\
             0&&&&&d_n
-        \end{bmatrix}$$
+        \end{bmatrix}\]
         where $\star$ can be any number.
 
     \item \textbf{Lower Triangular Matrix:} A square matrix with all non-diagonal elements above the diagonal equal to 0
-        $$ C = \begin{bmatrix}
+        \[ C = \begin{bmatrix}
             c_1 &&&&& 0 \\
             &c_2&&&&\\
             &&.&&&\\
             &&&.&&\\
             &&&&.&\\
             \star&&&&&c_n
-        \end{bmatrix}$$
+        \end{bmatrix}\]
         where $\star$ can be any number.
 \end{itemize}
 \end{paragraph}
@@ -137,49 +137,49 @@ where $a_{ij}$ refers to the element in A at the $i$th row and $j$th column
 
 \subsection*{Augmented Matrix}
 Given a system of linear equations:
-    $$
+    \[
     3x_1 - 2x_2 + 4x_3 = 0
-    $$
-    $$
+    \]
+    \[
     2x_1 + x_2 + 3x_3 = 1
-    $$
-    $$
+    \]
+    \[
     5x_1 + x_2 - 2x_3 = -1
-    $$
+    \]
     
 The augmented matrix is:
-$$
+\[
 \begin{bmatrix}
     3 & -2 & 4 & \vline & 0 \\
     2 & 1 & 3 & \vline & 1 \\
     5 & 1 & -2 & \vline & -1 
 \end{bmatrix}
-$$    
+\]    
 
 for a system of $m$ equations and $n$ variables:
 
-    $$
+    \[
     a_{1,1} x_1 + a_{1,2} x_2 + \cdots + a_{1,n} x_n = b_1
-    $$
-    $$
+    \]
+    \[
     a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n = b_2
-    $$
-    $$
+    \]
+    \[
     \vdots
-    $$
-    $$
+    \]
+    \[
     a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n = b_m
-    $$
+    \]
 
 The augmented matrix would be:
-$$
+\[
 \begin{bmatrix}
     a_{1,1} & a_{1,2} & \cdots & a_{1,n} & \vline & b_1 \\
     a_{2,1} & a_{2,2} & \cdots & a_{2,n} & \vline & b_2 \\
     \vdots & \vdots & \ddots & \vdots & \vline & \vdots \\
     a_{m,1} & a_{m,2} & \cdots & a_{m,n} & \vline & b_m
 \end{bmatrix}
-$$
+\]
 
 \subsection*{Elementary Row Operations}
 \begin{itemize}
@@ -198,26 +198,26 @@ A matrix is said to be in reduced row-echelon form if:
 \end{itemize}
 Example:
 \begin{itemize}
-    \item $$\begin{bmatrix}
+    \item \[\begin{bmatrix}
     \textbf{1} & 2 & 0 & 0 & 3 & \vline & 2 \\
     0 & 0 & \textbf{1} & 0 & -1 & \vline & 4\\
     0 & 0 & 0 & \textbf{1} & 1 & \vline & 3 \\
     0 & 0 & 0 & 0 & 0 & \vline & 0
-    \end{bmatrix}$$
+    \end{bmatrix}\]
     \item If the augmented matrix is: 
-    $$\begin{bmatrix}
+    \[\begin{bmatrix}
         1 & -3 & 0 & -5 & \vline & -7 \\
         3 & -12 & -2 & -27 & \vline & -33 \\
         -2 & 10 & 2 & 24 & \vline & 29 \\
         -1 & 6 & 1 & 14 & \vline & 17 \\
-    \end{bmatrix}$$
+    \end{bmatrix}\]
     Then its reduced row-echelon form is:
-    $$\begin{bmatrix}
+    \[\begin{bmatrix}
         1 & 0 & 0 & 1 & \vline & 0 \\
         0 & 1 & 0 & 2 & \vline & 0 \\
         0 & 0 & 1 & 3 & \vline & 0 \\
         0 & 0 & 0 & 0 & \vline & 0 \\
-    \end{bmatrix}$$
+    \end{bmatrix}\]
 \end{itemize}
 
 \section{Solutions of Linear Systems}
@@ -225,38 +225,38 @@ Example:
 \textbf{Note:} all the following matrices are in reduced row-echelon form.
 \begin{itemize}
     \item \textbf{No Solution:} If the system has no solution, then the system is said to be \emph{inconsistent}.\\
-    Eg: $$\begin{bmatrix}
+    Eg: \[\begin{bmatrix}
         1 & 2 & 0 & \vline & 0 \\
         0 & 0 & 1 & \vline & 0 \\
         0 & 0 & 0 & \vline & 1 \\
         0 & 0 & 0 & \vline & 0 
-        \end{bmatrix}$$
+        \end{bmatrix}\]
         This has no solution as the last row is $0 = 4$ which is not possible.
     \item \textbf{Infinitely Many Solutions:} If the system has infinitely many solutions, then the system is said to be \emph{consistent with infinitely many solutions}.\\
-    Eg: $$\begin{bmatrix}
+    Eg: \[\begin{bmatrix}
         1 & 2 & 0 & \vline & 0 \\
         0 & 0 & 1 & \vline & 2 \\
         0 & 0 & 0 & \vline & 0 
-        \end{bmatrix}$$
+        \end{bmatrix}\]
         This has a free variable $x_2$ and hence has infinitely many solutions.
 
         \item \textbf{Unique Solution:} If the system has a unique solution, then the system is said to be \textbf{consistent with unique solution}.\\
-    Eg: $$\begin{bmatrix}
+    Eg: \[\begin{bmatrix}
         1 & 0 & 0 & \vline & 1 \\
         0 & 1 & 0 & \vline & 2 \\
         0 & 0 & 1 & \vline & 3 
-        \end{bmatrix}$$
+        \end{bmatrix}\]
         This has no free variables and hence has a unique solution.
 \end{itemize}
 
 \subsection{Rank of A Matrix}
 The rank of a matrix is the number of leading 1's in the reduced row-echelon form of the matrix.\\
-Eg: $$\text{rank } \begin{bmatrix}
+Eg: \[\text{rank } \begin{bmatrix}
     1 & 2 & 3 \\
     4 & 5 & 6 \\
     7 & 8 & 9
-    \end{bmatrix} = 2$$
-    $$\text{Reduced Row Echelon Form of } \begin{bmatrix}
+    \end{bmatrix} = 2\]
+    \[\text{Reduced Row Echelon Form of } \begin{bmatrix}
         1 & 2 & 3 \\
         4 & 5 & 6 \\
         7 & 8 & 9
@@ -264,7 +264,7 @@ Eg: $$\text{rank } \begin{bmatrix}
             \textbf{1} & 0 & -1 \\
             0 & \textbf{1} & 2 \\
             0 & 0 & 0
-        \end{bmatrix}$$
+        \end{bmatrix}\]
 Consider a system of $m$ linear equations in $n$ variables, and the coefficient matrix is $A$.
         \begin{itemize}
     \item $\text{rank}(A) \le m$ and $\text{rank}(A) \le n$

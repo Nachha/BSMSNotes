@@ -24,7 +24,7 @@
 
 \end{tikzpicture}
 the force on $Q$ due to $q_1$ is given by:
-$$\vec{F_1} = \frac{1}{4\pi\epsilon_0} \frac{q_1Q}{r_1^2} \hat{r_1}$$
+\[\vec{F_1} = \frac{1}{4\pi\epsilon_0} \frac{q_1Q}{r_1^2} \hat{r_1}\]
 
 If there was another charge $q_2$ at $\vec{r_2}$: 
 
@@ -45,19 +45,20 @@ If there was another charge $q_2$ at $\vec{r_2}$:
 \end{tikzpicture}
 
 The force on $Q$ due to $q_2$ is given by:
-$$\vec{F_2} = \frac{1}{4\pi\epsilon_0} \frac{q_2Q}{r_2^2} \hat{r_2}$$
+\[\vec{F_2} = \frac{1}{4\pi\epsilon_0} \frac{q_2Q}{r_2^2} \hat{r_2}\]
 
 And the net charge on $Q$ is given by:
-$$\vec{F} = \vec{F_1} + \vec{F_2}$$
-$$\vec{F} = \frac{1}{4\pi\epsilon_0} \frac{q_1Q}{r_1^2} \hat{r_1} + \frac{1}{4\pi\epsilon_0} \frac{q_2Q}{r_2^2} \hat{r_2}$$
+\[\vec{F} = \vec{F_1} + \vec{F_2}\]
+\[\vec{F} = \frac{1}{4\pi\epsilon_0} \frac{q_1Q}{r_1^2} \hat{r_1} + \frac{1}{4\pi\epsilon_0} \frac{q_2Q}{r_2^2} \hat{r_2}\]
 
 If there were $n$ charges, the net force on $Q$ would be:
-$$\vec{F} = \sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_iQ}{r_i^2} \hat{r_i}$$
-$$\vec{F} = Q \sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$$
+\[\vec{F} = \sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_iQ}{r_i^2} \hat{r_i}\]
+\[\vec{F} = Q \sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}\]
 
 where $\sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$ is the electric field $\vec{E}$ at $\vec{R}$ due to the $n$ charges.
 
-\textbf{Field}: A value, vector or tensor, that is defined for every point in space and time.\\[1pt] 
+\paragraph{Field}
+A value, vector or tensor, that is defined for every point in space and time.\\[1pt] 
 
 \section{Vector Calculus}
 
@@ -98,7 +99,7 @@ where $\sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$ is the
         Cross product is a vector. It is anti-commutative and distributive.
     \subsection{Component form of a Vector: }
     A vector $\vec{A}$ can be written as:
-    $$\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}$$
+    \[\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}\]
     where $\hat{i}, \hat{j}, \hat{k}$ are unit vectors along the $x, y, z$ axes respectively.
 
     Given that $\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}$ and $\vec{B} = B_x \hat{i} + B_y \hat{j} + B_z \hat{k}$, we can perform the following operations:
@@ -109,11 +110,11 @@ where $\sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$ is the
         \item \textbf{Modulus: } $|\vec{A}| = \sqrt{A_x^2 + A_y^2 + A_z^2}$
         \item \textbf{Cross Product: } $\vec{A} \times \vec{B} = (A_yB_z - A_zB_y) \hat{i} + (A_zB_x - A_xB_z) \hat{j} + (A_xB_y - A_yB_x) \hat{k}$
             This can also be written in a determinant form:
-            $$\vec{A} \times \vec{B} = \begin{vmatrix}
+            \[\vec{A} \times \vec{B} = \begin{vmatrix}
                 \hat{i} & \hat{j} & \hat{k} \\
                 A_x & A_y & A_z \\
                 B_x & B_y & B_z
-            \end{vmatrix}$$
+            \end{vmatrix}\]
     \end{itemize}
     \subsection{Triple Product: }
     \paragraph*{Scalar Triple Product: } $\vec{A}.(\vec{B} \times \vec{C}) = \vec{B}.(\vec{C} \times \vec{A}) = \vec{C}.(\vec{A} \times \vec{B})$
@@ -125,101 +126,101 @@ where $\sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$ is the
 Geometrically, the derivative is the slope of the tangent to the curve at a point.
 
 \subsection{Gradient:} Consider a scalar, T, which exists at every point in space. 
-$$d T = \left(\frac{\partial T}{\partial x}\right)dx + \left(\frac{\partial T}{\partial y}\right)dy + \left(\frac{\partial T}{\partial z}\right)dz$$
+\[d T = \left(\frac{\partial T}{\partial x}\right)dx + \left(\frac{\partial T}{\partial y}\right)dy + \left(\frac{\partial T}{\partial z}\right)dz\]
 This can the written in the dot product form as:
-$$d T = \left(\frac{\partial T}{\partial x}\hat{x} + \frac{\partial T}{\partial y}\hat{y} + \frac{\partial T}{\partial z}\hat{z} \right) \cdot (dx \hat{x} + dy \hat{y} + dz \hat{z} )$$
+\[d T = \left(\frac{\partial T}{\partial x}\hat{x} + \frac{\partial T}{\partial y}\hat{y} + \frac{\partial T}{\partial z}\hat{z} \right) \cdot (dx \hat{x} + dy \hat{y} + dz \hat{z} )\]
 this is denoted as:
-$$d T = \nabla T \cdot d\vec{r}$$
+\[d T = \nabla T \cdot d\vec{r}\]
 Here, we treat $\nabla$ as an operator. It takes a scalar and returns a vector.
 
-\paragraph*{The $\nabla$ operator: } $$\nabla = \hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}$$
+\paragraph*{The $\nabla$ operator: } \[\nabla = \hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}\]
 
 \subsection{Divergence: } Consider a vector, $\vec{A}$, which exists at every point in space. The divergence of $\vec{A}$ is defined as:
-$$ \nabla \cdot \vec{A} = \left(\hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}{}\right) \cdot \left(A_x \hat{x} + A_y \hat{y} + A_z \hat{z}\right)$$
-$$ \nabla \cdot \vec{A} = \frac{\partial A_x}{\partial x} + \frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}$$
+\[ \nabla \cdot \vec{A} = \left(\hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}{}\right) \cdot \left(A_x \hat{x} + A_y \hat{y} + A_z \hat{z}\right)\]
+\[ \nabla \cdot \vec{A} = \frac{\partial A_x}{\partial x} + \frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}\]
 
 It behaves like a dot product, and is a scalar.
 
 \subsection{Curl: } Consider a vector, $\vec{A}$, which exists at every point in space. The curl of $\vec{A}$ is defined as:
-$$\nabla \times \vec{A}  = \begin{vmatrix}
+\[\nabla \times \vec{A}  = \begin{vmatrix}
     \hat{x} & \hat{y} & \hat{z} \\
     \partial/\partial x & \partial/\partial y & \partial/\partial z \\    
     A_x & A_y & A_z 
-\end{vmatrix}$$
+\end{vmatrix}\]
 
 It behaves like a cross product, and is a vector.
 
 \subsection{Second Derivatives: }
 \begin{itemize}
     \item \textbf{Divergence of a Gradient: } $\nabla \cdot \left(\nabla T\right)$
-    $$ \nabla \cdot \left(\nabla T\right)  = \left(\hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}\right) \cdot \left(\frac{\partial T}{\partial x} \hat{x} + \frac{\partial T}{\partial y} \hat{y} + \frac{\partial T}{\partial z} \hat{z}\right)$$
-    $$ \nabla \cdot \left(\nabla T\right)  = \left(\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2}\right)$$
+    \[ \nabla \cdot \left(\nabla T\right)  = \left(\hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}\right) \cdot \left(\frac{\partial T}{\partial x} \hat{x} + \frac{\partial T}{\partial y} \hat{y} + \frac{\partial T}{\partial z} \hat{z}\right)\]
+    \[ \nabla \cdot \left(\nabla T\right)  = \left(\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2}\right)\]
     It is denoted by $\nabla^2 T$ and is called the Laplacian of $T$.
     \paragraph*{Note:} Laplacian of a vector is theoretically not defined. But when $\nabla^2 \vec{A}$ is written, it means:
-    $$\nabla^2 \vec{A} = \left(\nabla^2 A_x\right) \hat{x} + \left(\nabla^2 A_y\right) \hat{y} + \left(\nabla^2 A_z\right) \hat{z}$$
+    \[\nabla^2 \vec{A} = \left(\nabla^2 A_x\right) \hat{x} + \left(\nabla^2 A_y\right) \hat{y} + \left(\nabla^2 A_z\right) \hat{z}\]
     \item \textbf{Curl of a Gradient: } $\nabla \times \left(\nabla T\right)$ 
-    $$\nabla \times \left(\nabla T\right) = 0$$
+    \[\nabla \times \left(\nabla T\right) = 0\]
     Curl of a gradient is always zero.
     \item \textbf{Gradient of Divergence: } $\nabla \left(\nabla \cdot \vec{A}\right)$
     \item \textbf{Divergence of Curl: } $\nabla \cdot \left(\nabla \times \vec{A}\right)$
-    $$\nabla \cdot \left(\nabla \times \vec{A}\right) = 0$$
+    \[\nabla \cdot \left(\nabla \times \vec{A}\right) = 0\]
     Divergence of a Curl is always zero.
     \item \textbf{Curl of Curl: } $\nabla \times \left(\nabla \times \vec{A}\right)$
-    $$\nabla \times \left(\nabla \times \vec{A}\right) = \nabla \left(\nabla \cdot \vec{A}\right) - \nabla^2 \vec{A}$$
+    \[\nabla \times \left(\nabla \times \vec{A}\right) = \nabla \left(\nabla \cdot \vec{A}\right) - \nabla^2 \vec{A}\]
 \end{itemize}
 
 \section{Integral Calculus}
 
 \subsection{Line Integral: }
 Consider a vector field $\vec{V}$ and a curve $C$ joining points $a$ and $b$. The line integral of $\vec{V}$ along $C$ is defined as:
-$$\int_{aP}^{b} \vec{V} \cdot d\vec{l}$$
+\[\int_{aP}^{b} \vec{V} \cdot d\vec{l}\]
 where $d\vec{l}$ is the differential displacement along the curve $C$.
 
 when $C$ is a closed figure, it is written as:
-$$\oint \vec{V} \cdot d\vec{l}$$
+\[\oint \vec{V} \cdot d\vec{l}\]
 \subsection{Surface Integral: }
 Consider a vector field $\vec{V}$ and a surface $S$. The surface integral of $\vec{V}$ over $S$ is defined as:
-$$\int_{S} \vec{V}\cdot \vec{da}$$
+\[\int_{S} \vec{V}\cdot \vec{da}\]
 where $\vec{da}$ is the differential area vector of the surface $S$.
 
 When $S$ is a closed surface:
-$$\oint \vec{V}\cdot\vec{da}$$
+\[\oint \vec{V}\cdot\vec{da}\]
 
 \subsection{Volume Integral: }
 Consider a scalar field $T$ and a volume $V$. The volume integral of $T$ over $V$ is defined as:
-$$\int_{V} T dV$$
+\[\int_{V} T dV\]
 \\
 If we consider a vector field $\vec{A}$, then:
-$$\int \vec{A} dV$$
-$$\hat{x} \int A_x dV + \hat{y} \int A_y dV + \hat{z} \int A_z dV$$
+\[\int \vec{A} dV\]
+\[\hat{x} \int A_x dV + \hat{y} \int A_y dV + \hat{z} \int A_z dV\]
 
 In Cartesian coordinates:
-$$dV = dx dy dz$$
+\[dV = dx dy dz\]
 
 In Spherical Polar coordinates:
-$$dV = r^2 \sin(\theta) dr d\theta d\phi$$
+\[dV = r^2 \sin(\theta) dr d\theta d\phi\]
 
 \subsection{Fundamental Theorem of Calculus: }
 If $f(x)$ is a continuous function and $F(x)$ is the anti-derivative of $f(x)$, then:
-$$\int_{a}^{b} f(x) = F(b) - F(a)$$
+\[\int_{a}^{b} f(x) = F(b) - F(a)\]
 \\
 
 \begin{itemize}
     \item \textbf{Fundamental Theorem for Gradients: }
 
 Consider a scalar field $T$ and a curve $C$, from $\vec{a}$ to $\vec{b}$, then:
-$$\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = T(\vec{b}) - T(\vec{a})$$
+\[\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = T(\vec{b}) - T(\vec{a})\]
 If the curve is a closed curve, then:
-$$\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = 0$$
+\[\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = 0\]
 
 \item \textbf{Fundamental Theorem for Divergence: } a.k.a Gauss' Theorem, Green's Theorem or divergence theorem.
 Consider a vector field $\vec{A}$ and a volume $V$, then:
-$$\int_{V}\left(\vec{\nabla} \cdot \vec{v}\right) = \oint \vec{v}.\vec{ds}$$
+\[\int_{V}\left(\vec{\nabla} \cdot \vec{v}\right) = \oint \vec{v}.\vec{ds}\]
 where $ds$  is the differential area vector of the surface $S$.
 
 \item \textbf{Fundamental Theorem for Curl: } a.k.a Stokes' Theorem.
 Consider a vector field $\vec{A}$ and a surface $S$, then:
-$$\int_{S}\left(\vec{\nabla} \times \vec{v}\right) \vec{da}= \oint \vec{v}.\vec{dl}$$
+\[\int_{S}\left(\vec{\nabla} \times \vec{v}\right) \vec{da}= \oint \vec{v}.\vec{dl}\]
 where $dl$  is the differential displacement vector along the boundary curve $C$ of the surface $S$.
 
 \end{itemize}
@@ -227,27 +228,27 @@ where $dl$  is the differential displacement vector along the boundary curve $C$
 \section{Dirac Delta Function: }
 \subsection{One-Dimensional Dirac Delta Function: }
 It is a function that is zero everywhere except at $x = 0$ and has an integral of 1. It is defined as:
-$$\delta(x) = \begin{cases}
+\[\delta(x) = \begin{cases}
     \infty & x = 0 \\
     0 & x \neq 0
-\end{cases}$$
+\end{cases}\]
 and
-$$\int_{-\infty}^{\infty} \delta(x) dx = 1$$
+\[\int_{-\infty}^{\infty} \delta(x) dx = 1\]
 Mathematically, it is not a function. i.e. don't tell your maths profs that its a function.
 
 \subsection{Three-Dimensional Dirac Delta Function: }
 It is a function that is zero everywhere except at $\vec{r} = \vec{r_0}$ and has a volume integral of 1. It is defined as:
 
-$$\delta^3(\vec{r}) = \begin{cases}
+\[\delta^3(\vec{r}) = \begin{cases}
     \infty & (x,y,z) = (0,0,0) \\
     0 & \text{everywhere else}
-\end{cases}$$
-$$\delta^3(\vec{r}) = \delta(x)\delta(y)\delta(z)$$
+\end{cases}\]
+\[\delta^3(\vec{r}) = \delta(x)\delta(y)\delta(z)\]
 and
-$$\int_{\text{all space}} \delta^3\left(\vec{r}\right) d\tau = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\delta(x)\delta(y)\delta(z) dx dy dz$$
+\[\int_{\text{all space}} \delta^3\left(\vec{r}\right) d\tau = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\delta(x)\delta(y)\delta(z) dx dy dz\]
 
 Generalizing the function:
-$$\int_{\text{all space}} f(r)\delta^3\left(r-a\right) d\tau = f(a)$$
+\[\int_{\text{all space}} f(r)\delta^3\left(r-a\right) d\tau = f(a)\]
 
 \section{Electrostatics}
 \subsection{Electric Field}
@@ -264,7 +265,7 @@ $$\int_{\text{all space}} f(r)\delta^3\left(r-a\right) d\tau = f(a)$$
 \end{tikzpicture}
 \end{center}
 The Electric Field at $\vec{R}$ due to $q_1$ is given by:
-$$\vec{E} = \frac{1}{4\pi\epsilon_0} \frac{q_1}{r_1^2} \hat{r_1}$$
+\[\vec{E} = \frac{1}{4\pi\epsilon_0} \frac{q_1}{r_1^2} \hat{r_1}\]
 
 If there is another charge present:
 \begin{center}
@@ -284,36 +285,66 @@ If there is another charge present:
 
 \end{tikzpicture}
 \end{center}
-$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left(\frac{q_1}{r_1^2}\hat{r_1} + \frac{q_2}{r_1^2}\hat{r_2}\right)$$
+\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left(\frac{q_1}{r_1^2}\hat{r_1} + \frac{q_2}{r_1^2}\hat{r_2}\right)\]
 
 \subsubsection*{Principle of Superposition:}
 The net electric field at $\vec{R}$ due to $n$ charges is given by:
 
-$$E = \frac{1}{4\pi\epsilon_0} \left( \sum_{i = 1}^{n} \frac{q_i}{r_i^2}\hat{r_i} \right)$$
+\[E = \frac{1}{4\pi\epsilon_0} \left( \sum_{i = 1}^{n} \frac{q_i}{r_i^2}\hat{r_i} \right)\]
 
 \subsubsection*{Question:}
 \begin{tikzpicture}
     \draw[<->, black] (-2.5,0) -- (2.5,0);
     \draw[->, black] (0,0) -- (0, 4);
-    \draw[->, black] (0,0) -- (0, 3) node[anchor=south west] {z};
-    \draw[-, black] (0,0) -- (1,0) node[anchor=south] {d/2};
-    \draw[-, black] (0,0) -- (-1,0) node[anchor=south] {d/2};
+    \draw[->, black] (0,0) -- (0, 3);
+    \draw[-, black] (0,0) -- (0, 1.5) node[anchor=south west] {$\vec{z}$};
+    \draw[-, black] (0,0) -- (1,0) node[anchor=north] {$d/2$};
+    \draw[-, black] (0,0) -- (-1,0) node[anchor=north] {$d/2$};
+    \draw[->, black] (1, 0) -- (2, 0) node[anchor=south west] {$q$};
+    \draw[->, black] (-1, 0) -- (-2, 0) node[anchor=south east] {$q$};
+    \draw[-, black] (2, 0) -- (1, 1.5) node[anchor=south west] {$\vec{r_1}$};
+    \draw[-, black] (-2, 0) -- (-1, 1.5) node[anchor=south east] {$\vec{r_2}$};
+    \draw[->, black] (1, 1.5) -- (0, 3);
+    \draw[->, black] (-1, 1.5) -- (0, 3);
+
 \end{tikzpicture}
 
 Consider two charges, $q$, placed at $r = \pm \frac{d}{2}$ respectively. Find the electric field at $z$.
 
 \subsubsection*{Answer}
-$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{q}{\left(\frac{d}{2}\right)^2 + z^2} \hat{r_1} + \frac{q}{\left(\frac{d}{2}\right)^2 + + z^2} \hat{r_2} \right)$$
-$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2 + \frac{d^2}{4}}\right) \left(\frac{z}{\sqrt{z^2 + \frac{d^2}{4}}}\hat{z}\right)$$
-$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2qz}{\left(z^2 + \frac{d^2}{4}\right)^{\frac{3}{2}}}\right) \hat{z}$$
+\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{q}{\left(\frac{d}{2}\right)^2 + z^2} \hat{r_1} + \frac{q}{\left(\frac{d}{2}\right)^2 + + z^2} \hat{r_2} \right)\]
+\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2 + \frac{d^2}{4}}\right) \left(\frac{z}{\sqrt{z^2 + \frac{d^2}{4}}}\hat{z}\right)\]
+\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2qz}{\left(z^2 + \frac{d^2}{4}\right)^{\frac{3}{2}}}\right) \hat{z}\]
+\\
+Now, if $z$ is very large (but not infinity):
 
-now, if $z$ is very large (but not infinity):
-
-$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2}\right)\left(1 + \frac{d^2}{4z^2}\right)^{\frac{-3}{2}} \hat{z}$$
+\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2}\right)\left(1 + \frac{d^2}{4z^2}\right)^{\frac{-3}{2}} \hat{z}\]
 this can be approximated to:
-$$\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2}\right)\left(1 - \frac{3d^2}{8z^2}\right) \hat{z}$$
+\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2}\right)\left(1 - \frac{3d^2}{8z^2}\right) \hat{z}\]
 
+Similar methods can be used to find the electric field for any discrete charge distribution.
 
+\subsection{Continuous Charge Distribution}
+\subsubsection{Linear Charge Distribution}
+Consider a linear Charge distribution, $\lambda$ of length $l$, along the $x$ axis. The electric field at $\vec{R}$ is given by: 
 
+\begin{tikzpicture}
+    \filldraw[ultra thick, gray] (0,-.05) rectangle (5,0.05);
+    \filldraw[ultra thick, black] (3,-.05) rectangle (3.1,0.05);
+    \node[anchor=south] at (2.9, 0.1) {$dx$};
+    \draw[->] [black] (3,0) -- (6, 5) node[anchor=south west] {$\vec{r}$};
+    \node[anchor=north] at (0,0) {+};
+    \node[anchor=north] at (1,0) {+};
+    \node[anchor=north] at (2,0) {+};
+    \node[anchor=north] at (3,0) {+};
+    \node[anchor=north] at (4,0) {+};
+    \node[anchor=north] at (5,0) {+};
+    \node[anchor=south east] at (6,5) {P};
+\end{tikzpicture}\\
+The Electric Field at point $P$ due to $dx$ is given by:
+\[d\vec{E} = \frac{1}{4\pi \epsilon_0} \frac{\lambda dx}{r^2} \hat{r}  \]
+Hence, the electric field at point $P$ due to the entire linear charge distribution is given by:
+\[E = \int_{\text{length $l$}} \frac{1}{4\pi \epsilon_0} \frac{\lambda dx}{r^2} \hat{r} \]
 
+\subsubsection{Surface Charge Distribution}
 \end{document} 

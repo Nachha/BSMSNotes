@@ -13,7 +13,7 @@
 
 $\mathbb{R}$ represents the set of real numbers.\\[1pt]
 $\mathbb{R}^2$ represents a 2 dimensional real plane. \\[1pt]
-$$\mathbb{R}^2 = \{(x,y) \mid x,y \in \mathbb{R}\}$$
+\[\mathbb{R}^2 = \{(x,y) \mid x,y \in \mathbb{R}\}\]
 
 %\begin{picture}
 
@@ -34,10 +34,10 @@ $\cdot$ add (or subtract) two vectors
 $\cdot$ if $c \in \mathbb{R}$ and $v \in \mathbb{R}^2$,  $c\vec{v}$ 
 
 \subsection{Dot Product}
-$u = (u_1, u_2)$ and $v = (v_1, v_2)$ $$u.v = u_1.v_1 + u_2.v_2$$
+$u = (u_1, u_2)$ and $v = (v_1, v_2)$ \[u.v = u_1.v_1 + u_2.v_2\]
 
 \subsubsection*{Theorem}
-$$u.v = |u||v| \cos(\theta)$$
+\[u.v = |u||v| \cos(\theta)\]
 where $\theta$ is the angle between $\vec{u}$ and $\vec{v}$
 and $|u|$ is the length of vector $\vec{u}$
 
@@ -53,27 +53,27 @@ and $|u|$ is the length of vector $\vec{u}$
 \end{tikzpicture}\\
 
 Proof:
-$$ w^2 = u^2 + v^2 - 2|u||v| \cos(\theta) \dots(1)$$
-$$\vec{w} = \vec{v} - \vec{u}$$
-$$ w = (v_1 - u_1, v_2 - u_2)$$
-$$ w^2 = (v_1 - u_1)^2 + (v_2 - u_2)^2$$
-$$ w^2 = v_1^2 - 2v_1u_1 + u_1^2 + v_2^2 - 2v_2u_2 + u_2^2$$
-$$ w^2 = v^2 + u^2 - 2v_1u_1 - 2v_2u_2 \dots (2)$$
+\[ w^2 = u^2 + v^2 - 2|u||v| \cos(\theta) \dots(1)\]
+\[\vec{w} = \vec{v} - \vec{u}\]
+\[ w = (v_1 - u_1, v_2 - u_2)\]
+\[ w^2 = (v_1 - u_1)^2 + (v_2 - u_2)^2\]
+\[ w^2 = v_1^2 - 2v_1u_1 + u_1^2 + v_2^2 - 2v_2u_2 + u_2^2\]
+\[ w^2 = v^2 + u^2 - 2v_1u_1 - 2v_2u_2 \dots (2)\]
 
 now, as $(1) = (2)$
 
-$$ u^2 + v^2 - 2|u||v| \cos(\theta) = v^2 + u^2 - 2v_1u_1 - 2v_2u_2$$
-$$|u||v| \cos(\theta) = v_1u_1 + v_2u_2$$
-$$|u||v| \cos(\theta) = \vec{u}.\vec{v}$$
+\[ u^2 + v^2 - 2|u||v| \cos(\theta) = v^2 + u^2 - 2v_1u_1 - 2v_2u_2\]
+\[|u||v| \cos(\theta) = v_1u_1 + v_2u_2\]
+\[|u||v| \cos(\theta) = \vec{u}.\vec{v}\]
 Hence proved.\\[1pt]
 
 Extending the above theorem to $\mathbb{R}^n$:
 Consider $\vec{u} = (u_1, u_2, \dots, u_n), \vec{v} = (v_1, v_2, \dots, v_n) \in \mathbb{R}$
-$$\vec{u}.\vec{v} = u_1v_1 + u_2v_2 + \dots + u_nv_n$$
+\[\vec{u}.\vec{v} = u_1v_1 + u_2v_2 + \dots + u_nv_n\]
 
 \subsection{Unit Vectors}
 If $\vec{v} \in \mathbb{R}^2$ is a vector.
-then, $$\hat{v} = \frac{\vec{v}}{|\vec{v}|}$$
+then, \[\hat{v} = \frac{\vec{v}}{|\vec{v}|}\]
 
 \subsection{Projections}
 If $\vec{u}$ and $\vec{v}$ are vectors in $\mathbb{R}^2$ and $\theta$ is the angle between them:
@@ -91,13 +91,13 @@ If $\vec{u}$ and $\vec{v}$ are vectors in $\mathbb{R}^2$ and $\theta$ is the ang
 
 let $\vec{w}$ be the projection of $\vec{u}$ on $\vec{v}$
 
-$$\vec{w} = |u| \cos(\theta) \hat{v}$$
-$$\vec{w} = \frac{|u| \cos(\theta)|v|\vec{v} }{|v|^2}$$
-$$\vec{w} = \frac{\vec{u}.\vec{v}}{|\vec{v}|^2} \vec{v}$$
+\[\vec{w} = |u| \cos(\theta) \hat{v}\]
+\[\vec{w} = \frac{|u| \cos(\theta)|v|\vec{v} }{|v|^2}\]
+\[\vec{w} = \frac{\vec{u}.\vec{v}}{|\vec{v}|^2} \vec{v}\]
 
 \subsection{Cross Product}
 Consider the vectors, $u,v$. Then the cross-product of $u$ and $v$ is defined as:
-$$u \times v = |u||v|\sin(\theta) \hat{n}$$
+\[u \times v = |u||v|\sin(\theta) \hat{n}\]
 where $\hat{n}$ is the unit vector perpendicular to the plane containing $u$ and $v$, and also $(\vec{u}, \vec{v}, \hat{n})$ form a right handed system.
 
 \paragraph*{Properties of Cross Product: }
@@ -108,17 +108,17 @@ where $\hat{n}$ is the unit vector perpendicular to the plane containing $u$ and
 \end{itemize}
 
 $\vec{u}$ and $\vec{v}$ can also be represented as: 
-$$ \vec{u} = u_1 \hat{i} + u_2 \hat{j} + u_3 \hat{k}$$
-$$ \vec{v} = v_1 \hat{i} + v_2 \hat{j} + v_3 \hat{k}$$
+\[ \vec{u} = u_1 \hat{i} + u_2 \hat{j} + u_3 \hat{k}\]
+\[ \vec{v} = v_1 \hat{i} + v_2 \hat{j} + v_3 \hat{k}\]
 
-$$\vec{u} \times \vec{v} = (u_2 v_3 - u_3 v_2)\hat{i} + (u_3 v_1 - u_1 v_3)\hat{i} + (u_1 v_2 - u_2 v_1)\hat{k}$$
+\[\vec{u} \times \vec{v} = (u_2 v_3 - u_3 v_2)\hat{i} + (u_3 v_1 - u_1 v_3)\hat{i} + (u_1 v_2 - u_2 v_1)\hat{k}\]
 
-$$\vec{u} \times \vec{v} = \begin{vmatrix}
+\[\vec{u} \times \vec{v} = \begin{vmatrix}
     \hat{i} & \hat{j} & \hat{k} \\
     u_1 & u_2 & u_3\\
     v_1 & v_2 & v_3
 \end{vmatrix}
-$$
+\]
 the above formula is only symbolic and meant to represent a cross product.
 
 \section{Multi-Variable Calculus}
@@ -126,11 +126,11 @@ the above formula is only symbolic and meant to represent a cross product.
 let $r: \mathbb{R} \rightarrow \mathbb{R}^3$ be a function.
 (It could be to any $\mathbb{R}^n$)\\
 for $t \in \mathbb{R}$, $r(t)$ is a vector in $\mathbb{R}^3$\\
-$$r(t) = f(t)\hat{i} + g(t)\hat{i} + h(t)\hat{i}$$
+\[r(t) = f(t)\hat{\imath} + g(t)\hat{\jmath} + h(t)\hat{k}\]
 
 \subsection{Continuity}
 $r$ is continuous at $a$ if: 
-$$\lim_{t \rightarrow a} r(t) = r(a)$$
+\[\lim_{t \rightarrow a} r(t) = r(a)\]
 i.e. $\forall \epsilon > 0, \exists \delta > 0$ such that $|t - a| < \delta \implies |r(t) - r(a)| < \epsilon$
 
 or, if $f$, $g$ and $h$ are continuous at $a$, $r$ is continuous at $a$.
