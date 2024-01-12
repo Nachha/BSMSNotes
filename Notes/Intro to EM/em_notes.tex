@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{amsmath, amssymb, amssymb}
 \usepackage{tikz}
-\usepackage{tikz-3dplot}
+\usetikzlibrary{3d}
 
 \begin{document}
 \begin{center}
@@ -369,5 +369,80 @@ Hence, the electric field at point $P$ due to the entire surface charge distribu
 \[ \vec{E} = \int_{\text{area $A$}} \frac{1}{4 \pi \epsilon} \frac{\sigma dA}{r^2} \hat{r} \]
 
 \subsubsection{Volume Charge Distribution}
+Consider a volume charge distribution, $\rho$ of volume $V$, in space. The electric field at point $P$ is given by:\\
+%make a potato and find the electric field at the centre
+
+\begin{tikzpicture}
+    \filldraw[ball color=gray] (0,0,0) circle (2);
+    \filldraw[ball color=black] (1,1,1) circle (0.05) node[anchor=south east] {$dV$};
+    \draw[->, black] (1,1,1) -- (5,4,2) node[anchor=south east] {$\vec{r}$};
+    \node[anchor=south west] at (5,4,2) {$P$};
+    \node[anchor=south] at (2.2,0,0) {+};
+    \node[anchor=south] at (1.8,1,0) {+};
+    \node[anchor=south] at (2,-1,0) {+};
+    \node[anchor=south] at (-2.2,0,0) {+};
+    \node[anchor=south] at (-1.8,1,0) {+};
+    \node[anchor=south] at (0,2.4,1) {+};
+    \node[anchor=south] at (2.2,0,0) {+};
+    \node[anchor=south] at (-2,-1,0) {+};
+    
+
+\end{tikzpicture}\\
+The electric field at point $P$ due to $dV$ is given by:
+\[ d\vec{E} = \frac{1}{4 \pi\epsilon_0} \frac{\rho dV}{r^2} \hat{r} \]
+Hence, the electric field at point $P$ due to the entire volume charge distribution is given by:
+\[ \vec{E} = \int_{\text{volume }V} \frac{1}{4 \pi \epsilon} \frac{\rho dV}{r^2} \hat{r} \]
+
+
+\section{Divergence and Curl of Electric Field}
+\subsection{Flux and Gauss' Law}
+\paragraph{Flux}
+The Electric Flux through a surface $S$ is defined as:
+\[\Phi_E = \int_{S} \vec{E} \cdot \vec{da}\]
+
+Now, if the surface $S$ is a closed surface, then:
+\[\Phi_E = \oint \vec{E} \cdot \vec{da}\]
+
+\paragraph*{A charge in a sphere}
+
+\paragraph*{A charge in a cube}
+
+
+\paragraph{Gauss' Law}
+As seen with the above two examples of the electric flux through a closed surface, the electric flux through a closed surface is proportional to the charge enclosed by the surface. This is known as Gauss' Law. Mathematically, it is written as:
+\[\oint \vec{E} \cdot \vec{da} = \frac{Q_{enc}}{\epsilon_0}\]
+where $Q_{enc}$ is the charge enclosed by the surface.
+This is also know as the integral form of Gauss' Law or the integral form of Maxwell's first equation.
+
+To write it in the form of a differential equation:\\
+\[Q_{enc} = \int_{V}\rho d\tau \]
+\[\int_V (\vec{\nabla} \cdot \vec{E}) dV = \oint \vec{E} \cdot \vec{da} \]
+\[ \int_V (\vec{\nabla} \cdot \vec{E}) dV = \int_{V}\rho d\tau \]
+As this is true for all volumes, we can write:
+\[\vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0}\]
+This is the differential form of Gauss' Law or Maxwell's first equation.
+
+\subsubsection{Divergence of Electric Field}
+
+The Electric Field at a point $\vec{r}$ due to a continuous charge distribution at $\vec{r'}$ is given by:
+
+\[\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int_{\text{all space}} \frac{\hat{\gamma}}{\gamma^2} \rho(\vec{r'}) d\tau' \]
+taking the divergence of the above function
+\[ \vec{\nabla} \cdot \vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int_{\text{all space}} \vec{\nabla} \cdot \left(\frac{\hat{\gamma}}{\gamma^2}\right) \rho(\vec{r'}) d\tau' \]
+\[\vec{\nabla}\cdot\frac{\hat{\gamma}}{\gamma^2} = 4 \pi \delta^3(\gamma)\]
+\[ \vec{\nabla} \cdot \vec{E} = \frac{1}{4 \pi \epsilon_0} \int 4 \pi \delta^3(r-r') \rho(r') d\tau' = \frac{1}{\epsilon_0} \rho(r)\]
+
+\subsubsection{Application of Gauss' Law} 
+
+\begin{itemize}
+
+\item \textbf{Spherical Charge Distribution}
+Consider a spherical charge distribution of radius $\gamma$ and net charge $Q$. The electric field at a point $r$ is given by:\\
+
+\item \textbf{Infinitely Long Linear Charge Distribution}
+
+\item \textbf{Infinitely Large Surface Charge Distribution}
+
+\end{itemize}
 
 \end{document} 
