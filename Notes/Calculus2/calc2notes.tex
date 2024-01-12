@@ -134,4 +134,34 @@ i.e. $\forall \epsilon > 0, \exists \delta > 0$ such that $|t - a| < \delta \imp
 
 or, if $f$, $g$ and $h$ are continuous at $a$, $r$ is continuous at $a$.
 
+\subsection{Differentiability}
+%some random gibberish was taught
+
+\subsection{Integration}
+let $f: [a,b] \rightarrow \mathbb{R}$ be a function.\\
+
+the integral of $f$ from $a$ to $b$ is defined as:
+\[\int_a^b f(x) dx = \text{Area under the curve $y = f(x)$ from $x = a$ to $x = b$}\]
+
+\paragraph{Anti-derivative}let $f: [a,b] \rightarrow \mathbb{R}$ be a function.\\
+\[ \int f(t) dt = F(t) +c \]
+such that $F'(t) = f(t)$ and $c$ is an arbitrary constant
+
+\paragraph{Fundamental Theorem of Calculus} let $f: [a,b] \rightarrow \mathbb{R}$ be a function and $F$ be its anti-derivative.\\
+\[ \int_{a}^{b} f(t) dt = F(b) - F(a) \]
+
+\subsubsection{Extending to a Vector Valued Function}
+Consider a function $r: \mathbb{R} \rightarrow \mathbb{R}^3$ (we are taking $\mathbb{R}^3$ as an example, it could be any $\mathbb{R}^n$)\\
+\[ r(t) = f(t)\hat{i} + g(t)\hat{j} + h(t)\hat{k} \]
+\[\int_{a}^{b}r(t)dt = \int_{a}^{b}f(t)dt\hat{i} + \int_{a}^{b}g(t)dt\hat{j} + \int_{a}^{b}h(t)dt\hat{k} \]
+
+\paragraph{Anti-derivative}
+\[ \int r(t) dt = \left(\int f(t)dt + c_1\right)\hat{i} + \left(\int g(t)dt + c_2\right)\hat{j} + \left(\int h(t)dt + c_3\right)\hat{k}  \]
+\[ \int r(t) dt = R(t) + C \]
+where $R'(t) = r(t)$ and $C$ is an arbitrary constant vector.
+\[ R(t) = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k} \]
+where $F'(t) = f(t)$, $G'(t) = g(t)$ and $H'(t) = h(t)$
+
+
+
 \end{document}
