@@ -404,12 +404,53 @@ Now, if the surface $S$ is a closed surface, then:
 \[\Phi_E = \oint \vec{E} \cdot \vec{da}\]
 
 \paragraph*{A charge in a sphere}
+Consider a charge $q$ in the centre of a spherical shell:\\
+
+\begin{tikzpicture}
+    \filldraw[color=black, fill=gray!10] (0,0) circle (2);
+    \filldraw[color=black, fill=black] (0,0) circle (0.05) node[anchor=south west] {$q$};
+    \draw[black, ->] (0,0) -- (2,0);
+    \draw[black, ->] (0,0) -- (0,2);
+    \draw[black, ->] (0,0) -- (-2,0);
+    \draw[black, ->] (0,0) -- (0,-2);
+    \node[anchor=north west] at (0.5,-0.5) {$\vec{E}$};
+    
+\end{tikzpicture}\\
+The flux through the spherical shell would be given by:
+\[ \Phi_E = \oint \vec{E} \cdot \vec{da} \]
+As $\vec{E}$ is constant and is always perpendicular to the surface:
+\[ \Phi_E = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \int_{\text{shere}} dA\]
+\[ \Phi_E = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} (4 \pi r^2)\]
+\[ \Phi_E = \frac{q}{\epsilon_0}\]
 
 \paragraph*{A charge in a cube}
+Consider a charge $q$ in the centre of a cubical surface of side $2a$:\\
 
+\begin{tikzpicture}
+    \filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (-2,2,-2) -- (-2,2,2) -- cycle;
+    \filldraw[fill=gray!20] (2,-2,2) -- (2,-2,-2) -- (-2,-2,-2) -- (-2,-2,2) -- cycle;
+    \filldraw[fill=gray!20] (2,2,2) -- (2,-2,2) -- (-2,-2,2) -- (-2,2,2) -- cycle;
+    \filldraw[fill=gray!20] (2,2,-2) -- (2,-2,-2) -- (-2,-2,-2) -- (-2,2,-2) -- cycle;
+    \filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (2,-2,-2) -- (2,-2,2) -- cycle;
+    \filldraw[fill=gray!20] (-2,2,2) -- (-2,2,-2) -- (-2,-2,-2) -- (-2,-2,2) -- cycle;
+    \filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (-2,2,-2) -- (-2,2,2) -- cycle;
+    \filldraw[black] (0,0,0) circle (0.05);
+    
+
+\end{tikzpicture}
+
+Now, the flux through each of the individual surfaces is equal by symmetry.
+The flux through the surface is:
+\[d\Phi_E = \int_{surface} da \frac{1}{4\pi\epsilon_0} \frac{q}{a^2 \sec^2(\theta)} \cos(\theta) \]
+\[ \Phi_E = \frac{q}{6\epsilon_0} \]
+
+Flux through the entire surface is:
+\[ \Phi_E = \frac{q}{\epsilon_0} \]
 
 \paragraph{Gauss' Law}
-As seen with the above two examples of the electric flux through a closed surface, the electric flux through a closed surface is proportional to the charge enclosed by the surface. This is known as Gauss' Law. Mathematically, it is written as:
+As seen with the above two examples of the electric flux through a closed surface, the electric flux through a closed surface is proportional to the charge enclosed by the surface. 
+This is known as Gauss' Law. 
+Mathematically, it is written as:
 \[\oint \vec{E} \cdot \vec{da} = \frac{Q_{enc}}{\epsilon_0}\]
 where $Q_{enc}$ is the charge enclosed by the surface.
 This is also know as the integral form of Gauss' Law or the integral form of Maxwell's first equation.
@@ -437,12 +478,72 @@ taking the divergence of the above function
 \begin{itemize}
 
 \item \textbf{Spherical Charge Distribution}
-Consider a spherical charge distribution of radius $\gamma$ and net charge $Q$. The electric field at a point $r$ is given by:\\
+Consider a spherical charge distribution of radius $\gamma$ and net charge $Q$. 
+To find the electric field at a point $r$ :\\
+
+\begin{tikzpicture}
+    \filldraw[color=black, fill=gray!20] (0,0) circle (2);
+    \filldraw[color=black, fill=black] (0,0) circle (0.05) node[anchor=south west] {$q$};
+    \draw[black, ->] (0,0) -- (2,0);
+    \node[anchor=north] at (1,0) {$\vec{r}$};
+\end{tikzpicture}\\
+
+We know that flux through a sphere of radius $r$ is given by:
+\[\Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{q}{\epsilon_0}\]
+\[ E \int_{\text{surface}} da = \frac{q}{\epsilon_0} \]
+\[ E 4 \pi r^2 = \frac{q}{\epsilon_0} \]
+\[ \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r} \]
 
 \item \textbf{Infinitely Long Linear Charge Distribution}
+Consider an infinitely long linear charge distribution with charge density $\lambda$.
+To find the electric field at a radial point $r$ :\\
+
+\begin{tikzpicture}
+    \draw[thick, <->] (0,0,-5) -- (0,0,5);
+    \draw[black] (0,0,2) circle (1);
+    \draw[black] (0,0,-2) circle (1);
+    \draw[black] (-0.707,0.707,2) -- (-0.707,0.707,-2);
+    \draw[black] (0.707,-0.707,2) -- (0.707,-0.707,-2);
+    \draw[black, <->] (0.8,-0.8,2) -- (0.8,-0.8,-2) node [anchor=south west] {$l$};
+    \draw[black] (0,0,2) -- (0.5,-0.5,2) node[anchor=south west] {$\vec{r}$};
+    \draw[black, ->] (0.5,-0.5,2) -- (0.707, -0.707, 2);
+
+\end{tikzpicture}\\
+
+Now, the flux through the cylinder is given by:
+\[\Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{\lambda l}{\epsilon_0}\]
+Also, the flux through the flat surface is zero as the field is perpendicular to the area at every point on the surface.
+Hence, the flux through the curved surface is equal to that of the cylinder
+\[ \Phi_E = \int_{\text{curved surface}} \vec{E}\cdot \vec{da} \]
+By symmetry, the electric field is constant and is always perpendicular to the surface.
+\[ \Phi_E = E \int_{\text{curved surface}} da = \frac{\lambda l}{\epsilon_0} \]
+\[ E 2 \pi r l = \frac{\lambda l}{\epsilon_0} \]
+\[ \vec{E} = \frac{1}{2 \pi \epsilon_0} \frac{\lambda}{r} \hat{r} \]
 
 \item \textbf{Infinitely Large Surface Charge Distribution}
+Consider an infinitely large surface charge distribution with charge density $\sigma$.
+To find the electric field at a radial point $r$ :\\
 
+\begin{tikzpicture}
+    \filldraw[gray!30] (3,0,3) -- (3,0,-3) -- (-3,0,-3) -- (-3,0,3) -- cycle;
+    \filldraw[gray!50] (1,-1,1) -- (1,-1,-1) -- (-1,-1,-1) -- (-1,-1,1) -- cycle;
+    \filldraw[gray!50] (1,1,1) -- (1,1,-1) -- (-1,1,-1) -- (-1,1,1) -- cycle;
+    \draw[black, <->] (0,0,0) -- (0,1,0);
+    \node[anchor=west] at (0,0.5,0) {$r$};
+    \draw[gray!70] (1,1,1) -- (1,-1,1);
+    \draw[gray!70] (1,1,-1) -- (1,-1,-1);
+    \draw[gray!70] (-1,1,-1) -- (-1,-1,-1);
+    \draw[gray!70] (-1,1,1) -- (-1,-1,1);
+\end{tikzpicture}
+
+Now the flux through the cuboid is given by:
+\[ \Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{\sigma A}{\epsilon_0} \]
+As the electric field is always parallel to 4 of the surfaces, the flux through them is zero.
+As the electric field is constant and is always perpendicular to through the remaining surfaces:
+\[ \Phi_E = E \int_{\text{surface}} da = \frac{\sigma A}{\epsilon_0} \]
+
+\[ E 2 A = \frac{\sigma A}{\epsilon_0} \]
+\[ \vec{E} = \frac{\sigma}{2 \epsilon_0} \hat{r} \]
 \end{itemize}
 
 \end{document} 
