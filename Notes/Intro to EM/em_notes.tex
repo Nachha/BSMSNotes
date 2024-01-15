@@ -573,7 +573,28 @@ Hence, by stokes theorem:
 \[ \vec{\nabla} \times \vec{E} 0 \]
 
 \section{Electric Potential}
+As the line integral is independent of the path taken, we can define a function $V(\vec{r})$ such that:
+\[ V(\vec{r}) = -\int_{O}^{\vec{r}} \vec{E}\cdot \vec{dl} \]
+Here, $O$ is a reference point.\\
 
+Potential difference between two points $\vec{a}$ and $\vec{b}$ is given by:
+\[ V(\vec{b}) - V(\vec{a}) = -\int_{O}^{b} \vec{E} \cdot \vec{dl} + \int_{O}^{a} \vec{E} \cdot \vec{dl} =-\int_{a}^{b} \vec{E} \cdot \vec{dl} \]
 
+Now, from Fundamental Theorem of Gradients:
+\[  V(\vec{b}) - V(\vec{a}) = - \int_{a}^{b} \vec{E} \cdot \vec{dl} = \int_{a}^{b} \vec{\nabla} V \cdot \vec{dl} \]
+\[ - \vec{\nabla}V = \vec{E} \]
+
+Combining it with the differential form of Gauss' Law:
+\[\vec{\nabla} \cdot \left(\vec{\nabla}V\right) = -\frac{\rho}{\epsilon_0} \]
+\[ \nabla^2 V = -\frac{\rho}{\epsilon_0} \]
+
+\subsection{Properties of Electric Potential}
+\begin{itemize}
+    \item Potential and Potential Energy are completely different. 
+    \item Working with a scalar (as in only one component) is simpler than working with three different components as in the case of Electric Field.
+    \item The reference point $O$ is arbitrary and changing it will only add a constant $k$ to the potential. While Subtracting, the will get cancelled out.
+    \item Potential also obeys the Principle of Superposition
+    \item Unit: Joule per Coulomb a.k.a. Volt
+\end{itemize}
 
 \end{document} 
