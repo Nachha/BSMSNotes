@@ -463,7 +463,7 @@ As this is true for all volumes, we can write:
 \[\vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0}\]
 This is the differential form of Gauss' Law or Maxwell's first equation.
 
-\subsubsection{Divergence of Electric Field}
+\subsection{Divergence of Electric Field}
 
 The Electric Field at a point $\vec{r}$ due to a continuous charge distribution at $\vec{r'}$ is given by:
 
@@ -545,5 +545,35 @@ As the electric field is constant and is always perpendicular to through the rem
 \[ E 2 A = \frac{\sigma A}{\epsilon_0} \]
 \[ \vec{E} = \frac{\sigma}{2 \epsilon_0} \hat{r} \]
 \end{itemize}
+
+\subsection{Curl of Electric Field}
+Let us consider a path $l$ and an electric field $\vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r}$ which exists in 3d space.\\
+
+\begin{tikzpicture}
+    \draw[->] (0,0,0) -- (0,0,5);
+    \draw[->] (0,0,0) -- (0,5,0);
+    \draw[->] (0,0,0) -- (5,0,0);
+    \draw[blue] (7,4,5) .. controls (3,4,2) and (4,5,3).. (5,4,6);
+    \draw[->] (0,0,0) -- (5,4,6) node[anchor=south west] {$\vec{b}$};
+    \draw[->] (0,0,0) -- (7,4,5) node[anchor=south west] {$\vec{a}$};
+    \node[anchor=south] at (4,4.3,3) {$l$};
+
+\end{tikzpicture}
+
+taking the line integral of $\vec{E}$ from $\vec{a}$ to $\vec{b}$:
+\[  \int_{a}^{b} \vec{E} \cdot \vec{dl} \]
+using spherical coordinates:
+\[ \vec{E} \cdot \vec{dl} = \frac{1}{4 \pi\epsilon_0}\frac{q}{r^2} dr \]
+\[ \int_{a}^{b} \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r} \cdot \vec{dl} = \frac{1}{4 \pi \epsilon_0}\left(\frac{q}{b} - \frac{q}{a}\right)\]
+
+Now, if we consider a closed path, i.e., $a = b$:
+\[ \oint \vec{E} \cdot \vec{dl} = 0 \]
+
+Hence, by stokes theorem:
+\[ \vec{\nabla} \times \vec{E} 0 \]
+
+\section{Electric Potential}
+
+
 
 \end{document} 
