@@ -169,6 +169,32 @@ where $R'(t) = r(t)$ and $C$ is an arbitrary constant vector.
 \[ R(t) = F(t)\hat{i} + G(t)\hat{j} + H(t)\hat{k} \]
 where $F'(t) = f(t)$, $G'(t) = g(t)$ and $H'(t) = h(t)$
 
+\subsubsection{Length of a Curve}
+let $r: [a,b] \rightarrow \mathbb{R}^3$ be a function. (As usual, we are taking $\mathbb{R}^3$, but it can be any $\mathbb{R}^n$)\\
+the length of the curve $l$ from $a$ to $b$ is defined as:
+\[ l = \int_{a}^{b} |r'(t)| dt \] 
+
+\section{Multi-Variable Functions}
+let $f: D \rightarrow \mathbb{R}$ be a function. Let $D\subseteq \mathbb{R}^n$. Then $f$ is called a Multi Variable Function\\
+Eg: \[f(x,y) = \frac{1}{x^2 + y^2}\]
+Domain of $f$ is $\mathbb{R}^2 - \{(0,0)\}$
+
+\subsection{Limits}
+let $f: D \rightarrow \mathbb{R}$ be a function. and $D\subseteq \mathbb{R}^2$. (we are taking $\mathbb{R}^2$ but it can be extended to any $\mathbb{R}^n$)\\
+
+\[ \lim_{(x,y)\rightarrow (x_1, y_1)} f(x,y) = L\]
+
+if $\forall \epsilon > 0, \exists \delta > 0$ such that $|(x,y) - (x_1, y_1)| < \delta \implies |f(x,y) - L| < \epsilon$
+\\
+Eg: \[ \lim_{(x,(x,y)\rightarrow (0,0))} \frac{x^2 - xy}{\sqrt{x} - \sqrt{y}}\]
+\[ \lim_{(x,(x,y)\rightarrow (0,0))} \frac{x(x-y)}{\sqrt{x} - \sqrt{y}}\]
+\[ \lim_{(x,(x,y)\rightarrow (0,0))} x(\sqrt{x} + \sqrt{y})\]
+\[ \therefore \lim_{(x,(x,y)\rightarrow (0,0))} \frac{x^2 - xy}{\sqrt{x} - \sqrt{y}} = 0 \]
+\\
+Eg: \[ \lim_{(x,(x,y)\rightarrow (0,0))} \frac{2x^2y}{x^4 + y^2}\]
+
+
+
 
 
 \end{document}
