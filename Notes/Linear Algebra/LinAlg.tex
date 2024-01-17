@@ -288,6 +288,48 @@ A vector space over $mathbb{R}$ is a set of Vectors along with rules for additio
     \item c(u+v) = cu + cv 
 \end{itemize}
 
+\section{Linear Transformation}
+A function $T: \mathbb{R}^m \rightarrow \mathbb{R}^n$ is a linear transformation if there exists a $n\times m $ matrix $A$ such that $T(\vec{x}) = A\vec{x}$
+
+This shows that $T$ is a function from a vector space to another vector space.
+
+\[ T(\vec{x}) = \vec{y} \]
+\[ \vec{y} = A\vec{x} \]
+
+\[ \begin{bmatrix}
+    y_1 \\
+    y_2 \\
+    \vdots \\
+    y_n
+\end{bmatrix} = \begin{bmatrix}
+    a_11 & a_12 & \cdots & a_1m \\
+    a_21 & a_22 & \cdots & a_2m \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_n1 & a_n2 & \cdots & a_nm \\
+\end{bmatrix} \begin{bmatrix}
+    x_1 \\
+    x_2 \\
+    \vdots \\
+    x_m
+\end{bmatrix} \]
+
+Each $\mathbb{R}^m$ has some special vectors: \( e_i \forall i = 1,2,3,..,m \).\\
+\[ e_i = \begin{bmatrix}
+    0 \\
+    0 \\
+    \vdots \\
+    1 \\ 
+    \vdots \\
+    0
+\end{bmatrix} \]
+where $1$ is in $i^{\text{th}}$ position.
+
+\paragraph{Theorem} Any linear transformation $T: \mathbb{R}^m \rightarrow \mathbb{R}^n$ of the form $T_A$ where $A = \begin{bmatrix}
+    \vline & \vline & \cdots & \vline \\
+    T(e_1) & T(e_2) & \cdots & T(e_m) \\
+    \vline & \vline & \cdots & \vline \\
+\end{bmatrix}$
+
 
 
 \end{document}
