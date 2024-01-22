@@ -186,15 +186,26 @@ let $f: D \rightarrow \mathbb{R}$ be a function. and $D\subseteq \mathbb{R}^2$. 
 
 if $\forall \epsilon > 0, \exists \delta > 0$ such that $|(x,y) - (x_1, y_1)| < \delta \implies |f(x,y) - L| < \epsilon$
 \\
-Eg: \[ \lim_{(x,(x,y)\rightarrow (0,0))} \frac{x^2 - xy}{\sqrt{x} - \sqrt{y}}\]
-\[ \lim_{(x,(x,y)\rightarrow (0,0))} \frac{x(x-y)}{\sqrt{x} - \sqrt{y}}\]
-\[ \lim_{(x,(x,y)\rightarrow (0,0))} x(\sqrt{x} + \sqrt{y})\]
-\[ \therefore \lim_{(x,(x,y)\rightarrow (0,0))} \frac{x^2 - xy}{\sqrt{x} - \sqrt{y}} = 0 \]
+Eg: \[ \lim_{(x,y)\rightarrow (0,0)} \frac{x^2 - xy}{\sqrt{x} - \sqrt{y}}\]
+\[ \lim_{(x,y)\rightarrow (0,0)} \frac{x(x-y)}{\sqrt{x} - \sqrt{y}}\]
+\[ \lim_{(x,y)\rightarrow (0,0)} x(\sqrt{x} + \sqrt{y})\]
+\[ \therefore \lim_{(x,y)\rightarrow (0,0)} \frac{x^2 - xy}{\sqrt{x} - \sqrt{y}} = 0 \]
 \\
-Eg: \[ \lim_{(x,(x,y)\rightarrow (0,0))} \frac{2x^2y}{x^4 + y^2}\]
+Eg: \[ \lim_{(x,y)\rightarrow (0,0)} \frac{2x^2y}{x^4 + y^2}\]
+this limit does not exist.\\
 
+\subsection{Derivatives}
+The usual definition of derivatives can't be extended to multi-variable functions.\\
+Eg: \[ f(x,y) = x \]
+\[ f'(x) = \lim_{(x,y)\rightarrow (x_1, y_1)} \frac{f(x,y) - f(x_1, y_1)}{|(x,y) - (x_1, y_1)|} \]
+if we keep y constant, Then the above limit becomes:
+\[ f'(x,y_0) = \lim_{(x,y_0)\rightarrow (x_1, y_0)} \frac{x - x_1}{|x - x_1|} \]
+which does not exist.\\
 
-
+Hence, we define partial derivatives.\\
+let $f: D \rightarrow \mathbb{R}$ be a function. and $D\subseteq \mathbb{R}^2$. (we are taking $\mathbb{R}^2$ but it can be extended to any $\mathbb{R}^n$)\\
+the partial derivative of $f$ with respect to $x$ at $(x_0, y_0)$ is defined as:
+\[ \frac{\partial f}{\partial x} \vline_{(x_0, y_0)} = \frac{f(x,y) - f(x_0, y_0)}{x - x_0}\]
 
 
 \end{document}
