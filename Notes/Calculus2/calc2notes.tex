@@ -207,5 +207,42 @@ let $f: D \rightarrow \mathbb{R}$ be a function. and $D\subseteq \mathbb{R}^2$. 
 the partial derivative of $f$ with respect to $x$ at $(x_0, y_0)$ is defined as:
 \[ \frac{\partial f}{\partial x} \vline_{(x_0, y_0)} = \frac{f(x,y) - f(x_0, y_0)}{x - x_0}\]
 
+\paragraph*{Example}
+\[ f(x,y) = \begin{cases}
+    0, xy = 0\\
+    1, xy \neq 0
+    
+\end{cases} \]
+
+The above function seems to be continuous if we approach $(0,0)$ along the x or y axes.
+But if we approach it along any other line passing through the origin, the limit doesn't exist.
+Therefore, $f(x,y)$ is not continuos at $(0,0)$.
+
+But the partial derivatives wrt $x$ and $y$ still exist:
+\[ \frac{\partial f}{\partial x} \vline_(0,0) = \lim_{x \rightarrow 0} \frac{f(x,0) - f(0,0)}{x} = 0\]
+\[ \frac{\partial f}{\partial y} \vline_(0,0) = \lim_{y \rightarrow 0} \frac{f(0,y) - f(0,0)}{y} = 0\]
+
+
+\subsubsection{Directional Derivative}
+Let $f(x,y)$ be a function in 2 variables and $\vec{u} = u_1 \hat{i} + u_2 \hat{j}$ be a vector in $\mathbb{R}^2$.
+
+The directional derivative of $f$ along $u$ at $P_0(x_0, y_0)$:
+\[ \left(D_u f\right)_{P_0} = \lim_{t \rightarrow 0} \frac{f\left(x_0 + tu_1, y_0 + tu_2\right) + f\left(x_0, y_0\right)}{t}\]
+(The denominator should be $t|u|$ but we don't take it at such for some unknown reason)
+
+Taking the same example as before:
+if $(u_1, u_2) \neq (0,0)$
+\[ \left(D_u f\right)_{(0,0)} = \lim_{t \rightarrow 0} \frac{f\left(tu_1, tu_2\right) - f(0,0)}{t}\]
+\[ = \lim_{t \rightarrow 0} = \frac{1}{t}\]
+But this limit doesn't exist.
+
+\subsection{Differentiability}
+Let $f: \mathbb{R}^2 \rightarrow \mathbb{R}$ is said to be differentiable at $(x_0,y_0)$ if $\Delta z$ satisfies the following equation of the form:
+\[ \Delta z = f_x(x_0,y_0)\Delta x + f_y(x_0,y_0)\Delta y + \epsilon_1 \Delta x + \epsilon_2 \Delta y\]
+in which both $\epsilon_1, \epsilon_2 \rightarrow 0$ as both $\Delta x, \Delta y \rightarrow 0$
+
+\subsection{Chain Rule}
+
+
 
 \end{document}
