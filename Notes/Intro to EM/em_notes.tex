@@ -657,6 +657,23 @@ The work done to bring all the charges from $\infty$ to their respective positio
 This can also be written as:
 \[ W = \frac{\epsilon_0}{2} \left(\int_{V} E^2 d\tau + \oint_{S} V E \cdot da  \right) \]
 
+If we apply this to all space, the surface integral vanishes and the Volume integral remains finite:
+\[ W = \frac{\epsilon_0}{2} \int_{\text{all space}} E^2 d\tau\]
+
+\paragraph{Example} To find the self energy of a sphere with radius $R$ and uniform $q$
+\[ W = \frac{\epsilon_0}{2} \int_{\text{all space}} E^2 d\tau\]
+\[ W = \frac{\epsilon_0}{2} \int_{0}^{2\pi}\int_{0}^{\pi} \int_{0}^{\infty} E^2 r^2 \sin(\theta) dr d\theta d\phi\]
+\[ W = \frac{4 \pi \epsilon_0}{2} \int_{0}^{\infty} E^2 r^2 dr \]
+\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \int_{R}^{\infty} \left( \frac{\rho 4 \pi R^3}{3\cdot 4 \pi \epsilon_0 r^2}\right)^2 r^2 dr + \int_{0}^{R} \left( \frac{\rho r}{3 \epsilon_0}\right)^2 r^2 dr \right]\]
+\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^4} r^2 dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^2\cdot r^2 dr \right]\]
+\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^2} dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^4 dr \right]\]
+\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \left. \frac{-1}{r} \right|_R^{\infty}+ \left. \frac{\rho^2}{3^2 \epsilon_0^2} \frac{r^5}{5} \right|_0^R  \right]\]
+\[ W = \frac{4 \pi \epsilon_0}{2} \left[\frac{-\rho ^2 R^6}{3^2 \epsilon_0^2} (0 - \frac{1}{R}) + \frac{\rho^2}{3^2 \epsilon_0^2} \left( \frac{R^5}{5} -0\right)  \right]\]
+\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^5}{3^2 \epsilon_0^2} + \frac{\rho^2}{3^2 \epsilon_0^2} \frac{R^5}{5}\right]\]
+\[ W = \frac{4 \pi \epsilon_0}{2} \frac{\rho^2 R^5}{3^2 \epsilon_0^2} \left(1 + \frac{1}{5}\right) \]
+\[ W = \frac{4 \pi \epsilon_0}{2} \frac{q^2}{\frac{4^2}{3^2} \pi^2 R^6} \frac{R^5}{3^2 \epsilon_0^2} \frac{6}{5}\]
+\[ W = \frac{3}{5} \frac{1}{4 \pi \epsilon_0} \frac{q^2}{R}\]
 
 
-\end{document} 
+
+\end{document}
