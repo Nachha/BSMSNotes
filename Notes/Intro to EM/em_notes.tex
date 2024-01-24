@@ -674,6 +674,53 @@ If we apply this to all space, the surface integral vanishes and the Volume inte
 \[ W = \frac{4 \pi \epsilon_0}{2} \frac{q^2}{\frac{4^2}{3^2} \pi^2 R^6} \frac{R^5}{3^2 \epsilon_0^2} \frac{6}{5}\]
 \[ W = \frac{3}{5} \frac{1}{4 \pi \epsilon_0} \frac{q^2}{R}\]
 
+\section{Conductors}
+Properties of an ideal conductor:
+\begin{itemize}
+    \item \textbf{E=0 inside the conductor} If there was an electric field, the charges (electrons) inside the conductor would move such that there is a positive charge on one part of the conductor and negative charge on the other side of the conductor. This would create an electric field opposite to that of the external field and we would get no net field in the bulk of the conductor
+        \begin{tikzpicture}
+            \filldraw[fill=gray!50] (-1.5, -3.3) -- (-1.5, 3) -- (1.5, 3) -- (1.5, -3.3) -- cycle;
+            \node[anchor=north] at (-1.3, 2.9) {-};
+            \node[anchor=north] at (-1.3, 2.5) {-};
+            \node[anchor=north] at (-1.3, 2.1) {-};
+            \node[anchor=north] at (-1.3, 1.7) {-};
+            \node[anchor=north] at (-1.3, 1.3) {-};
+            \node[anchor=north] at (-1.3, 0.9) {-};
+            \node[anchor=north] at (-1.3, 0.5) {-};
+            \node[anchor=north] at (-1.3, 0.1) {-};
+            \node[anchor=north] at (-1.3, -0.3) {-};
+            \node[anchor=north] at (-1.3, -0.7) {-};
+            \node[anchor=north] at (-1.3, -1.1) {-};
+            \node[anchor=north] at (-1.3, -1.5) {-};
+            \node[anchor=north] at (-1.3, -1.9) {-};
+            \node[anchor=north] at (-1.3, -2.3) {-};
+            \node[anchor=north] at (-1.3, -2.7) {-};
+            \node[anchor=north] at (1.3, 2.9) {+};
+            \node[anchor=north] at (1.3, 2.5) {+};
+            \node[anchor=north] at (1.3, 2.1) {+};
+            \node[anchor=north] at (1.3, 1.7) {+};
+            \node[anchor=north] at (1.3, 1.3) {+};
+            \node[anchor=north] at (1.3, 0.9) {+};
+            \node[anchor=north] at (1.3, 0.5) {+};
+            \node[anchor=north] at (1.3, 0.1) {+};
+            \node[anchor=north] at (1.3, -0.3) {+};
+            \node[anchor=north] at (1.3, -0.7) {+};
+            \node[anchor=north] at (1.3, -1.1) {+};
+            \node[anchor=north] at (1.3, -1.5) {+};
+            \node[anchor=north] at (1.3, -1.9) {+};
+            \node[anchor=north] at (1.3, -2.3) {+};
+            \node[anchor=north] at (1.3, -2.7) {+};
+            \draw[->, thick] (-1.7, 3.3) -- (1.7, 3.3);
+            \draw[->, thick] (1,0) -- (-1,0);
+            \node[anchor=south] at (0, 3.3) {$\vec{E_0}$};
+            \node[anchor=south] at (0, 0) {$\vec{E_i}$};
 
+
+        \end{tikzpicture}
+        
+        Here, $\vec{E_0}$ is the external field and $\vec{E_i}$ is the induced field.
+        \item \textbf{$\rho = 0$ inside the conductor} From Gauss' Law, if there is no field inside the conductor, then there is no charge inside the conductor.
+        \item \textbf{Any net charge resides on the surface} If there was a net charge inside the conductor, there would be an electric field inside the conductor. This would cause the charges to move until there is no net field inside the conductor.
+\end{itemize}
 
 \end{document}
