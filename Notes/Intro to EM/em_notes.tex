@@ -721,6 +721,63 @@ Properties of an ideal conductor:
         Here, $\vec{E_0}$ is the external field and $\vec{E_i}$ is the induced field.
         \item \textbf{$\rho = 0$ inside the conductor} From Gauss' Law, if there is no field inside the conductor, then there is no charge inside the conductor.
         \item \textbf{Any net charge resides on the surface} If there was a net charge inside the conductor, there would be an electric field inside the conductor. This would cause the charges to move until there is no net field inside the conductor.
+        \item \textbf{A conductor is equipotential} Consider two points in or on the surface of the conductor. \(V(b) - V(a) = \int_{a}^{b}-E\cdot dl = 0\). $\therefore V(a) = V(b)$.
+        \item \textbf{$\vec{E}$ is perpendicular to the surface just outside the conductor}. If otherwise, charge will flow along the surface of the conductor and will nullify any tangential component of the electric field.
 \end{itemize}
+
+\subsection{Induced charges on a conductor} 
+If we hold a point charge $q$ near an uncharged conductor: \\
+
+\begin{tikzpicture}
+    \filldraw[fill=gray!50] (0,0) circle (2);
+    \node[anchor=center] at (0,0) {conductor};
+    \filldraw[fill=black] (-4,0) circle (0.05) node[anchor=south] {$q$};
+    \node[anchor=center] at (-1.8, 0) {$-$};
+    \node[anchor=center] at (-1.5, 1) {$-$};
+    \node[anchor=center] at (-1.5, -1) {$-$};
+    \node[anchor=center] at (-0.9, 1.6) {$-$};
+    \node[anchor=center] at (-0.9, -1.6) {$-$};
+    \node[anchor=center] at (1.8, 0) {$+$};
+    \node[anchor=center] at (1.5, 1) {$+$};
+    \node[anchor=center] at (1.5, -1) {$+$};
+    \node[anchor=center] at (0.9, 1.6) {$+$};
+    \node[anchor=center] at (0.9, -1.6) {$+$};
+
+\end{tikzpicture}\\
+
+Since the negative charges are closer to the charge $q$, the conductor will get attracted to it. 
+
+If there is a cavity inside the conductor, then it will be electrically isolated from the outside of the conductor.
+Now, if we have a conductor with a cavity, and place a charge q inside the cavity:\\
+
+\begin{tikzpicture}
+    \filldraw[fill=gray!50] (0,0) circle (2.5);
+    \filldraw[fill=white] (0,0) circle (1);
+    \filldraw[fill=black] (0,0) circle (0.05);
+    \node[anchor=south] at (0,0) {$q$};
+    \node[anchor=center] at (1.2, 0) {$-$};
+    \node[anchor=center] at (-1.2, 0) {$-$};
+    \node[anchor=center] at (0.859, 0.859) {$-$};
+    \node[anchor=center] at (0, 1.2) {$-$};
+    \node[anchor=center] at (0, -1.2) {$-$};
+    \node[anchor=center] at (0.859, -0.859) {$-$};
+    \node[anchor=center] at (-0.859, -0.859) {$-$};
+    \node[anchor=center] at (-0.859, 0.859) {$-$};
+    \node[anchor=center] at (2.3, 0) {$+$};
+    \node[anchor=center] at (-2.3, 0) {$+$};
+    \node[anchor=center] at (0, -2.3) {$+$};
+    \node[anchor=center] at (0, 2.3) {$+$};
+    \node[anchor=center] at (1.63, 1.63) {$+$};
+    \node[anchor=center] at (-1.63, 1.63) {$+$};
+    \node[anchor=center] at (-1.63, -1.63) {$+$};
+    \node[anchor=center] at (1.63, -1.63) {$+$};
+    \node[anchor=center] at (0, -0.45) {$E \neq 0$};
+    \node[anchor=center] at (0, 1.7) {$E=0$};
+
+\end{tikzpicture}
+
+
+
+
 
 \end{document}
