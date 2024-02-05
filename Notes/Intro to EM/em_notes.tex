@@ -816,5 +816,34 @@ Therefore, the potential difference between the plates is given by:
 The capacitance $C$ is given by:
 \[ C = \frac{q}{V} = \frac{\sigma A}{\frac{\sigma d}{\epsilon_0}} = \frac{\epsilon_0 A}{d} \]
 
+\section*{Spacial Techniques}
+\section{Laplace's Equation}
+Many times, its a pain in the ass to find the electric field, potential, or charge density using the normal equations.
+Therefore we use the differential form of the problem to get an analytical view of the problem:
+\[ \nabla^2 V = - \frac{1}{\epsilon}\rho\]
+This is Poisson's Equation.
+If we take a region in space such that \( \rho = 0 \) (obviously not \(0\) everywhere), we get Laplace's Equation:
+\[ \nabla^2 V = 0\]
+
+\subsection{Laplace's Equation in One-dimension}
+\[ \frac{d^2 V}{dx^2} = 0\]
+\[ V(x) = mx + b \]
+This is an equation of a straight line in One-dimension.
+\begin{itemize}
+\item It means that \(V(x)\) is the average of \(V(x-a)\) and \(V(x+a)\).
+\item \(V\) has no local minima or maxima
+\end{itemize}
+
+\subsection{Laplace's Equation in Two-dimension}
+\[ \frac{d^2 V}{dx^2} + \frac{d^2 V}{dy^2} = 0\]
+The properties are similar to those in One-dimension.
+We define average here over a circle of radius $R$:
+\[ V(x,y) = \frac{1}{2 \pi R} \oint_{circle} V dl\]
+\subsection{Laplace's Equation in Three-dimension}
+The properties are the same as 1D
+Average is defined as:
+\[ V(x,y,z) = \frac{1}{4 \pi R^2} \oint_{sphere} V da\]
+
+
 
 \end{document}

@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1706336217 "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Intro to EM/em_notes.tex" "em_notes.pdf" "em_notes" 1706336220 0
+["pdflatex"] 1707120982 "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Intro to EM/em_notes.tex" "em_notes.pdf" "em_notes" 1707120983 0
   "/etc/texmf/web2c/texmf.cnf" 1700483544 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Intro to EM/em_notes.tex" 1706336216 41180 5908110f41a1e6f042e47654b3fa84ec ""
+  "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Intro to EM/em_notes.tex" 1707120980 42384 ba9e729eb82b5fc7e7bd551faa810e76 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -121,8 +121,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1693172360 40357 c95f5d5e031b5c7040b426833c11f2e0 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700483574 4643645 d2d1d8b8ba87ed005f4aaf1ce646a79e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700483597 7908202 39eeb4e2a2fba6a9d84a57a463b82dd6 ""
-  "em_notes.aux" 1706336220 5529 dcf6776d36041f840ca8d96c010ece53 "pdflatex"
-  "em_notes.tex" 1706336216 41180 5908110f41a1e6f042e47654b3fa84ec ""
+  "em_notes.aux" 1707120983 6029 ee7a3a4124bf16da406d2e91fe85461d "pdflatex"
+  "em_notes.tex" 1707120980 42384 ba9e729eb82b5fc7e7bd551faa810e76 ""
   (generated)
   "em_notes.aux"
   "em_notes.log"
