@@ -592,7 +592,8 @@ Combining it with the differential form of Gauss' Law:
 \begin{itemize}
     \item Potential and Potential Energy are completely different. 
     \item Working with a scalar (as in only one component) is simpler than working with three different components as in the case of Electric Field.
-    \item The reference point $O$ is arbitrary and changing it will only add a constant $k$ to the potential. While Subtracting, the will get cancelled out.
+    \item The reference point $O$ is arbitrary and changing it will only add a constant $k$ to the potential.
+    While Subtracting, the will get cancelled out.
     \item Potential also obeys the Principle of Superposition
     \item Unit: Joule per Coulomb a.k.a. Volt
 \end{itemize}
@@ -677,7 +678,8 @@ If we apply this to all space, the surface integral vanishes and the Volume inte
 \section{Conductors}
 Properties of an ideal conductor:
 \begin{itemize}
-    \item \textbf{E=0 inside the conductor} If there was an electric field, the charges (electrons) inside the conductor would move such that there is a positive charge on one part of the conductor and negative charge on the other side of the conductor. This would create an electric field opposite to that of the external field and we would get no net field in the bulk of the conductor
+    \item \textbf{E=0 inside the conductor} If there was an electric field, the charges (electrons) inside the conductor would move such that there is a positive charge on one part of the conductor and negative charge on the other side of the conductor.
+    This would create an electric field opposite to that of the external field and we would get no net field in the bulk of the conductor
         \begin{tikzpicture}
             \filldraw[fill=gray!50] (-1.5, -3.3) -- (-1.5, 3) -- (1.5, 3) -- (1.5, -3.3) -- cycle;
             \node[anchor=north] at (-1.3, 2.9) {-};
@@ -776,8 +778,43 @@ Now, if we have a conductor with a cavity, and place a charge q inside the cavit
 
 \end{tikzpicture}
 
+\section{Capacitors}
+When we have two conductors, and give a charge $+q$ to one and $-q$ to the other:
+\[ V = V_{+} - V_{-} = \int_{(-)}^{(+)} -E\cdot dl\]
+now, $E$ is proportional to $q$. Hence, $V$ is proportional to $q$.\\
+This proportionality constant is called capacitance $C$.
+\[ C = \frac{q}{V} \]
+$C$ depends completely on the geometry of the conductors and the medium between them. 
+It is independent of the charge on the conductors.
+The SI unit of capacitance is Farad (F).\\
+\paragraph{Parallel Plate Capacitor:}
+Consider two conducting parallel parallel plates of area $A$ and separation $d$. 
+If we place a charge $+q$ on one plate and $-q$ on the other, the electric field between the plates is given by:
 
+\begin{center}
+\begin{tikzpicture}
+    
+    \draw (-0.5, 2.5) -- (-0.5, -2.5);
+    \draw (0.5, 2.5) -- (0.5, -2.5);
+    \draw[->] (-0.5, 0) -- (0.5, 0);
+    \node[anchor=south]at (0,0) {$\vec{E}$}; 
+    \foreach \y in {-2,-1.5,...,2}{
+        \node[anchor=center] at (-0.7, \y) {$+$};
+    }
+    \foreach \y in {-2,-1.5,...,2}{
+        \node[anchor=center] at (0.7, \y) {$-$};
+    }
+    \draw[<->] (-0.5, -2.7) -- (0.5, -2.7);
+    \node[anchor=north] at (0, -2.7) {$d$};
 
+\end{tikzpicture}
+\end{center}
+The field between the plates is uniform and is given by:
+\[ E = \frac{\sigma}{\epsilon_0} \]
+Therefore, the potential difference between the plates is given by:
+\[ V = \int_{(-)}^{(+)} -E\cdot dl = -E\cdot d = -\frac{\sigma d}{\epsilon_0} \]
+The capacitance $C$ is given by:
+\[ C = \frac{q}{V} = \frac{\sigma A}{\frac{\sigma d}{\epsilon_0}} = \frac{\epsilon_0 A}{d} \]
 
 
 \end{document}
