@@ -222,6 +222,18 @@ But the partial derivatives wrt $x$ and $y$ still exist:
 \[ \frac{\partial f}{\partial x} \vline_(0,0) = \lim_{x \rightarrow 0} \frac{f(x,0) - f(0,0)}{x} = 0\]
 \[ \frac{\partial f}{\partial y} \vline_(0,0) = \lim_{y \rightarrow 0} \frac{f(0,y) - f(0,0)}{y} = 0\]
 
+\subsubsection{Chain Rule}
+
+If $w = f(x,y)$ is differentiable and $x = x(t)$ and $y=y(t)$ are differentiable functions of $t$, then the derivative of $w$ with respect to $t$ is given by:
+\[ \frac{dw}{dt} = \frac{\partial f}{\partial x}\frac{dx}{dt} + \frac{\partial f}{\partial y}\frac{dy}{dt} \]
+Now, this can be extended to $n$ variable function $w = \psi(a,b,c,\dots)$ by:
+\[ \frac{dw}{dt} = \frac{\partial \psi}{\partial a}\frac{da}{dt} + \frac{\partial \psi}{\partial b}\frac{db}{dt} +\frac{\partial \psi}{\partial c}\frac{dc}{dt} + \dots \]
+
+\subsection{Differentiability}
+Let $f: \mathbb{R}^2 \rightarrow \mathbb{R}$ is said to be differentiable at $(x_0,y_0)$ if $\Delta z$ satisfies the following equation of the form:
+\[ \Delta z = f_x(x_0,y_0)\Delta x + f_y(x_0,y_0)\Delta y + \epsilon_1 \Delta x + \epsilon_2 \Delta y\]
+in which both $\epsilon_1, \epsilon_2 \rightarrow 0$ as both $\Delta x, \Delta y \rightarrow 0$
+
 
 \subsubsection{Directional Derivative}
 Let $f(x,y)$ be a function in 2 variables and $\vec{u} = u_1 \hat{i} + u_2 \hat{j}$ be a vector in $\mathbb{R}^2$.
@@ -236,12 +248,12 @@ if $(u_1, u_2) \neq (0,0)$
 \[ = \lim_{t \rightarrow 0} = \frac{1}{t}\]
 But this limit doesn't exist.
 
-\subsection{Differentiability}
-Let $f: \mathbb{R}^2 \rightarrow \mathbb{R}$ is said to be differentiable at $(x_0,y_0)$ if $\Delta z$ satisfies the following equation of the form:
-\[ \Delta z = f_x(x_0,y_0)\Delta x + f_y(x_0,y_0)\Delta y + \epsilon_1 \Delta x + \epsilon_2 \Delta y\]
-in which both $\epsilon_1, \epsilon_2 \rightarrow 0$ as both $\Delta x, \Delta y \rightarrow 0$
-
-\subsection{Chain Rule}
+Another method to evaluate the directional derivative is by using gradients:
+let $u = u_1 \hat{i} + u_2 \hat{j}$
+\[ \left( D_u f\right)_{P_0} = \left(\frac{\partial f}{\partial x}\right)_{P_0} \frac{dx}{ds} + \left( \frac{\partial f}{\partial y} \right)_{P_0} \frac{dy}{ds} \]
+now, $\frac{dx}{ds} = u_1$ and $\frac{dy}{ds} = u_2$
+\[ \left( D_u f\right)_{P_0} = \left(\frac{\partial f}{\partial x}\right)_{P_0} u_1 + \left(\frac{\partial f}{\partial y}\right)_{P_0} u_2 \]
+\[ \left( D_u f\right)_{P_0} = (\nabla f)_{P_0} \cdot u \]
 
 
 
