@@ -266,6 +266,30 @@ Also, at every point $P_0$, the gradient vector is perpendicular to the tangent 
 The Tangent Plane at the point $P_0(x_0, y_0, z_0)$ on the level surface $f(x,y,z) = c$ of a differentiable function $f$ is the plane through $P_0$ and perpendicular to $\nabla_{P_0} f$.
 The Normal Line of $f$ at the point $P_0$ is the line through $P_0$ is the line parallel to $\nabla_{P_0} f$ and passing through $P_0$.
 
+\subsubsection{Estimation of change in a specific direction}
+let $f$ be a function of 2 or more variables and $u$ be a unit vector. Then the change in $f$ in the direction of $u$ is given by:
+\[ df = \left( \nabla_{P_0} f \cdot u \right) ds \]
+where $ds$ is the small change in the direction of $u$.
+
+\section{Extreme Values and Saddle Points}
+\textbf{Local Minima: } In 2D, $f(x_0, y_0)$ is a local minima if $f(x_0, y_0) \leq f(x,y)$ for all $(x,y)$ in some open disk centered at $(x_0, y_0)$\\
+\textbf{Local Maxima: } In 2D, $f(x_0, y_0)$ is a local maxima if $f(x_0, y_0) \geq  f(x,y)$ for all $(x,y)$ in some open disk centered at $(x_0, y_0)$\\
+Geometrically, local minima are valleys bottoms, and local maxima are peaks.
+
+\subsection{First Derivative Test}
+If $P_0(x_0, y_0)$ is a local extremum in the domain of $f$, and $f$ is differentiable at $P_0$, and if the first partial derivatives of $f$ exist at $P_0$, then:
+\begin{align*}
+\frac{\partial f}{\partial x} &= 0  & \frac{\partial f}{\partial y} &= 0 \\
+\end{align*}
+
+A point where both the partial derivatives are zero is called a critical point.
+
+\subsection{Saddle Points}
+A differentiable function $f(x,y)$ has a saddle point at $P_0(x_0, y_0)$ if $f$ has a critical point $P_0$ if in every open disk centered at $P_0$ there are domain points $(x,y)$ such that $f(x,y) > f(x_0, y_0)$ and $f(x,y) < f(x_0, y_0)$
+
+\subsection{Second Derivative Test}
+Let $f(x,y)$ be a function of 2 variables and $P_0(x_0, y_0)$ be a critical point of $f$. If the second partial derivatives of $f$ exist and are continuous in some open disk centered at $P_0$, then:
+
 
 
 
