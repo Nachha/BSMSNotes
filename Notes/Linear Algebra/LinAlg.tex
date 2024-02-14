@@ -324,12 +324,17 @@ Each $\mathbb{R}^m$ has some special vectors: \( e_i \forall i = 1,2,3,..,m \).\
 \end{bmatrix} \]
 where $1$ is in $i^{\text{th}}$ position.
 
-\paragraph{Theorem} Any linear transformation $T: \mathbb{R}^m \rightarrow \mathbb{R}^n$ of the form $T_A$ where $A = \begin{bmatrix}
+\paragraph{Theorem} Any transformation $T: \mathbb{R}^m \rightarrow \mathbb{R}^n$ of the form $T_A$ where $A = \begin{bmatrix}
     \vline & \vline & \cdots & \vline \\
     T(e_1) & T(e_2) & \cdots & T(e_m) \\
     \vline & \vline & \cdots & \vline \\
 \end{bmatrix}$
 
+A Transformation $T$ from $\mathbb{R}^m \rightarrow \mathbb{R}^n$ is a linear transformation if:
+\begin{itemize}
+    \item $T(\vec{u} + \vec{v}) = T(\vec{u}) + T(\vec{v})$
+    \item $T(c\vec{u}) = cT(\vec{u})$
+\end{itemize}
 
 
 \end{document}
