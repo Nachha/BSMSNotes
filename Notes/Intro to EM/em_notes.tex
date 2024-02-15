@@ -848,6 +848,33 @@ Average is defined as:
 With a few boundary conditions with the Laplace's Equation, we can solve for $V$. THis leads to the Uniqueness Theorems.
 
 \subsection{First Uniqueness Theorem}
-The solution to the first 
+The solution to the Laplace's Equation in some volume $v$ is uniquely dereminable if the value of $V$ is specified on the boundary surface $S$.
+\subsubsection*{Proof}
+Consider a closed figure and the potentials on its boundary is known:\\
+
+\begin{tikzpicture}
+    \draw[shade, black] (0,0) circle (2);
+    \shade[shading=radial, outer color=gray!80, inner color=gray!10] (0,0) circle (2);
+    \draw[<-] (-1.414, -1.414) -- (-4,-0.5) node[anchor=south] {$V$ on the surface};
+    \node[anchor=center] at (0,0) {$V$ to be found};
+\end{tikzpicture}
+If there were 2 different solutions:
+\begin{align*}
+    \nabla^2 V_1 &= 0\\
+    \nabla^2 V_2 &= 0
+\end{align*}
+taking their difference:
+\[ V_1 - V_2 \equiv V_3 \]
+\[ \nabla^2 V_3 = 0 \]
+at the boundary of the figure:
+now, as by Laplace Equation, we can't have local extremum, the only solution is \(V_3 = 0\).
+Hence, \(V_1 = V_2\)
+
+\subsection{Second Uniqueness Theorem}
+In a volume $v$ surrounded by conductor containing a specified charge density $\rho$, the electric field is uniquely determined if the total charge on each conductor is given.\\
+Proof is similar to the first uniqueness theorem.
+
+\section{Polarization}
+
 
 \end{document}
