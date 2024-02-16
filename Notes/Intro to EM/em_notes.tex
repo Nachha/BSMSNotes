@@ -624,9 +624,11 @@ Consider a charge $q$ slowly move from point $a$ to point $b$ in an electric fie
 \end{tikzpicture}
 
 The work done to move from $a$ to $b$ is given by:
-\[ W = \int_{a}^{b} \vec{F} \cdot \vec{dl} \]
-\[ W = -q \int_{a}^{b} \vec{E} \cdot \vec{dl} \]
-\[ W = -q \left[V(a) - V(b)\right] \]
+\begin{align*}
+    W &= \int_{a}^{b} \vec{F} \cdot \vec{dl} \\
+    W &= -q \int_{a}^{b} \vec{E} \cdot \vec{dl} \\
+    W &= -q \left[V(a) - V(b)\right]
+\end{align*}
 
 As shown above, the work done is independent of the path taken. Therefore, Electrostatic force is a conservative force.
 
@@ -652,28 +654,38 @@ The work done to bring all the charges from $\infty$ to their respective positio
 
 \subsubsection{Energy of a Continuous charge distribution}
 Consider a continuous charge distribution $\rho$ in space.\\
-The work done to bring all the charges from $\infty$ to their respective positions is given by:
+The work done to bring all the charges from $\infty$ to their respective positions is given by:\\
 \[ W = \frac{1}{2} \int \rho V d\tau \]
-
-This can also be written as:
+This can also be written as:\\
 \[ W = \frac{\epsilon_0}{2} \left(\int_{V} E^2 d\tau + \oint_{S} V E \cdot da  \right) \]
-
 If we apply this to all space, the surface integral vanishes and the Volume integral remains finite:
 \[ W = \frac{\epsilon_0}{2} \int_{\text{all space}} E^2 d\tau\]
 
-\paragraph{Example} To find the self energy of a sphere with radius $R$ and uniform $q$
-\[ W = \frac{\epsilon_0}{2} \int_{\text{all space}} E^2 d\tau\]
-\[ W = \frac{\epsilon_0}{2} \int_{0}^{2\pi}\int_{0}^{\pi} \int_{0}^{\infty} E^2 r^2 \sin(\theta) dr d\theta d\phi\]
-\[ W = \frac{4 \pi \epsilon_0}{2} \int_{0}^{\infty} E^2 r^2 dr \]
-\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \int_{R}^{\infty} \left( \frac{\rho 4 \pi R^3}{3\cdot 4 \pi \epsilon_0 r^2}\right)^2 r^2 dr + \int_{0}^{R} \left( \frac{\rho r}{3 \epsilon_0}\right)^2 r^2 dr \right]\]
-\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^4} r^2 dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^2\cdot r^2 dr \right]\]
-\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^2} dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^4 dr \right]\]
-\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \left. \frac{-1}{r} \right|_R^{\infty}+ \left. \frac{\rho^2}{3^2 \epsilon_0^2} \frac{r^5}{5} \right|_0^R  \right]\]
-\[ W = \frac{4 \pi \epsilon_0}{2} \left[\frac{-\rho ^2 R^6}{3^2 \epsilon_0^2} (0 - \frac{1}{R}) + \frac{\rho^2}{3^2 \epsilon_0^2} \left( \frac{R^5}{5} -0\right)  \right]\]
-\[ W = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^5}{3^2 \epsilon_0^2} + \frac{\rho^2}{3^2 \epsilon_0^2} \frac{R^5}{5}\right]\]
-\[ W = \frac{4 \pi \epsilon_0}{2} \frac{\rho^2 R^5}{3^2 \epsilon_0^2} \left(1 + \frac{1}{5}\right) \]
-\[ W = \frac{4 \pi \epsilon_0}{2} \frac{q^2}{\frac{4^2}{3^2} \pi^2 R^6} \frac{R^5}{3^2 \epsilon_0^2} \frac{6}{5}\]
-\[ W = \frac{3}{5} \frac{1}{4 \pi \epsilon_0} \frac{q^2}{R}\]
+\paragraph{Example} To find the self energy of a sphere with radius $R$ and uniform $q$\\
+\begin{center}
+\begin{tikzpicture}
+    \filldraw[color=black, fill=gray!50] (0,0) circle (2);
+    \draw[->] (0,0) -- (1.73, 1);
+    \node[anchor=north west] at (0.866, 0.5) {$R$};
+    \node[anchor=center] at (-0.7, -0.7) {$q$};
+
+\end{tikzpicture}
+\end{center}
+Let, $W$ be the self-energy of the given sphere, $\rho$ is the uniform charge density of the sphere.\\
+\begin{align*}
+    W &= \frac{\epsilon_0}{2} \int_{\text{all space}} E^2 d\tau\\
+    W &= \frac{\epsilon_0}{2} \int_{0}^{2\pi}\int_{0}^{\pi} \int_{0}^{\infty} E^2 r^2 \sin(\theta) dr d\theta d\phi\\
+    W &= \frac{4 \pi \epsilon_0}{2} \int_{0}^{\infty} E^2 r^2 dr \\
+    W &= \frac{4 \pi \epsilon_0}{2} \left[ \int_{R}^{\infty} \left( \frac{\rho 4 \pi R^3}{3\cdot 4 \pi \epsilon_0 r^2}\right)^2 r^2 dr + \int_{0}^{R} \left( \frac{\rho r}{3 \epsilon_0}\right)^2 r^2 dr \right]\\
+    W &= \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^4} r^2 dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^2\cdot r^2 dr \right]\\
+    W &= \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^2} dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^4 dr \right]\\
+    W &= \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \left. \frac{-1}{r} \right|_R^{\infty}+ \left. \frac{\rho^2}{3^2 \epsilon_0^2} \frac{r^5}{5} \right|_0^R  \right]\\
+    W &= \frac{4 \pi \epsilon_0}{2} \left[\frac{-\rho ^2 R^6}{3^2 \epsilon_0^2} (0 - \frac{1}{R}) + \frac{\rho^2}{3^2 \epsilon_0^2} \left( \frac{R^5}{5} -0\right)  \right]\\
+    W &= \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^5}{3^2 \epsilon_0^2} + \frac{\rho^2}{3^2 \epsilon_0^2} \frac{R^5}{5}\right]\\
+    W &= \frac{4 \pi \epsilon_0}{2} \frac{\rho^2 R^5}{3^2 \epsilon_0^2} \left(1 + \frac{1}{5}\right) \\
+    W &= \frac{4 \pi \epsilon_0}{2} \frac{q^2}{\frac{4^2}{3^2} \pi^2 R^6} \frac{R^5}{3^2 \epsilon_0^2} \frac{6}{5}\\
+    W &= \frac{3}{5} \frac{1}{4 \pi \epsilon_0} \frac{q^2}{R}
+\end{align*}
 
 \section{Conductors}
 Properties of an ideal conductor:
