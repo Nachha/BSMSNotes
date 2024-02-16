@@ -581,12 +581,16 @@ Potential difference between two points $\vec{a}$ and $\vec{b}$ is given by:
 \[ V(\vec{b}) - V(\vec{a}) = -\int_{O}^{b} \vec{E} \cdot \vec{dl} + \int_{O}^{a} \vec{E} \cdot \vec{dl} =-\int_{a}^{b} \vec{E} \cdot \vec{dl} \]
 
 Now, from Fundamental Theorem of Gradients:
-\[  V(\vec{b}) - V(\vec{a}) = - \int_{a}^{b} \vec{E} \cdot \vec{dl} = \int_{a}^{b} \vec{\nabla} V \cdot \vec{dl} \]
-\[ - \vec{\nabla}V = \vec{E} \]
+\begin{align*}
+    V(\vec{b}) - V(\vec{a}) &= - \int_{a}^{b} \vec{E} \cdot \vec{dl} = \int_{a}^{b} \vec{\nabla} V \cdot \vec{dl} \\
+    - \vec{\nabla}V &= \vec{E}
+\end{align*}
 
 Combining it with the differential form of Gauss' Law:
-\[\vec{\nabla} \cdot \left(\vec{\nabla}V\right) = -\frac{\rho}{\epsilon_0} \]
-\[ \nabla^2 V = -\frac{\rho}{\epsilon_0} \]
+\begin{align*}
+    \vec{\nabla} \cdot \left(\vec{\nabla}V\right) &= -\frac{\rho}{\epsilon_0} \\
+    \nabla^2 V &= -\frac{\rho}{\epsilon_0} 
+\end{align*}
 
 \subsection{Properties of Electric Potential}
 \begin{itemize}
