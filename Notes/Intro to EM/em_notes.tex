@@ -874,7 +874,47 @@ Hence, \(V_1 = V_2\)
 In a volume $v$ surrounded by conductor containing a specified charge density $\rho$, the electric field is uniquely determined if the total charge on each conductor is given.\\
 Proof is similar to the first uniqueness theorem.
 
+[There is a portion about dipole, quadrupole and octopoles, I am have not written that part cause its too boring]
+
 \section{Polarization}
+\subsection{Dielectrics}
+In a dielectric, all electrons are attached/associated to a given atom or molecule. 
+They can only move around in the given atom/molecule.
+Two mechanisms by which electric fields can distort a dielectric atom/molecule are stretching and rotating.
 
+\subsection{Induced Dipoles}
+A neutral atom consists of a positively charged nucleus and a negatively charge electron cloud.
+When an atom is placed in an electric field, the nucleus experiences a force in the direction of the electric field, while the electron cloud experiences a force opposite to the electric field. 
+As equilibrium is established such that the center of the electron cloud is displaced from the nucleus.
+This makes the atom a polarized.
+[In principle, the electron could get separated from the nucleus if there is a large enough field. But this doesn't normally happen]\\
+Now, the induced dipole moment is proportional to the electric field present:
+\[ \vec{p} = \alpha \vec{E} \]
+where $\alpha$ is the polarizability of the atom/molecule. $\alpha$ depends on the structure of the atom/molecule.
 
+\subsection{Alignment of Polar Molecules}
+Some molecules in nature already have a dipole moment because of their structure and/or the atoms they are composed of.
+If such a molecule is placed in an uniform Electric field:\\
+\begin{tikzpicture}
+    \draw[->, color=gray] (-3,3) -- (3,3);
+    \node[anchor=south, color=gray] at (0,3) {$\vec{E}$};
+    \draw[->] (-1.414, -1.414) -- (1.414, 1.414);
+    \node[anchor=south east] at (0,0) {$\vec{p}$};
+    \node[anchor=north west] at (0,0) {$d$};
+    \filldraw[black] (-1.414, -1.414) circle (0.05) node[anchor=north] {$-q$};
+    \filldraw[black] (1.414, 1.414) circle (0.05) node[anchor=south] {$+q$};
+    \draw[->, color=gray] (-1.414, -1.414) -- (-2, -1.414) node[anchor=north] {$\vec{F_{-}}$};
+    \draw[->, color=gray] (1.414, 1.414) -- (2, 1.414) node[anchor=south] {$\vec{F_{+}}$};
+
+\end{tikzpicture}
+Now, as the field is uniform, the net force on the molecule is zero.
+But, the molecule will experience a torque, $\tau$:
+\begin{align*}
+    \tau &= (r_+ \times \vec{F_+}) + (r_- \times \vec{F_-})\\
+    \tau &= [(d/2) \times q \vec{E}] + [(-d/2) \times -q \vec{E}]\\
+    \tau &= qd \vec{E}\\
+    \tau &= \vec{p} \times \vec{E}
+\end{align*}
+where, $\vec{p} = q \vec{d}$ is the dipole moment of the molecule.
+Hence the molecule will swing about and eventually rotate to align itself with the field. 
 \end{document}
