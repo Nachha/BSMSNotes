@@ -958,4 +958,67 @@ The second term is similar to the potential of a positive charge density, $\rho_
 Hence, the potential due to a polarized object is:
 \[ V(r) = \frac{1}{4 \pi \epsilon_0} \left[ \oint_{S} \frac{\sigma_b}{r} da' + \oint_{V} \frac{\rho_b}{r} d\tau ' \right] \]
 
+%complete the remaining stuff of polarization.
+
+\section{Magnetism}
+\subsection{The Lorentz Force Law}
+The magnetic force $F_{\text{mag}}$ for a particle with charge $Q$ and moving with velocity $v$ is:
+\[ \vec{f_{\text{mag}}} = Q (v \times B) \]
+
+The net force on the particle would be:
+\[ F = Q (E + v \times B ) \]
+
+\subsubsection*{Cyclotron}
+Given below is a diagram of a cyclotron.\\
+\begin{center}
+\begin{tikzpicture}
+    \filldraw[color=black, fill=gray] (-0.5,-4) -- (-0.5, 4) arc (90:270:4) -- cycle;
+    \filldraw[color=black, fill=gray] (0.5,4) -- (0.5, -4) arc (-90:90:4) -- cycle;
+    \node[anchor=center] at (4,4) {$B \otimes$};
+    \node[anchor=center] at (0, 4.5) {$\sim E$};
+    \draw[->] (0,0) -- (-0.5, 0);
+    \draw[->] (-0.5,0) arc (90:270:0.5);,-0.5
+    \draw[->] (-0.5,-1) -- (0.5, -1);
+    \draw[->] (0.5, -1) arc (-90:90:1);
+    \draw[->] (0.5,1) -- (-0.5, 1);
+    \draw[->] (-0.5, 1) arc (90:270:2);
+    \draw[->] (-0.5,-3) -- (0.5, -3);
+    \draw[->] (0.5, -3) arc (-90:90:3);
+    \draw[->] (0.5,3) -- (-5, 3) node[anchor=south] {beam of} node[anchor=north] {charged particles};
+
+\end{tikzpicture}
+\end{center}
+The Electric field is present only between the two dees. 
+The magnetic field is present everywhere. 
+The charged particles are accelerated by the electric field and then enter the magnetic field. 
+The magnetic field causes the particles to move in a circle. 
+The radius of the circle is given by: (the magnetic field is perpendicular to the velocity always)
+\begin{align*}
+    F = QvB &= m\frac{v^2}{r}\\
+    r &= \frac{mv}{Qb}
+\end{align*}
+This is the principle behind the cyclotron.
+
+\subsection{Work done by Magnetic Field}
+The work done by the magnetic field on a particle is always zero.
+\begin{align*}
+    dW &= \vec{F} \cdot \vec{dl}\\
+    dW &= Q(v \times B) \cdot vdt\\
+    W &= 0
+\end{align*}
+
+\subsection{Magnetic Force on a Current Carrying material}
+\subsubsection*{Current}
+Current in a wire is the charge flowing through a given cross-section per unit time.
+A line charge $\lambda$ moving with velocity $v$ has a current:
+\[ I = \lambda v \]
+
+\subsubsection*{Magnetic Force on a Current Carrying Wire}
+The magnetic force on a segment of wire of length $dl$ carrying a current $I$ is given by:
+\begin{align*}
+    F_{\text{mag}} &= \int (v \times B) dq\\
+    F_{\text{mag}} &= \int (v \times B) \lambda dl\\
+    F_{\text{mag}} &= \int I (dl \times B)
+\end{align*}
+
 \end{document}
