@@ -1,6 +1,5 @@
 \documentclass{article}
-\usepackage{amsmath, amssymb, amssymb}
-\usepackage{tikz, graphicx}
+\usepackage{amsmath, amssymb, mathtools, tikz, hyperref, float, caption, graphicx, enumitem, subcaption}
 \usetikzlibrary{3d}
 
 \begin{document}
@@ -11,7 +10,7 @@
 \end{center}
 
 \section{Coulomb's Law}
-
+\begin{figure}[H]
 \begin{tikzpicture}
     \draw[->] [black] (0,0) -- (0, 5);
     \draw[->] [black] (0,0) -- (5, 0);
@@ -23,27 +22,28 @@
     \draw[->] [black] (3,3.5) -- (4,4);
 
 \end{tikzpicture}
+\end{figure}
 the force on $Q$ due to $q_1$ is given by:
 \[\vec{F_1} = \frac{1}{4\pi\epsilon_0} \frac{q_1Q}{r_1^2} \hat{r_1}\]
 
 If there was another charge $q_2$ at $\vec{r_2}$: 
-
-\begin{tikzpicture}
-    \draw[->] [black] (0,0) -- (0, 5);
-    \draw[->] [black] (0,0) -- (5, 0);
-    \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
-    \draw[->] [black] (2,2) -- (4,4) node[anchor=south west] {$Q$};
-    \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
-    \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
-    \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R_1} - \vec{R}$ = $\vec{r_1}$};
-    \draw[->] [black] (3,3.5) -- (4,4);
-    \draw[black] (0, 0) -- (2,0.75) node[anchor=north west] {$\vec{R_2}$};
-    \draw[black, ->] (2,0.75) -- (4,1.5) node[anchor=north west] {$q_2$};
-    \draw[black] (4,1.5) -- (4,2.75) node[anchor=west] {$\vec{R_2} - \vec{R}$ = $\vec{r_2}$};
-    \draw[->] [black] (4,2.75) -- (4,4);
-
-\end{tikzpicture}
-
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw[->] [black] (0,0) -- (0, 5);
+        \draw[->] [black] (0,0) -- (5, 0);
+        \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
+        \draw[->] [black] (2,2) -- (4,4) node[anchor=south west] {$Q$};
+        \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
+        \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
+        \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R_1} - \vec{R}$ = $\vec{r_1}$};
+        \draw[->] [black] (3,3.5) -- (4,4);
+        \draw[black] (0, 0) -- (2,0.75) node[anchor=north west] {$\vec{R_2}$};
+        \draw[black, ->] (2,0.75) -- (4,1.5) node[anchor=north west] {$q_2$};
+        \draw[black] (4,1.5) -- (4,2.75) node[anchor=west] {$\vec{R_2} - \vec{R}$ = $\vec{r_2}$};
+        \draw[->] [black] (4,2.75) -- (4,4);
+    \end{tikzpicture}
+\end{figure}
 The force on $Q$ due to $q_2$ is given by:
 \[\vec{F_2} = \frac{1}{4\pi\epsilon_0} \frac{q_2Q}{r_2^2} \hat{r_2}\]
 
@@ -254,23 +254,24 @@ Generalizing the function:
 \section{Electrostatics}
 \subsection{Electric Field}
 \begin{center}
-\begin{tikzpicture}
-    \draw[->] [black] (0,0) -- (0, 5);
-    \draw[->] [black] (0,0) -- (5, 0);
-    \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
-    \draw[->] [black] (2,2) -- (4,4);
-    \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
-    \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
-    \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R} - \vec{R_1}$ = $\vec{r_1}$};
-    \draw[->] [black] (3,3.5) -- (4,4);
-\end{tikzpicture}
+    \begin{tikzpicture}
+        \draw[->] [black] (0,0) -- (0, 5);
+        \draw[->] [black] (0,0) -- (5, 0);
+        \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
+        \draw[->] [black] (2,2) -- (4,4);
+        \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
+        \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
+        \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R} - \vec{R_1}$ = $\vec{r_1}$};
+        \draw[->] [black] (3,3.5) -- (4,4);
+    \end{tikzpicture}
 \end{center}
 The Electric Field at $\vec{R}$ due to $q_1$ is given by:
 \[\vec{E} = \frac{1}{4\pi\epsilon_0} \frac{q_1}{r_1^2} \hat{r_1}\]
 
 If there is another charge present:
-\begin{center}
-\begin{tikzpicture}
+\begin{figure}[H]
+\centering
+    \begin{tikzpicture}
     \draw[->] [black] (0,0) -- (0, 5);
     \draw[->] [black] (0,0) -- (5, 0);
     \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
@@ -285,7 +286,7 @@ If there is another charge present:
     \draw[->] [black] (4,2.75) -- (4,4);
 
 \end{tikzpicture}
-\end{center}
+\end{figure}
 \[\vec{E} = \frac{1}{4\pi\epsilon_0} \left(\frac{q_1}{r_1^2}\hat{r_1} + \frac{q_2}{r_1^2}\hat{r_2}\right)\]
 
 \subsubsection*{Principle of Superposition:}
@@ -294,29 +295,31 @@ The net electric field at $\vec{R}$ due to $n$ charges is given by:
 \[E = \frac{1}{4\pi\epsilon_0} \left( \sum_{i = 1}^{n} \frac{q_i}{r_i^2}\hat{r_i} \right)\]
 
 \subsubsection*{Question:}
-\begin{tikzpicture}
-    \draw[<->, black] (-2.5,0) -- (2.5,0);
-    \draw[->, black] (0,0) -- (0, 4);
-    \draw[->, black] (0,0) -- (0, 3);
-    \draw[-, black] (0,0) -- (0, 1.5) node[anchor=south west] {$\vec{z}$};
-    \draw[-, black] (0,0) -- (1,0) node[anchor=north] {$d/2$};
-    \draw[-, black] (0,0) -- (-1,0) node[anchor=north] {$d/2$};
-    \draw[->, black] (1, 0) -- (2, 0) node[anchor=south west] {$q$};
-    \draw[->, black] (-1, 0) -- (-2, 0) node[anchor=south east] {$q$};
-    \draw[-, black] (2, 0) -- (1, 1.5) node[anchor=south west] {$\vec{r_1}$};
-    \draw[-, black] (-2, 0) -- (-1, 1.5) node[anchor=south east] {$\vec{r_2}$};
-    \draw[->, black] (1, 1.5) -- (0, 3);
-    \draw[->, black] (-1, 1.5) -- (0, 3);
-
-\end{tikzpicture}
-
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw[<->, black] (-2.5,0) -- (2.5,0);
+        \draw[->, black] (0,0) -- (0, 4);
+        \draw[->, black] (0,0) -- (0, 3);
+        \draw[-, black] (0,0) -- (0, 1.5) node[anchor=south west] {$\vec{z}$};
+        \draw[-, black] (0,0) -- (1,0) node[anchor=north] {$d/2$};
+        \draw[-, black] (0,0) -- (-1,0) node[anchor=north] {$d/2$};
+        \draw[->, black] (1, 0) -- (2, 0) node[anchor=south west] {$q$};
+        \draw[->, black] (-1, 0) -- (-2, 0) node[anchor=south east] {$q$};
+        \draw[-, black] (2, 0) -- (1, 1.5) node[anchor=south west] {$\vec{r_1}$};
+        \draw[-, black] (-2, 0) -- (-1, 1.5) node[anchor=south east] {$\vec{r_2}$};
+        \draw[->, black] (1, 1.5) -- (0, 3);
+        \draw[->, black] (-1, 1.5) -- (0, 3);
+    \end{tikzpicture}
+\end{figure}
 Consider two charges, $q$, placed at $r = \pm \frac{d}{2}$ respectively. Find the electric field at $z$.
 
 \subsubsection*{Answer}
-\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{q}{\left(\frac{d}{2}\right)^2 + z^2} \hat{r_1} + \frac{q}{\left(\frac{d}{2}\right)^2 + + z^2} \hat{r_2} \right)\]
-\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2 + \frac{d^2}{4}}\right) \left(\frac{z}{\sqrt{z^2 + \frac{d^2}{4}}}\hat{z}\right)\]
-\[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2qz}{\left(z^2 + \frac{d^2}{4}\right)^{\frac{3}{2}}}\right) \hat{z}\]
-\\
+\begin{align*}
+    \vec{E} &= \frac{1}{4\pi\epsilon_0} \left( \frac{q}{\left(\frac{d}{2}\right)^2 + z^2} \hat{r_1} + \frac{q}{\left(\frac{d}{2}\right)^2 + + z^2} \hat{r_2} \right)\\
+    \vec{E} &= \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2 + \frac{d^2}{4}}\right) \left(\frac{z}{\sqrt{z^2 + \frac{d^2}{4}}}\hat{z}\right)\\
+    \vec{E} &= \frac{1}{4\pi\epsilon_0} \left( \frac{2qz}{\left(z^2 + \frac{d^2}{4}\right)^{\frac{3}{2}}}\right) \hat{z}\\
+\end{align*}
 Now, if $z$ is very large (but not infinity):
 
 \[\vec{E} = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2}\right)\left(1 + \frac{d^2}{4z^2}\right)^{\frac{-3}{2}} \hat{z}\]
@@ -328,41 +331,47 @@ Similar methods can be used to find the electric field for any discrete charge d
 \subsection{Continuous Charge Distribution}
 \subsubsection{Linear Charge Distribution}
 Consider a linear Charge distribution, $\lambda$ of length $l$, along the $x$ axis. The electric field at point $P$ is given by: \\
-\begin{tikzpicture}
-    \filldraw[ultra thick, gray] (0,-.05) rectangle (5,0.05);
-    \filldraw[ultra thick, black] (3,-.05) rectangle (3.1,0.05);
-    \node[anchor=south] at (2.9, 0.1) {$dx$};
-    \draw[->] [black] (3,0) -- (6, 5) node[anchor=south west] {$\vec{r}$};
-    \node[anchor=north] at (0,0) {+};
-    \node[anchor=north] at (1,0) {+};
-    \node[anchor=north] at (2,0) {+};
-    \node[anchor=north] at (3,0) {+};
-    \node[anchor=north] at (4,0) {+};
-    \node[anchor=north] at (5,0) {+};
-    \node[anchor=south east] at (6,5) {$P$};
-\end{tikzpicture}\\
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \filldraw[ultra thick, gray] (0,-.05) rectangle (5,0.05);
+        \filldraw[ultra thick, black] (3,-.05) rectangle (3.1,0.05);
+        \node[anchor=south] at (2.9, 0.1) {$dx$};
+        \draw[->] [black] (3,0) -- (6, 5) node[anchor=south west] {$\vec{r}$};
+        \node[anchor=north] at (0,0) {+};
+        \node[anchor=north] at (1,0) {+};
+        \node[anchor=north] at (2,0) {+};
+        \node[anchor=north] at (3,0) {+};
+        \node[anchor=north] at (4,0) {+};
+        \node[anchor=north] at (5,0) {+};
+        \node[anchor=south east] at (6,5) {$P$};
+    \end{tikzpicture}
+\end{figure}
 The Electric Field at point $P$ due to $dx$ is given by:
 \[d\vec{E} = \frac{1}{4\pi \epsilon_0} \frac{\lambda dx}{r^2} \hat{r}  \]
 Hence, the electric field at point $P$ due to the entire linear charge distribution is given by:
 \[\vec{E} = \int_{\text{length $l$}} \frac{1}{4\pi \epsilon_0} \frac{\lambda dx}{r^2} \hat{r} \]
 
 \subsubsection{Surface Charge Distribution}
-Consider a surface charge distribution, $\sigma$ of area $A$, on the $xy$ plane. The electric field at point $P$ is given by:\\
-\begin{tikzpicture}
-    \filldraw[gray] (-2,0,-2) -- (2,0,-2) -- (2,0,2) -- (-2,0,2) -- cycle;
-    \filldraw[black] (-1.05,0,-1.05) -- (-0.95,0,-1.05) -- (-0.95,0,-0.95) -- (-1.05,0,-0.95) -- cycle node[anchor=south east] {$dA$};
-    \draw[black, ->](-1, 0, -1) -- (3,5,3) node[anchor=south east] {$\vec{r}$};
-    \node[anchor=north] at (2,0,2) {+};
-    \node[anchor=north] at (1,0,2) {+};
-    \node[anchor=north] at (0,0,2) {+};
-    \node[anchor=north] at (-1,0,2) {+};
-    \node[anchor=north] at (-2,0,2) {+};
-    \node[anchor=north] at (2,0,-2) {+};
-    \node[anchor=north] at (2,0,-1) {+};
-    \node[anchor=north] at (2,0,0) {+};
-    \node[anchor=north] at (2,0,1) {+};
-    \node[anchor=south west] at (3,5,3) {$P$};
-\end{tikzpicture}\\
+Consider a surface charge distribution, $\sigma$ of area $A$, on the $xy$ plane. The electric field at point $P$ is given by:
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \filldraw[gray] (-2,0,-2) -- (2,0,-2) -- (2,0,2) -- (-2,0,2) -- cycle;
+        \filldraw[black] (-1.05,0,-1.05) -- (-0.95,0,-1.05) -- (-0.95,0,-0.95) -- (-1.05,0,-0.95) -- cycle node[anchor=south east] {$dA$};
+        \draw[black, ->](-1, 0, -1) -- (3,5,3) node[anchor=south east] {$\vec{r}$};
+        \node[anchor=north] at (2,0,2) {+};
+        \node[anchor=north] at (1,0,2) {+};
+        \node[anchor=north] at (0,0,2) {+};
+        \node[anchor=north] at (-1,0,2) {+};
+        \node[anchor=north] at (-2,0,2) {+};
+        \node[anchor=north] at (2,0,-2) {+};
+        \node[anchor=north] at (2,0,-1) {+};
+        \node[anchor=north] at (2,0,0) {+};
+        \node[anchor=north] at (2,0,1) {+};
+        \node[anchor=south west] at (3,5,3) {$P$};
+    \end{tikzpicture}
+\end{figure}
 The Electric Field at point $P$ due to $dA$ is given by:
 \[ d\vec{E} = \frac{1}{4 \pi \epsilon} \frac{\sigma dA}{r^2} \hat{r} \]
 Hence, the electric field at point $P$ due to the entire surface charge distribution is given by:
@@ -666,7 +675,7 @@ If we apply this to all space, the surface integral vanishes and the Volume inte
 \[ W = \frac{\epsilon_0}{2} \int_{\text{all space}} E^2 d\tau\]
 
 \paragraph{Example} To find the self energy of a sphere with radius $R$ and uniform $q$\\
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{tikzpicture}
         \filldraw[color=black, fill=gray!50] (0,0) circle (2);
@@ -697,7 +706,7 @@ Properties of an ideal conductor:
     \item \textbf{E=0 inside the conductor} If there was an electric field, the charges (electrons) inside the conductor would move such that there is a positive charge on one part of the conductor and negative charge on the other side of the conductor.
     This would create an electric field opposite to that of the external field and we would get no net field in the bulk of the conductor
         
-        \begin{figure}[h]
+        \begin{figure}[H]
            \centering 
             \begin{tikzpicture}
                 \filldraw[fill=gray!50] (-1.5, -3.3) -- (-1.5, 3) -- (1.5, 3) -- (1.5, -3.3) -- cycle;
@@ -740,7 +749,7 @@ Properties of an ideal conductor:
         Here, $\vec{E_0}$ is the external field and $\vec{E_i}$ is the induced field.
         \item \textbf{$\rho = 0$ inside the conductor} From Gauss' Law, if there is no field inside the conductor, then there is no charge inside the conductor.
         \item \textbf{Any net charge resides on the surface} If there was a net charge inside the conductor, there would be an electric field inside the conductor. This would cause the charges to move until there is no net field inside the conductor.
-        \item \textbf{A conductor is equipotential} Consider two points in or on the surface of the conductor. \(V(b) - V(a) = \int_{a}^{b}-E\cdot dl = 0\). $\therefore V(a) = V(b)$.
+        \item \textbf{A conductor is equipotential} Consider two points in or on the surface of the conductor. \(V(b) - V(a) = \int_{a}^{b}-E\cdot dl = 0\). \(\therefore V(a) = V(b)\).
         \item \textbf{$\vec{E}$ is perpendicular to the surface just outside the conductor}. If otherwise, charge will flow along the surface of the conductor and will nullify any tangential component of the electric field.
 \end{itemize}
 
@@ -769,7 +778,7 @@ Since the negative charges are closer to the charge $q$, the conductor will get 
 If there is a cavity inside the conductor, then it will be electrically isolated from the outside of the conductor.
 Now, if we have a conductor with a cavity, and place a charge q inside the cavity:
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
     \filldraw[fill=gray!50] (0,0) circle (2.5);
@@ -810,7 +819,7 @@ The SI unit of capacitance is Farad (F).\\
 \paragraph{Parallel Plate Capacitor:}
 Consider two conducting parallel parallel plates of area $A$ and separation $d$. 
 If we place a charge $+q$ on one plate and $-q$ on the other, the electric field between the plates is given by:
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}    
     \draw (-0.5, 2.5) -- (-0.5, -2.5);
@@ -869,7 +878,7 @@ With a few boundary conditions with the Laplace's Equation, we can solve for $V$
 The solution to the Laplace's Equation in some volume $v$ is uniquely dereminable if the value of $V$ is specified on the boundary surface $S$.
 \subsubsection*{Proof}
 Consider a closed figure and the potentials on its boundary is known:
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
     \draw[shade, black] (0,0) circle (2);
@@ -918,7 +927,7 @@ where $\alpha$ is the polarizability of the atom/molecule. $\alpha$ depends on t
 \subsection{Alignment of Polar Molecules}
 Some molecules in nature already have a dipole moment because of their structure and/or the atoms they are composed of.
 If such a molecule is placed in an uniform Electric field:\\
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{tikzpicture}
     \draw[->, color=gray] (-3,3) -- (3,3);
     \node[anchor=south, color=gray] at (0,3) {$\vec{E}$};
@@ -977,7 +986,7 @@ The net force on the particle would be:
 
 \subsubsection*{Cyclotron}
 Given below is a diagram of a cyclotron.\\
-\begin{figure}[h]
+\begin{figure}[H]
 %\centering
 \begin{tikzpicture}
     \filldraw[color=black, fill=gray] (-0.5,-4) -- (-0.5, 4) arc (90:270:4) -- cycle;
