@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1723104981.61633 "calc2notes.xdv" "calc2notes.pdf" "calc2notes" 1723104982.07369 0
-  "calc2notes.xdv" 1723104981.51686 110080 fbe46faf5100be2169baedef44019df5 "xelatex"
+["xdvipdfmx"] 1723105199.53761 "calc2notes.xdv" "calc2notes.pdf" "calc2notes" 1723105200.02065 0
+  "calc2notes.xdv" 1723105199.48153 109636 a532cb0df237284ed530be7f00c2e0be "xelatex"
   (generated)
   "calc2notes.pdf"
   (rewritten before read)
-["xelatex"] 1723104980.14243 "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Calculus2/calc2notes.tex" "calc2notes.xdv" "calc2notes" 1723104982.07037 0
-  "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Calculus2/calc2notes.tex" 1723104978.21511 19660 c0a02bf121d85f82a442220a13cce6cd ""
+["xelatex"] 1723105198.17496 "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Calculus2/calc2notes.tex" "calc2notes.xdv" "calc2notes" 1723105200.01889 0
+  "/mnt/sda1/nachi/Notes/BSMSNotes/Notes/Calculus2/calc2notes.tex" 1723105197.6159 19607 c660d51df2c94886c81e94ee2ef00b49 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1716849630 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1716849630 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -107,8 +107,8 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1716849630 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1718445723 9578732 8e5a017583c8d5ec03a9a7d685a8c189 ""
-  "calc2notes.aux" 1723104981.51404 3819 d82a9d0c669d3359561fbcd2071c7f5f "xelatex"
-  "calc2notes.tex" 1723104978.21511 19660 c0a02bf121d85f82a442220a13cce6cd ""
+  "calc2notes.aux" 1723105199.47774 3819 d82a9d0c669d3359561fbcd2071c7f5f "xelatex"
+  "calc2notes.tex" 1723105197.6159 19607 c660d51df2c94886c81e94ee2ef00b49 ""
   (generated)
   "calc2notes.aux"
   "calc2notes.log"
