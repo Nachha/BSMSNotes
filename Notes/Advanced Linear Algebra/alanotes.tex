@@ -1,9 +1,9 @@
 \documentclass[12pt, oneside]{book}
 \usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
 \usepackage{tikz, caption, subcaption, enumitem, polyglossia}
-\usepackage{tikz-3dplot, float, etoolbox}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
 \usepackage[top=20mm, bottom=20mm, left=15mm, right=15mm]{geometry}
-%\usepackage{showframe}
+\usepackage{showframe}
 
 \makeatletter
 \patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
@@ -51,7 +51,39 @@
     \item Distributivity: For all \( a, b, c \in F \), the Left Distributive Law, \( a \cdot (b + c) = a \cdot b + a \cdot c \) and Right Distributive Law, \( (a + b) \cdot c = a \cdot c + b \cdot c \).
 \end{enumerate}
 \subsection{Detour 1 - Finite Fields}
-another long wall of text
+\paragraph{Theorem 1:} \( \mathbb{Z}_n \) is a field if and only if \( n \) is a prime number.
+\paragraph{Proof:} Let \( n \) be any Positive Integer.
+We can trivially show that for all \( n \), Closure and Associativity of addition and multiplication, Additive Identity, Multiplicative Identity and Additive Inverse, Distributivity rules are satisfied.
+The only property we need to show is the existence of Multiplicative Inverse.
+\begin{enumerate}[leftmargin=2.5cm, label=Case \arabic*:]
+    \item \( n \) is a composite number with factors \( a, b \). 
+Assume \( \mathbb{Z}_n \) is a field.
+As, \( a \text{ and } b \) are factors of \( n \), they are less the \( n \), and hence belong to \( \mathbb{Z}_n \).
+Now, \( a \cdot b = 0 \) in \( \mathbb{Z}_n \), but the product of two non-zero elements cannot be zero in a field. Hence, \( \mathbb{Z}_n \) cannot be a field, when \(n\) is composite.
+    \item \( n \) is a prime number. We need to show that for all \( a \neq 0 \in \mathbb{Z}_n \), there exists an element \( a^{-1} \in \mathbb{Z}_n \) such that \( a \cdot a^{-1} = 1\).\\
+Let us take an element \( a \in \mathbb{Z}_n \) such that \( a \neq 0 \).
+Now, we know that the GCD of \( a \) and \( n \) is 1.
+Hence, by Bézout's Identity, there exist integers \( x, y \) such that \( ax + ny = \gcd(a,n) = 1 \).
+Applying modulo \( n \), we get \( ax \equiv 1 \pmod{n} \).
+Hence, \( x \) is the multiplicative inverse of \( a \) in \( \mathbb{Z}_n \).
+\end{enumerate}
+\section{Vector Spaces}
+\paragraph{Definition} A Vector Space, defined over a field \( F \) of scalers, is a set of objects \(V\) with two operations, Vector addition and Scalar Multiplication and follows the following axioms:
+\begin{enumerate}
+    \item Closure: For all \( u,v \in V \), \(u + v \in V \).
+    \item Commutative: for all \( u,v \in V \), \(u + v = v + u \).
+    \item Associativity: For all \( u,v,w \in V \), \(u + (v + w) = (u + v) + w \).
+    \item Additive Identity: There exists an element \( O \in V \) such that for all \( u \in V \), \(O + u = u \).
+    \item Additive Inverse: For all \( u \in V \), there exists an element \( -u \in V \) such that \(u + (-u) = O \).
+    \item Scalar Multiplication: For all \( a \in F \) and \( u \in V \), \(a \cdot u \in V \). It has the following properties:
+    \begin{enumerate}
+        \item Multiplication by \(I\): If \(I\) is the Multiplicative identity of \( F \), then \(I \cdot u = u \).
+        \item Unambiguous: for all \( a,b \in F \) and \( u \in V \), \( (a \cdot b) \cdot u = a \cdot (b \cdot u) \).
+        \item Distributive: For all \( a \in F \) and \( u,v \in V \), \( a \cdot (u + v) = a \cdot u + a \cdot v \) and \( (a + b) \cdot u = a \cdot u + b \cdot u \).
+        \item Distributive: For all \( a,b \in F \) and \( u \in V \), \( (a + b) \cdot u = a \cdot u + b \cdot u \).
+    \end{enumerate}
+\end{enumerate}
+\section{Subspaces}
 \chapter{Linear Transformations}
 long wall of text incoming
 
