@@ -1,0 +1,43 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{BI2233 - Genetics}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Neue}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Introduction}
+Some of the principles of Genetics has been known for a very long time.
+Eg: If a specific feature was required from a plant/animal, one would bread only those with the features and hence obtain individuals that have the same traits
+Genetics as a formal topic is only about 200 years old.
+
+\paragraph{Tangent 1:} There are many biological phenomena that were understood using genetics.
+\textit{Drosophila} was used to understand Cancer, aging, etc.
+The Central Dogma of Molecular Biology was mainly understood using single-celled organisms (\textit{E. Coli}) 
+
+\paragraph{Tangent 2:}Aging is a phenomena that is very well known.
+How to identify if a gene (or a set of genes) influence aging?
+One could start by trying to mutate certain genes and see if the lifespan of the individual changes.
+(Japanese have a relatively longer lifespan).
+The age of a person may also be affected by various environmental factors.
+There could also be many epigenetic factors that are not directly related to the genetic information.
+
+
+\end{document}

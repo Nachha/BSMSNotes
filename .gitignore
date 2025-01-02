@@ -1,0 +1,8 @@
+*.log
+*.aux
+*.fls
+*.out
+*.toc
+*.fdb_latexmk
+*.xdv
+*.json
