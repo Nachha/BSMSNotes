@@ -50,6 +50,14 @@ This number is represented as \(N_A\) and is approximated to:
 \paragraph{Thermodynamic Limit:} When the number of elements in our system increases to a number large enough such that the fluctuations in the sum is very little is known as the Thermodynamic Limit.
 This is the point where we can deal with averages and their distributions instead of precise values.
 
+\subsection{Combinatorics}
+In the above examples, we are merely counting the number of objects present.
+But often times we will be dealing with the various ways in which the parameters of these objects can be changed and how that can affect the overall macroscopic system.
+
+\paragraph{Logarithm and Sterling's Approximation} When dealing with very large numbers we will be using logarithms(often base \(e\)) to make the large numbers that we have to deal with down to a size that is easier to understand.
+As we will be dealing with large numbers and their factorials, we will be using the Sterling's approximation to simplify the logarithms:
+\[ \ln(n!) \approx n \ln(n) - n \]
+
 \subsection{Properties of Gas}
 There are many properties that can be used to describe the state of a Gas.
 Eg: Volume \(V\), Internal Energy \(U\), Pressure \(P\), Temperature \(T\).
@@ -63,9 +71,19 @@ These properties are broadly classified as:
 \subsection{Ideal Gas}
 Experiments on gases show some of the relations between \(P\), \(V\) and \(T\)
 \begin{enumerate}
-    \item \textbf{Boyle's Law} A fixed amount of gas obeys:
+    \item \textbf{Boyle's Law} A fixed amount of gas at a constant temperature obeys:
     \[P \propto \frac{1}{V}\]
+    \item \textbf{Charles' Law} A fixed amount of gas at a constant pressure obeys:
+    \[ V \propto T \]
+    where T is measure in Kelvin.
+    \item \textbf{Gay-Lussac's Law} A fixed amount of gas at a constant volume obeys:
+    \[ P \propto T \]
 \end{enumerate}
+These three laws can be combined to give the following relation:
+\[ PV \propto T \]
+Now, if we consider that there are \(N\) molecules in the gas:
+\[ PV = Nk_bT \]
+where \(k_b\) is the Boltzmann constant.
 
 \section{Heat}
 \subsection{Definition}
@@ -91,11 +109,32 @@ Eg: Probability of various macrostates of a system.
 
 \subsection{Discrete Probability Distributions}
 Discrete Random Variables take a finite (or countably infinite) values.
+Examples include the number of heads in a coin toss experiment, number of sibblings per person, etc.
+Let x be a discrete random variable, and \(x_i\) be the possible values of \(x\).
+The probability of the random variable taking the value \(x_i\) is denoted by \(p_i\).
 Some of the properties include:
 \begin{enumerate}
     \item Sum of probabilities of all random variables add up to \(1\):
     \[\sum_{i} p_i = 1\]
     \item Mean or expectation value of the random variable is defined as:
     \[ \ev{x} = \sum_{i} x_i p_i \]
+    \item Any function of x can be averaged as:
+    \[ \ev{f(x)} = \sum_{i} f(x_i) p_i \]
 \end{enumerate}
+
+\subsection{Continuous Probability Distributions}
+Continuous Random Variables take values in a continuous range, i.e., they take uncountably infinite values.
+Examples include height of a person, time a train gets delayed by, etc.
+We define a Probability Distribution Function \(P(x)\) that says the random variable x has a probability of \(P(x)dx\) of being in the range \([x, x+dx]\).
+Some of the properties include:
+\begin{enumerate}
+    \item The probability of the random variable being in the entire range is \(1\):
+    \[ \int_{-\infty}^{\infty} P(x)dx = 1 \]
+    \item The expectation value of the random variable is defined as:
+    \[ \ev{x} = \int_{-\infty}^{\infty} xP(x)dx \]
+    \item Any function of x can be averaged as:
+    \[ \ev{f(x)} = \int_{-\infty}^{\infty} f(x)P(x)dx \]
+\end{enumerate}
+
+
 \end{document}
