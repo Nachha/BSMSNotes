@@ -1,0 +1,101 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\evdel}{\langle}{\rangle}
+\newcommand{\ev}{\evdel}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{PH2223 - Thermal and\\Statistical Physics}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Neue}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Preliminaries}
+\section{Introduction}
+\subsection{Large Numbers - What is a mole?}
+Population of India: \( \approx 1.4 \times 10^9\)\\
+Indian Economy: \( \approx 4 \times 10^{12} \) USD\\
+Number of \(\text{N}_2\) molecules in 1kg of Nitrogen: \( \approx 10^{25} \)\\
+
+This number is too big.
+Instead of dealing with numbers this large.
+We will be dealing with averages for these large set of numbers.
+
+Consider the addition of two numbers \(a_1\) and \(a_2\), given they are of the same order of magnitude.
+As we increase the number of terms, the sum increases, but overall sum is not going to change by a significant value.
+As we approach \(100\) terms, another term added will only result in minor fluctuations in the sum. 
+
+We use the term mole as a unit to represent the number of particles in a system.
+\paragraph{Mole:}A mole is defined as the quantity of matter that contains as many entities as the number of atoms in exactly \(12\text{g}\) of \(^{12}\text{C}\).
+This number is represented as \(N_A\) and is approximated to:
+\[ N_A = 6.022 \times 10^{23} \]
+
+\paragraph{Thermodynamic Limit:} When the number of elements in our system increases to a number large enough such that the fluctuations in the sum is very little is known as the Thermodynamic Limit.
+This is the point where we can deal with averages and their distributions instead of precise values.
+
+\subsection{Properties of Gas}
+There are many properties that can be used to describe the state of a Gas.
+Eg: Volume \(V\), Internal Energy \(U\), Pressure \(P\), Temperature \(T\).
+
+These properties are broadly classified as:
+\begin{enumerate}
+    \item \textbf{Intensive Properties} Properties that are not affected by the size of the system. Eg: \(P, T\)
+    \item \textbf{Extensive Properties} Properties that scale with the size of system. Eg: \(V, U\)
+\end{enumerate}
+
+\subsection{Ideal Gas}
+Experiments on gases show some of the relations between \(P\), \(V\) and \(T\)
+\begin{enumerate}
+    \item \textbf{Boyle's Law} A fixed amount of gas obeys:
+    \[P \propto \frac{1}{V}\]
+\end{enumerate}
+
+\section{Heat}
+\subsection{Definition}
+Heat is defined as the thermal energy in transit.
+Heat is never stored in objects.
+It is only energy that is stored.
+Heat naturally only flows from a body with higher temperature to a body with lower temperature.
+Though, when there is an external energy is provided, heat can flow from a colder body to a hotter body.
+\subsection{Heat Capacity}
+Heat is not stored.
+But what Physics has conventionally called this Heat Capacity, so we will call it Heat Capacity.
+\paragraph{Heat Capacity} It is the amount of heat(energy) \(dQ\) that is required to raise the temperature of the system by a small amount \(dT\).
+\[\text{Heat Capacity }C = \frac{dQ}{dT} \]
+Heat Capacity of the system \(C\) per unit mass is known as the Specific Heat Capacity \(c\).
+
+Often times the heat provided to the system isn't utilized fully just to increase temperature.
+There are often other constraints to the system, like if the heat is used to do work on the surroundings.
+In these cases, we will be using terms like Heat Capacity at constant pressure \(C_P\) or Heat Capacity at constant Volume \(C_V\)
+
+\section{Probability}
+Probability is required in Statistical Mechanics because a lot of the phenomenon that occur predicted by the physics are often with a given with a statistical background.
+Eg: Probability of various macrostates of a system.
+
+\subsection{Discrete Probability Distributions}
+Discrete Random Variables take a finite (or countably infinite) values.
+Some of the properties include:
+\begin{enumerate}
+    \item Sum of probabilities of all random variables add up to \(1\):
+    \[\sum_{i} p_i = 1\]
+    \item Mean or expectation value of the random variable is defined as:
+    \[ \ev{x} = \sum_{i} x_i p_i \]
+\end{enumerate}
+\end{document}

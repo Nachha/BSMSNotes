@@ -1,0 +1,28 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{MT2233 - Discrete Structures}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Neue}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Preliminaries}
+test text
+\end{document}
