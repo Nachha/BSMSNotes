@@ -1,0 +1,113 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{MT2213 - Group Theory}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Neue}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Definitions}
+\section{Groups}
+A non-empty set G is a group, is considered to be a group with an operation \(\star\) if to every pair \( \left(x,y\right) \in G \times G\) and element \(x \star y \in G\) is assigned, satisfying the following axioms:
+\begin{enumerate}
+    \item \textbf{Associativity:} \(\forall\text{ } x,y,z \in G\), \(x \star \left(y \star z\right) = \left(x \star y \right) \star z = x \star y \star z \)
+    \item \textbf{Existence of Identity:} There exists an element \(e \in G\) such that \(e \star g = g \star e = g\)
+    \item \textbf{Existence of Inverse:} For every element \(x \in G\) there exists an element \(x^{-1} \in G\) such that \(x \star x^{-1} = e = x^{-1} \star x \), where \(e \in G\) is the identity element of the group.
+\end{enumerate}
+It is represented as \( \left(G, \star \right) \).
+Some properties of groups:
+\begin{enumerate}
+    \item \textbf{Uniqueness of Identity:} The identity element of a group is unique.
+    Consider \(e_1, e_2 \in G, e_1 \neq e_2\) and both are identity elements.
+    Let \(x \in G\), then \( e_1 \star x = e_2 \star x = x \).
+    This also implies that \(e_1 = e_2\), hence the identity element is unique.
+    \item \textbf{Uniqueness of Inverse:} The inverse of an element in a group is unique.
+    Consider \(x \in G\), and \(y_1, y_2 \in G\) are inverses of \(x\).
+    Then, \(x \star y_1 = e = y_1 \star x\) and \(x \star y_2 = e = y_2 \star x\).
+    Now, \(y_1 = y_1 \star e = y_1 \star \left(x \star y_2\right) = \left(y_1 \star x\right) \star y_2 = e \star y_2 = y_2\).
+    Hence, the inverse of an element is unique.
+\end{enumerate}
+
+\subsection{Examples:}
+\begin{enumerate}
+    \item \( \left( \mathbb{Z}, +\right) \) is a group:
+    \begin{enumerate}
+        \item Associativity: Addition is associative.
+        \item Identity: \(0\) is the identity. Let \(x \in Z\). Now \(0 + x = x + 0 = x\). Hence, it is an identity.
+        \item Inverse: Let \(x \in \mathbb{Z}\). Now, \(x + (-x) = (-x) + x = 0\), where \(0\) is the additive identity.
+    \end{enumerate}
+    \item \(\left( \mathbb{Q}^{+}, \times \right)\) is a group:
+    \begin{enumerate}
+        \item Associativity: Multiplication is associative.
+        \item Identity: \(1\) is the identity:
+        Let \(x \in \mathbb{Q}^{+} \). Now, \(1 \times x = x \times 1 = x\). Hence, it is an identity.
+        \item Inverse: Let \(x \in \mathbb{Q}^{+} \), Now, \(x \times \frac{1}{x} = \frac{1}{x} \times x = 1\), where 1 is the multiplicative identity.
+    \end{enumerate} \break
+    \item \(\left(GL(n,\mathbb{R}), \times \right)\) is a group, where \(\times\) is matrix multiplication (or combination of linear transformations):
+    \begin{enumerate}
+        \item Associativity: Matrix multiplication is associative.
+        \item Identity: \(I_n\) is the identity matrix.
+        \item Inverse: Let \(A \in GL(n,\mathbb{R})\), then \(A \times A^{-1} = A^{-1} \times A = I_n\).
+    \end{enumerate}
+\end{enumerate}
+Check if:
+\begin{enumerate}
+    \item \( \left(\mathbb{R}, \times \right)\) is a group or not.
+    
+    \(0 \in \mathbb{R}\), \(0\) does not have an inverse. Hence, it is not a group.
+
+    \item \(\left(\mathbb{C}, \times\right)\) is a group or not.
+    
+    \(0 \in \mathbb{C}\), \(0\) does not have an inverse. Hence, it is not a group.
+    
+    \item \(\left(\mathbb{R}/\{0\}, \times \right)\) is a group or not.
+    
+    Yes its a group:
+    \begin{enumerate}
+        \item Associativity: Multiplication is associative.
+        \item Identity: 1 is an identity:
+        Let \(x \in \mathbb{R}/\{0\} \). Now, \(1 \times x = x \times 1 = x\). Hence, it is an identity.
+        \item Inverse: Let \(x \in \mathbb{R}/\{0\} \), Now, \(x \times \frac{1}{x} = \frac{1}{x} \times x = 1\), where 1 is the multiplicative inverse.
+    \end{enumerate}
+
+    \item \(\left(\mathbb{C}/\{0\}, \times \right)\) is a group or not.
+    
+    Yes it is a group:
+    \begin{enumerate}
+        \item Associativity: Multiplication is associative.
+        \item Identity: 1 is an identity:
+        Let \(x \in \mathbb{C}/\{0\} \). Now, \(1 \times x = x \times 1 = x\). Hence, it is an identity.
+        \item Inverse: Let \(x \in \mathbb{C}/\{0\} \), Now, \(x \times \frac{1}{x} = \frac{1}{x} \times x = 1\), where 1 is the multiplicative inverse.
+    \end{enumerate}
+\end{enumerate}
+\subsection{Sub-groups}
+Consider a group \( \left(G, \star \right) \).
+A non-empty subset \(H\) is a subgroup of \(G\) if \(H\) is a group with the same operation \(\star\) as \(G\).
+
+A few properties of subgroups:
+\begin{enumerate}
+    \item \textbf{Identity:} The identity element of \(G\) is also the identity element of \(H\).
+    \item \textbf{Inverse:} If \(x \in H\), then \(x^{-1} \in H\).
+\end{enumerate}
+
+\subsection{Abelian Groups}
+A group \( \left(G, \star \right) \) is said to be abelian if the operation \(\star\) is commutative, i.e., \(x \star y = y \star x\), \(\forall x,y \in G\).
+
+\end{document}
