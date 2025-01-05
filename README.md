@@ -1,8 +1,8 @@
 # BSMSNotes
 
-This is a Github repository made by me. It contains the notes of MT1213, MT1223 and PH1213 courses of the second semester.
+This is a Github repository made by me. It contains the notes of some of the courses taken by my during my semester at IISER Pune.
 
-I have randomly decided to them publish it on Github.
+I have randomly decided to them publish it on GitHub.
 
 The files will ideally be updated by the end of the class.
 Worst case by the end of the day.
