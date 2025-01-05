@@ -94,7 +94,7 @@ Heat naturally only flows from a body with higher temperature to a body with low
 Though, when there is an external energy is provided, heat can flow from a colder body to a hotter body.
 \subsection{Heat Capacity}
 Heat is not stored.
-But what Physics has conventionally called this Heat Capacity, so we will call it Heat Capacity.
+But Physics has conventionally called this Heat Capacity, so we will call it Heat Capacity.
 \paragraph{Heat Capacity} It is the amount of heat(energy) \(dQ\) that is required to raise the temperature of the system by a small amount \(dT\).
 \[\text{Heat Capacity }C = \frac{dQ}{dT} \]
 Heat Capacity of the system \(C\) per unit mass is known as the Specific Heat Capacity \(c\).
@@ -136,5 +136,80 @@ Some of the properties include:
     \[ \ev{f(x)} = \int_{-\infty}^{\infty} f(x)P(x)dx \]
 \end{enumerate}
 
+\subsection{Linear Transformations and Translation}
+Some times, we have a random variable \(x\), but need to make a second random variable by performing Linear Transformations and/or translations of the initial variable:
+\[ \ev{y} = \ev{mx+c} = m\ev{x} + c \]
+
+\subsection{Variance}
+Consider a random variable \(x\).
+When we are calculating the mean (or expectation value) of \(x\), we often times lose other aspects of the information that we used to get the said value of \(x\).
+We use Variance, and standard deviation, to measure the accuracy and the spread of the values of \(x\).
+\[ \text{Deviation} = x - \ev{x} \]
+To ensure that the negative and positive values are equally take into consideration, and also do not cancel out, we take modulus:
+\[ \text{Deviation} = \left|x - \ev{x}\right| \]
+Finally, as it is easier to work with squares:
+\[ \text{Deviation}^2 = \left(x - \ev{x}\right)^2 \]
+The average of this value is known as the variance of \(x\), \(\sigma_x^2\).
+\begin{align*}
+    \sigma_x^2 &= \ev{\left(x - \ev{x}\right)^2} \\
+    \sigma_x^2 &= \ev{x^2} - \ev{x}^2
+\end{align*}
+The positive square root of variance is called standard deviation about the mean, \(\sigma_x\)
+\[ \sigma_x = \sqrt{\ev{x^2} - \ev{x}} \]
+
+\paragraph{Affect of Linear Transformations on Variance}If we consider a random variable \(y = mx + c\), then the variance of \(y\) is:
+\begin{align*}
+    \sigma_y^2 &= \ev{\left(y - \ev{y}\right)^2} \\
+    \sigma_y^2 &= \ev{\left(mx + c - m\ev{x} - c\right)^2} \\
+    \sigma_y^2 &= m^2\ev{\left(x - \ev{x}\right)^2} \\
+    \sigma_y^2 &= m^2\sigma_x^2
+\end{align*}
+Considering this, the standard deviation of \(y\) is:
+\[ \sigma_y = \left|m\right|\sigma_x \]
+
+\subsection{Independence of Random Variables}
+Two random variables are said to be independent if the probability of one random variable taking a value is not affected by the value of the other random variable.
+
+\noindent If \(x\) and \(y\) are independent random variables, then the probability of x being in the range \(\left(x, x+dx\right)\) and y being in the range \(\left(y, y+dy\right)\) is \(P_x \left(x\right) dx P_y \left(y\right) dy \).
+The average value of the product of the two random variables is:
+\begin{align*}
+    \ev{xy} &= \int \int xy P_x \left(x\right) P_y \left(y\right) dx dy \\
+    \ev{xy} &= \int x P_x \left(x\right) dx \int y P_y \left(y\right) dy \\
+    \ev{xy} &= \ev{x} \ev{y}
+\end{align*}
+
+\subsubsection{Experiments and Random Variables}
+Normally, when performing experiments, we perform multiple trials and record the results.
+In these cases, we can consider the individual trials as random variables, and thus the average of the trials as the expectation value of the random variable.
+Also, if the error in each trial is \(\sigma_X\), the error in the rms error in the average of the trials is: \(\sigma_X/\sqrt{N}\)
+
+\subsubsection{Theory of Random Walks}
+Consider a drunk person walking along a straight line on a street.
+Assume that the length of each step is \(1\) unit.
+The drunk person can take a step in either direction with equal probability, and each step is an independent event.
+Hence, the expectation value of the position of the drunk person after \(N\) steps is \(0\).
+However, the rms distance of the drunk person from the origin is \(n \ev{X}\).
+Hence, the rms distance of the drunk person from the origin is \(\sqrt{N}\) units.
+
+\subsection{Binomial Distribution}
+\paragraph{Bernoulli Trials} A Bernoulli trial is an experiment with two possible outcomes: Success or Failure.
+The probability of success is \(p\), and the probability of failure is \(1-p\).
+
+\paragraph{Binomial Distribution} A Binomial Distribution is the discrete probability distribution \(P\left(n,k\right)\) of getting \(k\) successes in \(n\) Bernoulli trials.
+By basic combinatorics, the probability of getting \(k\) successes in \(n\) trials is:
+\[ P\left(n,k\right) = \binom{n}{k} p^k \left(1-p\right)^{n-k} \]
+
+\paragraph{Note:} Taking the summation of the Binomial Distribution over all possible values of \(k\):
+\[ \sum_{k=0}^{n} P\left(n,k\right) = 1 \]
+Hence, it is a valid probability distribution.
+
+\subsubsection{Expectation and Variance of Binomial Distribution}
+The expectation value of the Binomial Distribution is:
+\[ \ev{k} = np \]
+The variance of the Binomial Distribution is:
+\[ \sigma_k^2 = np\left(1-p\right) \]
+Finally, another important property of the Binomial Distribution is the fractional width of the distribution, \(\sigma_k/\ev{k}\).
+\[ \frac{\sigma_k}{\ev{k}} = \sqrt{ \frac{1-p}{np} } \]
+As the number of trials increases, the fractional width of the distribution decreases making it narrower about the mean.
 
 \end{document}
