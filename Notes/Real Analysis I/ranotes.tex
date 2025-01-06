@@ -1,0 +1,83 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{MT2223 - Real Analysis I}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Neue}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Real Number System}
+\section{Natural Numbers}
+\( \mathbb{N} = \{ 1,2,3,\dots \} \) is the set of all natural numbers.
+They can also be referred to as Positive Integers.
+The set of Natural Numbers is important because it is the smallest set which is closed under addition and multiplication.
+
+\subsection{Peano Axioms}
+\begin{enumerate}
+    \item The number \(1 \in \mathbb{N}\)
+    \item For every Natural Number \(n\), there exists another Natural Number \(m\) which is known as the successor of \(n\).
+    \item \(1\) is not the successor for any number in the set of Natural Number set.
+    \item If \(m,n \in \mathbb{N}\) have the same successor, then \(m=n\).
+    \item If \(A \subset \mathbb{N}\) such that \(1 \in A\) and \(n \in A \implies n+1 \in A\), then \(A = \mathbb{N}\).
+\end{enumerate}
+
+\section{Integers}
+\( \mathbb{Z} = \{ \dots, -2, -1, 0, 1, 2, \dots \} \) is the set of all integers.
+This set is important because it is the smallest set which is closed under subtraction.
+
+\section{Rational Numbers}
+The set of Rational Numbers is defined as:
+\[ \mathbb{Q} = \left\{ \frac{m}{n} \; \vline \; m,n \in \mathbb{Z}, n \neq 0 \right\} \]
+This set is important because it is the smallest set which is closed under division.
+
+\section{Real Numbers}
+We can see that the set of Rational Numbers is incomplete.
+There is no Rational Number whose square is \(2\).
+\paragraph{Proof:} Consider a rational number whose square is \(2\).
+\[ \left(\frac{p}{q}\right)^2 = 2 \]
+Here, \(p\) and \(q\) are both integers and co-prime.
+\begin{align*}
+    \frac{p^2}{q^2} &= 2 \\
+    p^2 &= 2q^2
+\end{align*}
+Now, as \(p^2\) is even, \(p\) must be even.
+Let \(p = 2k\). then, \(p^2 = 4k^2\): 
+\begin{align*}
+    4k^2 &= 2q^2 \\
+    2k^2 &= q^2
+\end{align*}
+Now, as \(q^2\) is even, \(q\) must be even.
+
+But this contradicts the fact that \(p\) and \(q\) are co-prime.
+Hence, by proof of contradiction, there is no Rational Number whose square is \(2\).
+%Prove why there is no Rational Number whose square is 2.
+
+\paragraph{Question:} \(A = \left\{ p \in \mathbb{Q} \; | \; p^2 < 2 \right\}\).
+Can we find a number \(q \in A\) such that \( p \leq q, \forall p \in A \)? 
+\paragraph{Answer:} Claim: given \(p \in A\), we can find \(q \in A\) such that \(p < q\).
+Consider the following number:
+\begin{align*}
+    q &= p + \frac{2-p^2}{2+p} \\
+    q &= \frac{p\left(2+p\right) + 2 - p^2}{p +2}\\
+    q &= \frac{2 + 2p}{2 + p} \\
+\end{align*}
+
+
+\end{document}
