@@ -67,7 +67,6 @@ Now, as \(q^2\) is even, \(q\) must be even.
 
 But this contradicts the fact that \(p\) and \(q\) are co-prime.
 Hence, by proof of contradiction, there is no Rational Number whose square is \(2\).
-%Prove why there is no Rational Number whose square is 2.
 
 \paragraph{Question:} \(A = \left\{ p \in \mathbb{Q} \; | \; p^2 < 2 \right\}\).
 Can we find a number \(q \in A\) such that \( p \leq q, \forall p \in A \)? 
@@ -77,7 +76,52 @@ Consider the following number:
     q &= p + \frac{2-p^2}{2+p} \\
     q &= \frac{p\left(2+p\right) + 2 - p^2}{p +2}\\
     q &= \frac{2 + 2p}{2 + p} \\
+    q^2 - 2 &= \frac{2\left(p^2 - 2\right)}{\left(p + 2\right)^2}
 \end{align*}
+Looking at the first equation \(q > p\). If \(p^2 < 2\), then the final equation shows that \(q^2 < 2\).
 
+\section{Functions}
+A function from a set \(A\) to a set \(B\) is a subset of \(A \times B\) such that for every element in \(A\), there exists a unique element in \(B\).
+The set \(A \times B \) is known as the Cartesian Product of \(A\) and \(B\) or Relation from \(A\) to \(B\).
+A function from \(A\) to \(B\) is denoted as \(f: A \to B\).
+
+\section{Ordered Sets}
+Let \(S\) be a ordered set.
+An order on \(S\) is a relation, denoted by \(<\), such that:
+\begin{enumerate}
+    \item For every \(x,y \in S\), exactly one of the following is true:
+    \begin{itemize}
+        \item \(x < y\)
+        \item \(x = y\)
+        \item \(y > x\)
+    \end{itemize}
+    \item \(\forall \: x,y,z \in S\) if \(x < y\) and \(y < z\), then \(x < z\).
+\end{enumerate}
+
+\subsection{Upper and Lower Bounds}
+Let \(S\) be an ordered set and \(E \subset S\).
+\begin{enumerate}
+    \item \(E\) is said to be bounded above if there exists \( a \in S \), such that for every \( x \in E \), \( x \leq a \). Here, \(a\) is called an Upper Bound for \(E\).
+    \item \(E\) is said to be bounded below if there exists \( b \in S \), such that for every \( x \in E \), \( x \geq b \). Here, \(b\) is called a Lower Bound for \(E\).
+\end{enumerate}
+
+\subsubsection{Supremum and Infimum}
+\paragraph{Supremum:} Assume \(E\) to be bounded above.
+Suppose there exists a number \(\alpha \in S\) such that:
+\begin{itemize}
+    \item \(\alpha\) is an Upper Bound for \(E\).
+    \item If \(\gamma < \alpha\), then \(\gamma\) is not an Upper Bound for \(E\).
+\end{itemize}
+Then \( \alpha \) is known as the least Upper Bound or Supremum of \(E\).
+\paragraph{Infimum:} Assume \(E\) to be bounded below.
+Suppose there exists a number \(\beta \in S\) such that:
+\begin{itemize}
+    \item \(\beta\) is a Lower Bound for \(E\).
+    \item If \(\gamma > \beta\), then \(\gamma\) is not a Lower Bound for \(E\).
+\end{itemize}
+Then \( \beta \) is known as the greatest Lower Bound or Infimum of \(E\).
+
+\subsection{Least Upper Bound Property}
+An ordered set \(S\) is said to have the Least Upper Bound Property if \(E \subset S\) is non-empty and bounded above, then \( \sup E\) exists in \(S\).
 
 \end{document}

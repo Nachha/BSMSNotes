@@ -10,6 +10,10 @@
 \patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
 \makeatother
 
+\DeclarePairedDelimiter{\evdel}{\langle}{\rangle}
+\newcommand{\ev}{\evdel}
+
+
 \predate{}
 \postdate{}
 \date{}
@@ -97,17 +101,54 @@ Check if:
         \item Inverse: Let \(x \in \mathbb{C}/\{0\} \), Now, \(x \times \frac{1}{x} = \frac{1}{x} \times x = 1\), where 1 is the multiplicative inverse.
     \end{enumerate}
 \end{enumerate}
+\subsection{Abelian Groups}
+A group \( \left(G, \star \right) \) is said to be abelian if the operation \(\star\) is commutative, i.e., \(x \star y = y \star x\), \(\forall x,y \in G\).
+
+\subsection{Conjugate}
+Consider a group \( \left(G, \star \right) \).
+For \(x,y \in G\), \(y\) is said to be conjugate of \(x\) if there exists an element \(a \in G\) such that:
+\[ y = a \star x \star a^{-1} \]
+\paragraph{Note:} For a given \(a\), the conjugate of \(x\) is unique.
+i.e., if we consider conjugate to be a function \(f_a\), then \(f_a\) is a bijection.
+
+\subsection{Order of a Group}
+The order of a group \(G\) is the number of elements in the group.
+It is denoted by \(|G|\).
+A group \(G\) is said to be finite if the number of elements in it is finite.
+Otherwise, it is said to be infinite.
+
+\subsection{Cyclic Group}
+A group \( \left(G, \star \right) \) is said to be cyclic if there exists an element \(a \in G\) such that every element of \(G\) can be written as a power of \(a\).
+Let, \(G = \ev{g}\) by a cyclic group of order \(n\).
+Then, \(G = \{e, g, g^2, \ldots, g^{n-1}\}\).
+\subsubsection{Properties of Cyclic Groups}
+\begin{enumerate}
+    \item All cyclic groups are abelian.
+    \item \(n = \min{ \left\{m \in \mathbb{N} \: \vline \: g^m = 1\right\} }\).
+
+    \paragraph{Proof:} As the order of \(G\) is finite, there exists \(a,b \in \mathbb{N}\) such that \(g^a = g^b\). 
+    This implies: \(g^{a-b} = 1\).
+    \[ \therefore \exists \: n := \min{ \left\{m \in \mathbb{N} \: \vline \: g^m = 1\right\} } \]
+
+    \item If \(z \in \mathbb{Z}\): \(g^z = 1 \implies n \: \vline \: z \).
+    \paragraph{Proof:} Let \(z = qn + r\), where \(0 \leq r < n\).
+    \[ g^z = g^{qn+r} = g^{qn} \star g^r = 1 \star g^r = g^r \]
+    If \(r\) is such that \(g^r = 1\), then \(r = 0\).
+    Hence, \(n \: \vline \: z\).
+    \item For \(i,j,k \in \left\{1,2,3,\dots,n-1\right\}\): \(g^i \star g^j = g^k \implies i+j \equiv k \pmod{n}\).
+\end{enumerate}
+
 \subsection{Sub-groups}
 Consider a group \( \left(G, \star \right) \).
 A non-empty subset \(H\) is a subgroup of \(G\) if \(H\) is a group with the same operation \(\star\) as \(G\).
+It is represented as \(H \leq G\).
 
 A few properties of subgroups:
 \begin{enumerate}
     \item \textbf{Identity:} The identity element of \(G\) is also the identity element of \(H\).
     \item \textbf{Inverse:} If \(x \in H\), then \(x^{-1} \in H\).
 \end{enumerate}
-
-\subsection{Abelian Groups}
-A group \( \left(G, \star \right) \) is said to be abelian if the operation \(\star\) is commutative, i.e., \(x \star y = y \star x\), \(\forall x,y \in G\).
+Every group has at least two subgroups: the trivial subgroups \(U = \{e\}\) and the group itself \(G\).
+We abuse notation and simply write \(U = 1\).
 
 \end{document}
