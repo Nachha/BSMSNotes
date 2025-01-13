@@ -124,4 +124,22 @@ Then \( \beta \) is known as the greatest Lower Bound or Infimum of \(E\).
 \subsection{Least Upper Bound Property}
 An ordered set \(S\) is said to have the Least Upper Bound Property if \(E \subset S\) is non-empty and bounded above, then \( \sup E\) exists in \(S\).
 
+\subsubsection{Theorem}
+Let \(S\) be an ordered set with the Least Upper Bound Property.
+Let \(B \subset S\) be non-empty and bounded below.
+Let \(L\) be the set of all Lower Bounds of \(B\).
+Then, \( \alpha = \sup L \) exists in \(S\), and \(\alpha = \inf B\).
+
+\paragraph{Proof:} As \(B\) is bounded below, \(L\) is non-empty.
+The set \(L\) is bounded above by any element of \(B\).
+
+Let \( \alpha \in S \: \& \: \alpha = \sup L \).
+Now, if \( \gamma < \alpha \), then \(\gamma\) is not an Upper Bound for \(L\), and hence \( \gamma \notin B \).
+It is also true that \( \alpha \leq x \) for every \( x \in B \).
+Hence, \( \alpha \in L \).
+
+If \( \alpha < \beta \) then \( \beta \notin L \), since \( \alpha \) is an upper bound of \(L\).
+We have shown that \( \alpha \in \) but \(\beta \notin L\) if \( \alpha < \beta \).
+Therefore, \( \alpha \) is a lower bound for \(B\) and \(\beta\) is not.
+This implies that \( \alpha = \inf B \).
 \end{document}

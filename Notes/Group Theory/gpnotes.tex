@@ -130,13 +130,9 @@ Then, \(G = \{e, g, g^2, \ldots, g^{n-1}\}\).
     This implies: \(g^{a-b} = 1\).
     \[ \therefore \exists \: n := \min{ \left\{m \in \mathbb{N} \: \vline \: g^m = 1\right\} } \]
 
-    \item If \(z \in \mathbb{Z}\): \(g^z = 1 \implies n \: \vline \: z \).
-    \paragraph{Proof:} Let \(z = qn + r\), where \(0 \leq r < n\).
-    \[ g^z = g^{qn+r} = g^{qn} \star g^r = 1 \star g^r = g^r \]
-    If \(r\) is such that \(g^r = 1\), then \(r = 0\).
-    Hence, \(n \: \vline \: z\).
-    \item For \(i,j,k \in \left\{1,2,3,\dots,n-1\right\}\): \(g^i \star g^j = g^k \implies i+j \equiv k \pmod{n}\).
+    \item 
 \end{enumerate}
+
 
 \subsection{Sub-groups}
 Consider a group \( \left(G, \star \right) \).
@@ -148,7 +144,40 @@ A few properties of subgroups:
     \item \textbf{Identity:} The identity element of \(G\) is also the identity element of \(H\).
     \item \textbf{Inverse:} If \(x \in H\), then \(x^{-1} \in H\).
 \end{enumerate}
-Every group has at least two subgroups: the trivial subgroups \(U = \{e\}\) and the group itself \(G\).
-We abuse notation and simply write \(U = 1\).
 
+\subsubsection{Minimal and Maximal Subgroups}
+The Minimal subgroup \(U \neq 1\) is known as a minimal subgroup of group \(G\) if no other non-trivial subgroup of \(G\) is contained in \(U\).
+
+The Maximal subgroup \(U \neq G\) is known as the maximal subgroup of group \(G\) if \(U\) is not contained in any other subgroup of \(G\).
+
+\subsubsection{Theorem}
+Let \(A\) and \(B\) be subgroups of \(G\).
+Then \(AB\) is a subgroup of \(G\) if and only if \(AB=BA\).
+
+\paragraph{Proof:} From \( AB \leq G \) we get:
+\[ \left(AB \right) = \left(AB\right)^{-1} = B^{-1} A^{-1} = BA \]
+If \(BA = AB\):
+\[\left(AB\right) \left(AB\right) = A\left(BA\right) B = A\left(AB\right)B = AABB = AB \]
+and
+\[ \left(AB\right)^{-1} = B^{-1} A^{-1} = BA = AB\] 
+Therefore, \(AB \leq G\)
+
+\subsubsection{Theorem}
+Let \(A\) and \(B\) be finite subgroups of \(G\).
+Then, \[ \left| AB \right| = \frac{ \left| A \right| \left| B \right|}{\left| A \cap B \right|} \]
+
+\paragraph{Proof:} If we consider an equivalence relation on the Cartesian Product \( A \times B \):
+\[ \left( a_1, b_1 \right) \sim \left( a_2, b_2 \right) \Leftrightarrow a_1 b_1 = a_2 b_2 \]
+Then \(\left|AB\right|\) is the number of equivalence classes in \(A \times B\).
+Let \( \left(a_1, b_1\right) \in A \times B \).
+The equivalence class:
+\[ \{ \left(a_2, b_2\right) \: \vline \: a_1 b_1 = a_2 b_2 \} \]
+which contains exactly \(\left|A \cap B\right|\) elements:
+\begin{align*}
+    a_2 b_2 = a_1 b_1 &\Leftrightarrow a_1^{-1} a_2 = b_1 b_2^{-1} \\
+    &\Leftrightarrow a_2 = a_1 d \text{ and } b_2 = d b_1 \text{ for some } d \in A \cap B
+\end{align*} 
+
+\subsection{Cosets}
+\LaTeX
 \end{document}
