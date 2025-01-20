@@ -10,8 +10,8 @@
 \newcommand{\ev}{\evdel}
 
 \makeatletter
-\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
-\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\patchcmd{\makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
 \makeatother
 
 \predate{}
@@ -211,5 +211,11 @@ The variance of the Binomial Distribution is:
 Finally, another important property of the Binomial Distribution is the fractional width of the distribution, \(\sigma_k/\ev{k}\).
 \[ \frac{\sigma_k}{\ev{k}} = \sqrt{ \frac{1-p}{np} } \]
 As the number of trials increases, the fractional width of the distribution decreases making it narrower about the mean.
+
+\section{Temperature and Boltzmann Constant}
+\subsection{Thermal Equilibrium}
+Consider two bodies, one which is "hot" and another which is "cold".
+As heat is "thermal energy in transit", and given that the system is left alone, heat will flow from the "hot" body to the "cold" body.
+
 
 \end{document}
