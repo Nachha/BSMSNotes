@@ -179,5 +179,27 @@ which contains exactly \(\left|A \cap B\right|\) elements:
 \end{align*} 
 
 \subsection{Cosets}
-\LaTeX
+Let \(\left( G, \star \right) \) be a group.
+Consider \(H\) be a subgroup of \(G\) and \(a \in G\).
+The subset \(aH = \{ah \: \vline \: h \in H\}\) is known as the left coset of \(H\) containing \(a\).
+Similarly, the subset \( Ha = \{ah \: \vline \: h \in H\} \) is known as the right coset of \(H\) containing \(a\).
+
+\subsubsection{Properties of Cosets}
+\begin{enumerate}
+	\item The application \(Hx \rightarrow \left(Hx \right)^{-1} = x^{-1} H \) defines a bijective relation from the set of Right Cosets of \(H\) to the set of Left Cosets of \(H\).
+	\item If the set of Right Cosets of \(H\) in \(G\) is finite, then the number of Right Cosets of \(H\) in \(G\) is called the inedex of \(H\) in \(G\).
+	\item One of the cosets is the subgroup \(H\) itself. \(eH = He = H\), where \(e\) is the identity element of the group \(G\).
+	\item For all \(x \in G \), as \( x = ex \in Hx \), the right cosets of \(H\) cover the set \(G\).
+	\item For \(x,y \in G \),
+		\[ Hx = Hy \Leftrightarrow yx^{-1} \in H \Leftrightarrow y \in Hx \]
+		Hence, any two right cosets are either disjoint or equal.
+\end{enumerate}
+
+\subsubsection{Lagrange's Theorem}
+Let \(H\) be a subgroup of the finite group \(G\).
+Then,
+\[\left|G\right| = \left|H\right|\left|G:H\right| \]
+i.e., \(|H|\) and \(|G:H|\) are divisors of \(H\).
+
+
 \end{document}
