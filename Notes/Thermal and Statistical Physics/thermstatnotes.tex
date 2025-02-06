@@ -225,6 +225,70 @@ This process is irreversible, i.e., the heat transfer from the "hot" body to the
 The principle of thermometers is based on the Zeroth Law.
 
 \subsection{Microstates and Macrostates}
+Consider any system of particles, no matter how large.
+We know that the system can be described by QM, by a way of the parameters of the particles.
+The wave function of the system would be, \(\phi(q_1, q_2, \dots, q_n)\), which is a function of some \(n\) many coordinates which are used to characterize the system.
+Hence, the system can be described by a set of \(n\) coordinates, which is known as the microstate of the system.
+
+\subsubsection{Phase Space}
+Consider a simple system with a single particle moving on a straight line.
+By the above logic, we can describe the system by the position \(x\) and momentum \(p_x\) of the particle.
+Hence, the wave function of the above system is \(\phi(x, p_x)\).
+By this definition, these are equivalent to specifying the system's microstate as a specific point in a two-dimensional space.
+This is known as the phase space of the system.
+
+By Heisenberg Uncertainty Principle, we know that the position and momentum of a particle cannot be measured simultaneously with arbitrary precision.
+Given that the uncertainty in \(x\) is \(\delta x\) and the uncertainty in \(p_x\), then in the phase space, the microstate will fill a cell of area \( \delta x \delta p_x\).
+Let this area be a certain value, \( \delta x \delta p_x = h_0\).
+This has a constant with dimension of angular momentum.
+
+Now, if we generalize this to a system with \(n\) particles, then the phase space of the system will be \(2n\) dimensional.
+\(n\) coordinates corresponding to the position of the particles, and \(n\) coordinates corresponding to the momentum of the particles.
+Once again, this phase space will be divided into cells of volume \(h_0^n\).
+microstate 
+\subsubsection{Macrostate}
+While the microstate of a system is a specific point/cell in the phase state, multiple microstates can have the same or very similar properties like energy, temperature, etc.
+These sets of measurements, and corresponding properties of the the system represent the macrostate of the system.
+The macrostate of a system may map to multiple microstates, and without further experimentation/examination, one cannot determine the exact microstate of the system.
+
+\subsection{Statistical Definition of Temperature}
+Consider the following setup such that the two bodies each with energy \(E_1\) and \(E_2\).
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw[thick] (0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle;
+        \draw[thick] (0+4,0) -- (2+4,0) -- (2+4,2) -- (0+4,2) -- cycle;
+        \filldraw[fill=black, draw=black] (2,1-0.05) -- (2,1+0.05) -- (2+2,1+0.05) -- (2+2,1-0.05) -- cycle;
+        \node[anchor=south] at (1,1) {\(E_1\)};
+        \node[anchor=south] at (5,1) {\(E_2\)};
+        \node[anchor=north] at (1,1) {\(\Omega_1(E_1)\)};
+        \node[anchor=north] at (5,1) {\(\Omega_2(E_2)\)};
+        \node[anchor=north] at (1,0) {System \(1\)};
+        \node[anchor=north] at (5,0) {System \(2\)};
+    \end{tikzpicture}
+    \caption{\(\Omega_i(E_j)\) is the set of microstates of the system \(i\) with energy \(E_j\)}
+\end{figure}
+Now, let System \(1\) be in any one of \( \Omega_1(E_1)\) microstates and System \(2\) be in any one of \( \Omega_2(E_2)\) microstates.
+Thus, the entire system can be in any one of the \( \Omega_1(E_1) \times \Omega_2(E_2)\) microstates.
+
+These two systems are isolated from the surroundings, hence the total energy of the system is \(E = E_1 + E_2\).
+The number of microstates of the system with energy \(E = \left| \Omega_1(E_1) \times \Omega_2(E_2) \right| \).
+After a long time the system will attain thermal equilibrium, and the values \(E_1\) and \(E_2\) will be fixed.
+Now, we make a statement as follows:
+\begin{quote}
+    The system will be in the macrostate with the largest number of microstates accessible to it.
+\end{quote}
+This is based on the following assumptions:
+\begin{enumerate}
+    \item Each microstate is equally likely to be occupied.
+    \item The system's internal dynamics are such that it will explore all possible microstates.
+    \item Given enough time, the system will explore all possible microstates and spend an equal amount of time in each one.
+\end{enumerate}
+Now, 
+
+
+
+
 
 
 
