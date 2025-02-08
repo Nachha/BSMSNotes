@@ -284,12 +284,31 @@ This is based on the following assumptions:
     \item The system's internal dynamics are such that it will explore all possible microstates.
     \item Given enough time, the system will explore all possible microstates and spend an equal amount of time in each one.
 \end{enumerate}
-Now, 
+Now, the most probable macrostate is the one with the largest number of microstates.
+This is the maxima of \(\Omega_1(E_1) \Omega_2(E_2)\).
+Upon differentiating this with respect to \(E_1\):
+\begin{align*}
+    0 &= \frac{d}{dE_1} \left| \Omega_1(E_1) \Omega_2(E_2) \right| \\
+    &= \left|\Omega_2(E_2)\right| \frac{d\left|\Omega_1(E_1)\right|}{dE_1} + \left|\Omega_1(E_1)\right| \frac{d\left|\Omega_2(E_2)\right|}{dE_2} \frac{dE_2}{dE_1} \\
+\end{align*}
+As the total energy of the system is constant, \(dE_1 = -dE_2\).
+\begin{align*}
+    0 &= \left|\Omega_2(E_2)\right| \frac{d\left|\Omega_1(E_1)\right|}{dE_1} - \left|\Omega_1(E_1)\right| \frac{d\left|\Omega_2(E_2)\right|}{dE_2} \\
+    0 &= \frac{d\ln\left|\Omega_1(E_1)\right|}{dE_1} - \frac{d\ln\left|\Omega_2(E_2)\right|}{dE_2} \\
+\end{align*}
+This states is the one where the number of microstates are maximum, and is thus called the state such that their "temperature is identical"
+Hence, this is used to define temperature \(T\) as:
+\[ \frac{1}{k_b T} = \frac{d\ln\left|\Omega(E)\right|}{dE} \]
+where \(k_b\) is the Boltzmann constant.
 
-
-
-
-
+\chapter{Kinetic Theory of Gases}
+\section{Maxwell-Boltzmann Distribution}
+\paragraph{Assumptions}
+\begin{enumerate}
+    \item The molecular size of the gas is negligible compared to the intermolecular distance.
+    \item Molecules can exchange energy with each other by means of collisions.
+    \item All collisions are elastic.
+\end{enumerate}
 
 
 \end{document}

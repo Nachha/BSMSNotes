@@ -229,7 +229,15 @@ If \( a_1, a_2, \dots, a_n \) and \( b_1, b_2, \dots, b_n \) are complex numbers
 \paragraph{Proof:} Consider \(A = \sum |a_j|^2 \), \(B = \sum |b_j|^2\) and \(\sum a_j \bar{b_j}\).
 Now, if either \(A=0\) or \(B=0\), then all of \(a_j=0\) or \(b_j=0\) respectively.
 Therefore, assume that \(A,B>0\).
-
-
+\begin{align*}
+	\sum \left| Ba_j - Cb_j \right|^2 & = \sum \left( Ba_j - Cb_j \right)\left( B \bar{a_j} - \bar{Cb_j} \right)                                                   \\
+	                                  & = B^2 \sum \left|a_j\right| - B\bar{C} \sum a_j \bar{b_j} - BC \sum \bar{a_j} b_j + \left|C\right|^2 \sum \left|b_j\right| \\
+	                                  & = B^2 A - B\left|C\right|^2
+	                                  & = B\left(AB - \left|C\right|^2\right)
+\end{align*}
+As every term in the summation is non-negative:
+\[B\left(AB - |C|^2\right) \geq 0\]
+Finally, as \(B>0\):
+\[ AB \geq |C|^2\]
 
 \end{document}

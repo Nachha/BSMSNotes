@@ -5,45 +5,45 @@
 \begin{document}
 
 \begin{center}
-    \begin{LARGE}
-        \textbf{Introduction to Electromagnetism}
-    \end{LARGE}
+	\begin{LARGE}
+		\textbf{Introduction to Electromagnetism}
+	\end{LARGE}
 \end{center}
 
 \section{Coulomb's Law}
 \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \draw[->] [black] (0,0) -- (0, 5);
-        \draw[->] [black] (0,0) -- (5, 0);
-        \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
-        \draw[->] [black] (2,2) -- (4,4) node[anchor=south west] {$Q$};
-        \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
-        \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
-        \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R} - \vec{R_1}$ = $\vec{r_2}$};
-        \draw[->] [black] (3,3.5) -- (4,4);
-    \end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\draw[->] [black] (0,0) -- (0, 5);
+		\draw[->] [black] (0,0) -- (5, 0);
+		\draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
+		\draw[->] [black] (2,2) -- (4,4) node[anchor=south west] {$Q$};
+		\draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
+		\draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
+		\draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R} - \vec{R_1}$ = $\vec{r_2}$};
+		\draw[->] [black] (3,3.5) -- (4,4);
+	\end{tikzpicture}
 \end{figure}
 the force on $Q$ due to $q_1$ is given by:
 \[\vec{F_1} = \frac{1}{4\pi\epsilon_0} \frac{q_1Q}{r_1^2} \hat{r_1}\]
 
-If there was another charge $q_2$ at $\vec{r_2}$: 
+If there was another charge $q_2$ at $\vec{r_2}$:
 \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \draw[->] [black] (0,0) -- (0, 5);
-        \draw[->] [black] (0,0) -- (5, 0);
-        \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
-        \draw[->] [black] (2,2) -- (4,4) node[anchor=south west] {$Q$};
-        \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
-        \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
-        \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R_1} - \vec{R}$ = $\vec{r_1}$};
-        \draw[->] [black] (3,3.5) -- (4,4);
-        \draw[black] (0, 0) -- (2,0.75) node[anchor=north west] {$\vec{R_2}$};
-        \draw[black, ->] (2,0.75) -- (4,1.5) node[anchor=north west] {$q_2$};
-        \draw[black] (4,1.5) -- (4,2.75) node[anchor=west] {$\vec{R_2} - \vec{R}$ = $\vec{r_2}$};
-        \draw[->] [black] (4,2.75) -- (4,4);
-    \end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\draw[->] [black] (0,0) -- (0, 5);
+		\draw[->] [black] (0,0) -- (5, 0);
+		\draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
+		\draw[->] [black] (2,2) -- (4,4) node[anchor=south west] {$Q$};
+		\draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
+		\draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
+		\draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R_1} - \vec{R}$ = $\vec{r_1}$};
+		\draw[->] [black] (3,3.5) -- (4,4);
+		\draw[black] (0, 0) -- (2,0.75) node[anchor=north west] {$\vec{R_2}$};
+		\draw[black, ->] (2,0.75) -- (4,1.5) node[anchor=north west] {$q_2$};
+		\draw[black] (4,1.5) -- (4,2.75) node[anchor=west] {$\vec{R_2} - \vec{R}$ = $\vec{r_2}$};
+		\draw[->] [black] (4,2.75) -- (4,4);
+	\end{tikzpicture}
 \end{figure}
 The force on $Q$ due to $q_2$ is given by:
 \[\vec{F_2} = \frac{1}{4\pi\epsilon_0} \frac{q_2Q}{r_2^2} \hat{r_2}\]
@@ -59,77 +59,77 @@ If there were $n$ charges, the net force on $Q$ would be:
 where $\sum_{i=1}^n \frac{1}{4\pi\epsilon_0} \frac{q_i}{r_i^2} \hat{r_i}$ is the electric field $\vec{E}$ at $\vec{R}$ due to the $n$ charges.
 
 \paragraph{Field}
-A value, vector or tensor, that is defined for every point in space and time. \\[1pt] 
+A value, vector or tensor, that is defined for every point in space and time. \\[1pt]
 
 \section{Vector Calculus}
 
-\paragraph{Vectors} 
+\paragraph{Vectors}
 A vector is a quantity that is said to transform like a displacement. \\[1pt]
 
 \subsection{Operations on Vectors}
 \begin{itemize}
-    \item \textbf{Addition}: $\vec{A} + \vec{B} = \vec{C}$
-    \begin{figure}[H]
-        \begin{tikzpicture}
-            \draw[black] (0,0) -- (1,1) node[anchor=south east] {$\vec{A}$};
-            \draw[black, ->] (1,1) -- (2,2);
-            \draw[black] (2,2) -- (3,2) node[anchor=south] {$\vec{B}$};
-            \draw[black, ->] (3,2) -- (4,2);
-            \draw[black] (0,0) -- (2,1) node[at end, anchor=north ] {$\vec{C}$};
-            \draw[black, ->] (2,1) -- (4,2);
-        \end{tikzpicture}
-    \end{figure}
+	\item \textbf{Addition}: $\vec{A} + \vec{B} = \vec{C}$
+	      \begin{figure}[H]
+		      \begin{tikzpicture}
+			      \draw[black] (0,0) -- (1,1) node[anchor=south east] {$\vec{A}$};
+			      \draw[black, ->] (1,1) -- (2,2);
+			      \draw[black] (2,2) -- (3,2) node[anchor=south] {$\vec{B}$};
+			      \draw[black, ->] (3,2) -- (4,2);
+			      \draw[black] (0,0) -- (2,1) node[at end, anchor=north ] {$\vec{C}$};
+			      \draw[black, ->] (2,1) -- (4,2);
+		      \end{tikzpicture}
+	      \end{figure}
 
-    \item \textbf{Subtraction:} $\vec{A} - \vec{B} = \vec{C}$
-    \begin{figure}[H]    
-        \begin{tikzpicture}
-            \draw[black] (0,0) -- (1,1) node[anchor=south east] {$\vec{C}$};
-            \draw[black, ->] (1,1) -- (2,2);
-            \draw[black, ->] (4,2) -- (6,2) node[anchor=south] {$\vec{B}$};
-            \draw[black, <-] (2,2) -- (3,2) node[anchor=south] {$\vec{-B}$};
-            \draw[black] (3,2) -- (4,2);
-            \draw[black] (0,0) -- (2,1) node[at end, anchor=north ] {$\vec{A}$};
-            \draw[black, ->] (2,1) -- (4,2);
-        \end{tikzpicture}
-    \end{figure}
+	\item \textbf{Subtraction:} $\vec{A} - \vec{B} = \vec{C}$
+	      \begin{figure}[H]
+		      \begin{tikzpicture}
+			      \draw[black] (0,0) -- (1,1) node[anchor=south east] {$\vec{C}$};
+			      \draw[black, ->] (1,1) -- (2,2);
+			      \draw[black, ->] (4,2) -- (6,2) node[anchor=south] {$\vec{B}$};
+			      \draw[black, <-] (2,2) -- (3,2) node[anchor=south] {$\vec{-B}$};
+			      \draw[black] (3,2) -- (4,2);
+			      \draw[black] (0,0) -- (2,1) node[at end, anchor=north ] {$\vec{A}$};
+			      \draw[black, ->] (2,1) -- (4,2);
+		      \end{tikzpicture}
+	      \end{figure}
 
-    \item \textbf{Multiplication by a scalar: } $c\vec{A} = \vec{C}$
-    \item \textbf{Dot Product: } $\vec{A}.\vec{B} = AB\cos(\theta)$.
-        Dot product is a scalar. It is commutative and distributive.
-    \item \textbf{Cross Product: } $\vec{A} \times \vec{B} = AB\sin(\theta) \hat{n}$
-        where $\hat{n}$ is the unit vector perpendicular to the plane containing $\vec{A}$ and $\vec{B}$.
-    \end{itemize}
+	\item \textbf{Multiplication by a scalar: } $c\vec{A} = \vec{C}$
+	\item \textbf{Dot Product: } $\vec{A}.\vec{B} = AB\cos(\theta)$.
+	      Dot product is a scalar. It is commutative and distributive.
+	\item \textbf{Cross Product: } $\vec{A} \times \vec{B} = AB\sin(\theta) \hat{n}$
+	      where $\hat{n}$ is the unit vector perpendicular to the plane containing $\vec{A}$ and $\vec{B}$.
+\end{itemize}
 
-        Cross product is a vector. It is anti-commutative and distributive.
-    \subsection{Component form of a Vector: }
-    A vector $\vec{A}$ can be written as:
-    \[\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}\]
-    where $\hat{i}, \hat{j}, \hat{k}$ are unit vectors along the $x, y, z$ axes respectively.
+Cross product is a vector. It is anti-commutative and distributive.
+\subsection{Component form of a Vector: }
+A vector $\vec{A}$ can be written as:
+\[\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}\]
+where $\hat{i}, \hat{j}, \hat{k}$ are unit vectors along the $x, y, z$ axes respectively.
 
-    Given that $\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}$ and $\vec{B} = B_x \hat{i} + B_y \hat{j} + B_z \hat{k}$, we can perform the following operations:
-    \begin{itemize}
-        \item \textbf{Addition (and Subtraction):} $\vec{A} + \vec{B} = (A_x + B_x) \hat{i} + (A_y + B_y) \hat{j} + (A_z + B_z) \hat{k}$
-        \item \textbf{Multiplication by a scalar: } $c\vec{A} = cA_x \hat{i} + cA_y \hat{j} + cA_z \hat{k}$, where $c$ is a scalar.
-        \item \textbf{Dot Product: } $\vec{A}.\vec{B} = A_xB_x + A_yB_y + A_zB_z$
-        \item \textbf{Modulus: } $|\vec{A}| = \sqrt{A_x^2 + A_y^2 + A_z^2}$
-        \item \textbf{Cross Product: } $\vec{A} \times \vec{B} = (A_yB_z - A_zB_y) \hat{i} + (A_zB_x - A_xB_z) \hat{j} + (A_xB_y - A_yB_x) \hat{k}$
-            This can also be written in a determinant form:
-            \[\vec{A} \times \vec{B} = \begin{vmatrix}
-                \hat{i} & \hat{j} & \hat{k} \\
-                A_x & A_y & A_z \\
-                B_x & B_y & B_z
-            \end{vmatrix}\]
-    \end{itemize}
-    \subsection{Triple Product: }
-    \paragraph*{Scalar Triple Product: } $\vec{A}.(\vec{B} \times \vec{C}) = \vec{B}.(\vec{C} \times \vec{A}) = \vec{C}.(\vec{A} \times \vec{B})$
-    Geometrically the scalar triple product is the volume of the parallelepiped formed by the three vectors.
-    \paragraph*{Vector Triple Product: } $\vec{A} \times (\vec{B} \times \vec{C}) = \vec{B}(\vec{A}.\vec{C}) - \vec{C}(\vec{A}.\vec{B})$
+Given that $\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}$ and $\vec{B} = B_x \hat{i} + B_y \hat{j} + B_z \hat{k}$, we can perform the following operations:
+\begin{itemize}
+	\item \textbf{Addition (and Subtraction):} $\vec{A} + \vec{B} = (A_x + B_x) \hat{i} + (A_y + B_y) \hat{j} + (A_z + B_z) \hat{k}$
+	\item \textbf{Multiplication by a scalar: } $c\vec{A} = cA_x \hat{i} + cA_y \hat{j} + cA_z \hat{k}$, where $c$ is a scalar.
+	\item \textbf{Dot Product: } $\vec{A}.\vec{B} = A_xB_x + A_yB_y + A_zB_z$
+	\item \textbf{Modulus: } $|\vec{A}| = \sqrt{A_x^2 + A_y^2 + A_z^2}$
+	\item \textbf{Cross Product: } $\vec{A} \times \vec{B} = (A_yB_z - A_zB_y) \hat{i} + (A_zB_x - A_xB_z) \hat{j} + (A_xB_y - A_yB_x) \hat{k}$
+	      This can also be written in a determinant form:
+	      \[\vec{A} \times \vec{B} = \begin{vmatrix}
+			      \hat{i} & \hat{j} & \hat{k} \\
+			      A_x     & A_y     & A_z     \\
+			      B_x     & B_y     & B_z
+		      \end{vmatrix}\]
+\end{itemize}
+\subsection{Triple Product: }
+\paragraph*{Scalar Triple Product: } $\vec{A}.(\vec{B} \times \vec{C}) = \vec{B}.(\vec{C} \times \vec{A}) = \vec{C}.(\vec{A} \times \vec{B})$
+Geometrically the scalar triple product is the volume of the parallelepiped formed by the three vectors.
+\paragraph*{Vector Triple Product: } $\vec{A} \times (\vec{B} \times \vec{C}) = \vec{B}(\vec{A}.\vec{C}) - \vec{C}(\vec{A}.\vec{B})$
 
 \section{Differential Calculus}
 \subsection{'Ordinary' Derivative: } $\frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
 Geometrically, the derivative is the slope of the tangent to the curve at a point.
 
-\subsection{Gradient:} Consider a scalar, T, which exists at every point in space. 
+\subsection{Gradient:} Consider a scalar, T, which exists at every point in space.
 \[d T = \left(\frac{\partial T}{\partial x}\right)dx + \left(\frac{\partial T}{\partial y}\right)dy + \left(\frac{\partial T}{\partial z}\right)dz\]
 This can the written in the dot product form as:
 \[d T = \left(\frac{\partial T}{\partial x}\hat{x} + \frac{\partial T}{\partial y}\hat{y} + \frac{\partial T}{\partial z}\hat{z} \right) \cdot (dx \hat{x} + dy \hat{y} + dz \hat{z} )\]
@@ -147,30 +147,30 @@ It behaves like a dot product, and is a scalar.
 
 \subsection{Curl: } Consider a vector, $\vec{A}$, which exists at every point in space. The curl of $\vec{A}$ is defined as:
 \[\nabla \times \vec{A}  = \begin{vmatrix}
-    \hat{x} & \hat{y} & \hat{z} \\
-    \partial/\partial x & \partial/\partial y & \partial/\partial z \\    
-    A_x & A_y & A_z 
-\end{vmatrix}\]
+		\hat{x}             & \hat{y}             & \hat{z}             \\
+		\partial/\partial x & \partial/\partial y & \partial/\partial z \\
+		A_x                 & A_y                 & A_z
+	\end{vmatrix}\]
 
 It behaves like a cross product, and is a vector.
 
 \subsection{Second Derivatives:}
 \begin{itemize}
-    \item \textbf{Divergence of a Gradient: } $\nabla \cdot \left(\nabla T\right)$
-    \[ \nabla \cdot \left(\nabla T\right)  = \left(\hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}\right) \cdot \left(\frac{\partial T}{\partial x} \hat{x} + \frac{\partial T}{\partial y} \hat{y} + \frac{\partial T}{\partial z} \hat{z}\right)\]
-    \[ \nabla \cdot \left(\nabla T\right)  = \left(\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2}\right)\]
-    It is denoted by $\nabla^2 T$ and is called the Laplacian of $T$.
-    \paragraph*{Note:} Laplacian of a vector is theoretically not defined. But when $\nabla^2 \vec{A}$ is written, it means:
-    \[\nabla^2 \vec{A} = \left(\nabla^2 A_x\right) \hat{x} + \left(\nabla^2 A_y\right) \hat{y} + \left(\nabla^2 A_z\right) \hat{z}\]
-    \item \textbf{Curl of a Gradient: } $\nabla \times \left(\nabla T\right)$ 
-    \[\nabla \times \left(\nabla T\right) = 0\]
-    Curl of a gradient is always zero.
-    \item \textbf{Gradient of Divergence: } $\nabla \left(\nabla \cdot \vec{A}\right)$
-    \item \textbf{Divergence of Curl: } $\nabla \cdot \left(\nabla \times \vec{A}\right)$
-    \[\nabla \cdot \left(\nabla \times \vec{A}\right) = 0\]
-    Divergence of a Curl is always zero.
-    \item \textbf{Curl of Curl: } $\nabla \times \left(\nabla \times \vec{A}\right)$
-    \[\nabla \times \left(\nabla \times \vec{A}\right) = \nabla \left(\nabla \cdot \vec{A}\right) - \nabla^2 \vec{A}\]
+	\item \textbf{Divergence of a Gradient: } $\nabla \cdot \left(\nabla T\right)$
+	      \[ \nabla \cdot \left(\nabla T\right)  = \left(\hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}\right) \cdot \left(\frac{\partial T}{\partial x} \hat{x} + \frac{\partial T}{\partial y} \hat{y} + \frac{\partial T}{\partial z} \hat{z}\right)\]
+	      \[ \nabla \cdot \left(\nabla T\right)  = \left(\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2}\right)\]
+	      It is denoted by $\nabla^2 T$ and is called the Laplacian of $T$.
+	      \paragraph*{Note:} Laplacian of a vector is theoretically not defined. But when $\nabla^2 \vec{A}$ is written, it means:
+	      \[\nabla^2 \vec{A} = \left(\nabla^2 A_x\right) \hat{x} + \left(\nabla^2 A_y\right) \hat{y} + \left(\nabla^2 A_z\right) \hat{z}\]
+	\item \textbf{Curl of a Gradient: } $\nabla \times \left(\nabla T\right)$
+	      \[\nabla \times \left(\nabla T\right) = 0\]
+	      Curl of a gradient is always zero.
+	\item \textbf{Gradient of Divergence: } $\nabla \left(\nabla \cdot \vec{A}\right)$
+	\item \textbf{Divergence of Curl: } $\nabla \cdot \left(\nabla \times \vec{A}\right)$
+	      \[\nabla \cdot \left(\nabla \times \vec{A}\right) = 0\]
+	      Divergence of a Curl is always zero.
+	\item \textbf{Curl of Curl: } $\nabla \times \left(\nabla \times \vec{A}\right)$
+	      \[\nabla \times \left(\nabla \times \vec{A}\right) = \nabla \left(\nabla \cdot \vec{A}\right) - \nabla^2 \vec{A}\]
 \end{itemize}
 
 \section{Integral Calculus}
@@ -210,22 +210,22 @@ If $f(x)$ is a continuous function and $F(x)$ is the anti-derivative of $f(x)$, 
 \\
 
 \begin{itemize}
-    \item \textbf{Fundamental Theorem for Gradients: }
+	\item \textbf{Fundamental Theorem for Gradients: }
 
-Consider a scalar field $T$ and a curve $C$, from $\vec{a}$ to $\vec{b}$, then:
-\[\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = T(\vec{b}) - T(\vec{a})\]
-If the curve is a closed curve, then:
-\[\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = 0\]
+	      Consider a scalar field $T$ and a curve $C$, from $\vec{a}$ to $\vec{b}$, then:
+	      \[\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = T(\vec{b}) - T(\vec{a})\]
+	      If the curve is a closed curve, then:
+	      \[\int_{\vec{a}}^{\vec{b}} \nabla T \cdot d\vec{l} = 0\]
 
-\item \textbf{Fundamental Theorem for Divergence: } a.k.a Gauss' Theorem, Green's Theorem or divergence theorem.
-Consider a vector field $\vec{A}$ and a volume $V$, then:
-\[\int_{V}\left(\vec{\nabla} \cdot \vec{v}\right) = \oint \vec{v}.\vec{ds}\]
-where $ds$  is the differential area vector of the surface $S$.
+	\item \textbf{Fundamental Theorem for Divergence: } a.k.a Gauss' Theorem, Green's Theorem or divergence theorem.
+	      Consider a vector field $\vec{A}$ and a volume $V$, then:
+	      \[\int_{V}\left(\vec{\nabla} \cdot \vec{v}\right) = \oint \vec{v}.\vec{ds}\]
+	      where $ds$  is the differential area vector of the surface $S$.
 
-\item \textbf{Fundamental Theorem for Curl: } a.k.a Stokes' Theorem.
-Consider a vector field $\vec{A}$ and a surface $S$, then:
-\[\int_{S}\left(\vec{\nabla} \times \vec{v}\right) \vec{da}= \oint \vec{v}.\vec{dl}\]
-where $dl$  is the differential displacement vector along the boundary curve $C$ of the surface $S$.
+	\item \textbf{Fundamental Theorem for Curl: } a.k.a Stokes' Theorem.
+	      Consider a vector field $\vec{A}$ and a surface $S$, then:
+	      \[\int_{S}\left(\vec{\nabla} \times \vec{v}\right) \vec{da}= \oint \vec{v}.\vec{dl}\]
+	      where $dl$  is the differential displacement vector along the boundary curve $C$ of the surface $S$.
 
 \end{itemize}
 
@@ -233,9 +233,9 @@ where $dl$  is the differential displacement vector along the boundary curve $C$
 \subsection{One-Dimensional Dirac Delta Function: }
 It is a function that is zero everywhere except at $x = 0$ and has an integral of 1. It is defined as:
 \[\delta(x) = \begin{cases}
-    \infty & x = 0 \\
-    0 & x \neq 0
-\end{cases}\]
+		\infty & x = 0    \\
+		0      & x \neq 0
+	\end{cases}\]
 and
 \[\int_{-\infty}^{\infty} \delta(x) dx = 1\]
 Mathematically, it is not a function, i.e., don't tell your maths profs that its a function.
@@ -244,9 +244,9 @@ Mathematically, it is not a function, i.e., don't tell your maths profs that its
 It is a function that is zero everywhere except at $\vec{r} = \vec{r_0}$ and has a volume integral of 1. It is defined as:
 
 \[\delta^3(\vec{r}) = \begin{cases}
-    \infty & (x,y,z) = (0,0,0) \\
-    0 & \text{everywhere else}
-\end{cases}\]
+		\infty & (x,y,z) = (0,0,0)      \\
+		0      & \text{everywhere else}
+	\end{cases}\]
 \[\delta^3(\vec{r}) = \delta(x)\delta(y)\delta(z)\]
 and
 \[\int_{\text{all space}} \delta^3\left(\vec{r}\right) d\tau = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\delta(x)\delta(y)\delta(z) dx dy dz\]
@@ -257,38 +257,38 @@ Generalizing the function:
 \section{Electrostatics}
 \subsection{Electric Field}
 \begin{center}
-    \begin{tikzpicture}
-        \draw[->] [black] (0,0) -- (0, 5);
-        \draw[->] [black] (0,0) -- (5, 0);
-        \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
-        \draw[->] [black] (2,2) -- (4,4);
-        \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
-        \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
-        \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R} - \vec{R_1}$ = $\vec{r_1}$};
-        \draw[->] [black] (3,3.5) -- (4,4);
-    \end{tikzpicture}
+	\begin{tikzpicture}
+		\draw[->] [black] (0,0) -- (0, 5);
+		\draw[->] [black] (0,0) -- (5, 0);
+		\draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
+		\draw[->] [black] (2,2) -- (4,4);
+		\draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
+		\draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
+		\draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R} - \vec{R_1}$ = $\vec{r_1}$};
+		\draw[->] [black] (3,3.5) -- (4,4);
+	\end{tikzpicture}
 \end{center}
 The Electric Field at $\vec{R}$ due to $q_1$ is given by:
 \[\vec{E} = \frac{1}{4\pi\epsilon_0} \frac{q_1}{r_1^2} \hat{r_1}\]
 
 If there is another charge present:
 \begin{figure}[H]
-\centering
-    \begin{tikzpicture}
-    \draw[->] [black] (0,0) -- (0, 5);
-    \draw[->] [black] (0,0) -- (5, 0);
-    \draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
-    \draw[->] [black] (2,2) -- (4,4);
-    \draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
-    \draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
-    \draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R_1} - \vec{R}$ = $\vec{r_1}$};
-    \draw[->] [black] (3,3.5) -- (4,4);
-    \draw[black] (0, 0) -- (2,0.75) node[anchor=north west] {$\vec{R_2}$};
-    \draw[black, ->] (2,0.75) -- (4,1.5) node[anchor=north west] {$q_2$};
-    \draw[black] (4,1.5) -- (4,2.75) node[anchor=west] {$\vec{R_2} - \vec{R}$ = $\vec{r_2}$};
-    \draw[->] [black] (4,2.75) -- (4,4);
+	\centering
+	\begin{tikzpicture}
+		\draw[->] [black] (0,0) -- (0, 5);
+		\draw[->] [black] (0,0) -- (5, 0);
+		\draw[black] (0,0) -- (2,2) node[anchor=north west] {$\vec{R}$};
+		\draw[->] [black] (2,2) -- (4,4);
+		\draw[black] (0, 0) -- (1,1.5) node[anchor=south east] {$\vec{R_1}$};
+		\draw[black, ->] (1,1.5) -- (2,3) node[anchor=south east] {$q_1$};
+		\draw[black] (2,3) -- (3,3.5) node[anchor=south east] {$\vec{R_1} - \vec{R}$ = $\vec{r_1}$};
+		\draw[->] [black] (3,3.5) -- (4,4);
+		\draw[black] (0, 0) -- (2,0.75) node[anchor=north west] {$\vec{R_2}$};
+		\draw[black, ->] (2,0.75) -- (4,1.5) node[anchor=north west] {$q_2$};
+		\draw[black] (4,1.5) -- (4,2.75) node[anchor=west] {$\vec{R_2} - \vec{R}$ = $\vec{r_2}$};
+		\draw[->] [black] (4,2.75) -- (4,4);
 
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{figure}
 \[\vec{E} = \frac{1}{4\pi\epsilon_0} \left(\frac{q_1}{r_1^2}\hat{r_1} + \frac{q_2}{r_1^2}\hat{r_2}\right)\]
 
@@ -299,29 +299,29 @@ The net electric field at $\vec{R}$ due to $n$ charges is given by:
 
 \subsubsection*{Question:}
 \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \draw[<->, black] (-2.5,0) -- (2.5,0);
-        \draw[->, black] (0,0) -- (0, 4);
-        \draw[->, black] (0,0) -- (0, 3);
-        \draw[-, black] (0,0) -- (0, 1.5) node[anchor=south west] {$\vec{z}$};
-        \draw[-, black] (0,0) -- (1,0) node[anchor=north] {$d/2$};
-        \draw[-, black] (0,0) -- (-1,0) node[anchor=north] {$d/2$};
-        \draw[->, black] (1, 0) -- (2, 0) node[anchor=south west] {$q$};
-        \draw[->, black] (-1, 0) -- (-2, 0) node[anchor=south east] {$q$};
-        \draw[-, black] (2, 0) -- (1, 1.5) node[anchor=south west] {$\vec{r_1}$};
-        \draw[-, black] (-2, 0) -- (-1, 1.5) node[anchor=south east] {$\vec{r_2}$};
-        \draw[->, black] (1, 1.5) -- (0, 3);
-        \draw[->, black] (-1, 1.5) -- (0, 3);
-    \end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\draw[<->, black] (-2.5,0) -- (2.5,0);
+		\draw[->, black] (0,0) -- (0, 4);
+		\draw[->, black] (0,0) -- (0, 3);
+		\draw[-, black] (0,0) -- (0, 1.5) node[anchor=south west] {$\vec{z}$};
+		\draw[-, black] (0,0) -- (1,0) node[anchor=north] {$d/2$};
+		\draw[-, black] (0,0) -- (-1,0) node[anchor=north] {$d/2$};
+		\draw[->, black] (1, 0) -- (2, 0) node[anchor=south west] {$q$};
+		\draw[->, black] (-1, 0) -- (-2, 0) node[anchor=south east] {$q$};
+		\draw[-, black] (2, 0) -- (1, 1.5) node[anchor=south west] {$\vec{r_1}$};
+		\draw[-, black] (-2, 0) -- (-1, 1.5) node[anchor=south east] {$\vec{r_2}$};
+		\draw[->, black] (1, 1.5) -- (0, 3);
+		\draw[->, black] (-1, 1.5) -- (0, 3);
+	\end{tikzpicture}
 \end{figure}
 Consider two charges, $q$, placed at $r = \pm \frac{d}{2}$ respectively. Find the electric field at $z$.
 
 \subsubsection*{Answer}
 \begin{align*}
-    \vec{E} &= \frac{1}{4\pi\epsilon_0} \left( \frac{q}{\left(\frac{d}{2}\right)^2 + z^2} \hat{r_1} + \frac{q}{\left(\frac{d}{2}\right)^2 + + z^2} \hat{r_2} \right)\\
-    \vec{E} &= \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2 + \frac{d^2}{4}}\right) \left(\frac{z}{\sqrt{z^2 + \frac{d^2}{4}}}\hat{z}\right)\\
-    \vec{E} &= \frac{1}{4\pi\epsilon_0} \left( \frac{2qz}{\left(z^2 + \frac{d^2}{4}\right)^{\frac{3}{2}}}\right) \hat{z}\\
+	\vec{E} & = \frac{1}{4\pi\epsilon_0} \left( \frac{q}{\left(\frac{d}{2}\right)^2 + z^2} \hat{r_1} + \frac{q}{\left(\frac{d}{2}\right)^2 + + z^2} \hat{r_2} \right) \\
+	\vec{E} & = \frac{1}{4\pi\epsilon_0} \left( \frac{2q}{z^2 + \frac{d^2}{4}}\right) \left(\frac{z}{\sqrt{z^2 + \frac{d^2}{4}}}\hat{z}\right)                        \\
+	\vec{E} & = \frac{1}{4\pi\epsilon_0} \left( \frac{2qz}{\left(z^2 + \frac{d^2}{4}\right)^{\frac{3}{2}}}\right) \hat{z}                                             \\
 \end{align*}
 Now, if $z$ is very large (but not infinity):
 
@@ -335,20 +335,20 @@ Similar methods can be used to find the electric field for any discrete charge d
 \subsubsection{Linear Charge Distribution}
 Consider a linear Charge distribution, $\lambda$ of length $l$, along the $x$ axis. The electric field at point $P$ is given by:
 \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \filldraw[ultra thick, gray] (0,-.05) rectangle (5,0.05);
-        \filldraw[ultra thick, black] (3,-.05) rectangle (3.1,0.05);
-        \node[anchor=south] at (2.9, 0.1) {$dx$};
-        \draw[->] [black] (3,0) -- (6, 5) node[anchor=south west] {$\vec{r}$};
-        \node[anchor=north] at (0,0) {+};
-        \node[anchor=north] at (1,0) {+};
-        \node[anchor=north] at (2,0) {+};
-        \node[anchor=north] at (3,0) {+};
-        \node[anchor=north] at (4,0) {+};
-        \node[anchor=north] at (5,0) {+};
-        \node[anchor=south east] at (6,5) {$P$};
-    \end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\filldraw[ultra thick, gray] (0,-.05) rectangle (5,0.05);
+		\filldraw[ultra thick, black] (3,-.05) rectangle (3.1,0.05);
+		\node[anchor=south] at (2.9, 0.1) {$dx$};
+		\draw[->] [black] (3,0) -- (6, 5) node[anchor=south west] {$\vec{r}$};
+		\node[anchor=north] at (0,0) {+};
+		\node[anchor=north] at (1,0) {+};
+		\node[anchor=north] at (2,0) {+};
+		\node[anchor=north] at (3,0) {+};
+		\node[anchor=north] at (4,0) {+};
+		\node[anchor=north] at (5,0) {+};
+		\node[anchor=south east] at (6,5) {$P$};
+	\end{tikzpicture}
 \end{figure}
 The Electric Field at point $P$ due to $dx$ is given by:
 \[d\vec{E} = \frac{1}{4\pi \epsilon_0} \frac{\lambda dx}{r^2} \hat{r}  \]
@@ -358,22 +358,22 @@ Hence, the electric field at point $P$ due to the entire linear charge distribut
 \subsubsection{Surface Charge Distribution}
 Consider a surface charge distribution, $\sigma$ of area $A$, on the $xy$ plane. The electric field at point $P$ is given by:
 \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \filldraw[gray] (-2,0,-2) -- (2,0,-2) -- (2,0,2) -- (-2,0,2) -- cycle;
-        \filldraw[black] (-1.05,0,-1.05) -- (-0.95,0,-1.05) -- (-0.95,0,-0.95) -- (-1.05,0,-0.95) -- cycle node[anchor=south east] {$dA$};
-        \draw[black, ->](-1, 0, -1) -- (3,5,3) node[anchor=south east] {$\vec{r}$};
-        \node[anchor=north] at (2,0,2) {+};
-        \node[anchor=north] at (1,0,2) {+};
-        \node[anchor=north] at (0,0,2) {+};
-        \node[anchor=north] at (-1,0,2) {+};
-        \node[anchor=north] at (-2,0,2) {+};
-        \node[anchor=north] at (2,0,-2) {+};
-        \node[anchor=north] at (2,0,-1) {+};
-        \node[anchor=north] at (2,0,0) {+};
-        \node[anchor=north] at (2,0,1) {+};
-        \node[anchor=south west] at (3,5,3) {$P$};
-    \end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\filldraw[gray] (-2,0,-2) -- (2,0,-2) -- (2,0,2) -- (-2,0,2) -- cycle;
+		\filldraw[black] (-1.05,0,-1.05) -- (-0.95,0,-1.05) -- (-0.95,0,-0.95) -- (-1.05,0,-0.95) -- cycle node[anchor=south east] {$dA$};
+		\draw[black, ->](-1, 0, -1) -- (3,5,3) node[anchor=south east] {$\vec{r}$};
+		\node[anchor=north] at (2,0,2) {+};
+		\node[anchor=north] at (1,0,2) {+};
+		\node[anchor=north] at (0,0,2) {+};
+		\node[anchor=north] at (-1,0,2) {+};
+		\node[anchor=north] at (-2,0,2) {+};
+		\node[anchor=north] at (2,0,-2) {+};
+		\node[anchor=north] at (2,0,-1) {+};
+		\node[anchor=north] at (2,0,0) {+};
+		\node[anchor=north] at (2,0,1) {+};
+		\node[anchor=south west] at (3,5,3) {$P$};
+	\end{tikzpicture}
 \end{figure}
 The Electric Field at point $P$ due to $dA$ is given by:
 \[ d\vec{E} = \frac{1}{4 \pi \epsilon} \frac{\sigma dA}{r^2} \hat{r} \]
@@ -385,19 +385,19 @@ Consider a volume charge distribution, $\rho$ of volume $V$, in space. The elect
 %make a potato and find the electric field at the centre
 
 \begin{tikzpicture}
-    \filldraw[ball color=gray] (0,0,0) circle (2);
-    \filldraw[ball color=black] (1,1,1) circle (0.05) node[anchor=south east] {$dV$};
-    \draw[->, black] (1,1,1) -- (5,4,2) node[anchor=south east] {$\vec{r}$};
-    \node[anchor=south west] at (5,4,2) {$P$};
-    \node[anchor=south] at (2.2,0,0) {+};
-    \node[anchor=south] at (1.8,1,0) {+};
-    \node[anchor=south] at (2,-1,0) {+};
-    \node[anchor=south] at (-2.2,0,0) {+};
-    \node[anchor=south] at (-1.8,1,0) {+};
-    \node[anchor=south] at (0,2.4,1) {+};
-    \node[anchor=south] at (2.2,0,0) {+};
-    \node[anchor=south] at (-2,-1,0) {+};
-    
+	\filldraw[ball color=gray] (0,0,0) circle (2);
+	\filldraw[ball color=black] (1,1,1) circle (0.05) node[anchor=south east] {$dV$};
+	\draw[->, black] (1,1,1) -- (5,4,2) node[anchor=south east] {$\vec{r}$};
+	\node[anchor=south west] at (5,4,2) {$P$};
+	\node[anchor=south] at (2.2,0,0) {+};
+	\node[anchor=south] at (1.8,1,0) {+};
+	\node[anchor=south] at (2,-1,0) {+};
+	\node[anchor=south] at (-2.2,0,0) {+};
+	\node[anchor=south] at (-1.8,1,0) {+};
+	\node[anchor=south] at (0,2.4,1) {+};
+	\node[anchor=south] at (2.2,0,0) {+};
+	\node[anchor=south] at (-2,-1,0) {+};
+
 
 \end{tikzpicture}\\
 The electric field at point $P$ due to $dV$ is given by:
@@ -419,13 +419,13 @@ Now, if the surface $S$ is a closed surface, then:
 Consider a charge $q$ in the centre of a spherical shell:\\
 
 \begin{tikzpicture}
-    \filldraw[color=black, fill=gray!10] (0,0) circle (2);
-    \filldraw[color=black, fill=black] (0,0) circle (0.05) node[anchor=south west] {$q$};
-    \draw[black, ->] (0,0) -- (2,0);
-    \draw[black, ->] (0,0) -- (0,2);
-    \draw[black, ->] (0,0) -- (-2,0);
-    \draw[black, ->] (0,0) -- (0,-2);
-    \node[anchor=north west] at (0.5,-0.5) {$\vec{E}$};
+	\filldraw[color=black, fill=gray!10] (0,0) circle (2);
+	\filldraw[color=black, fill=black] (0,0) circle (0.05) node[anchor=south west] {$q$};
+	\draw[black, ->] (0,0) -- (2,0);
+	\draw[black, ->] (0,0) -- (0,2);
+	\draw[black, ->] (0,0) -- (-2,0);
+	\draw[black, ->] (0,0) -- (0,-2);
+	\node[anchor=north west] at (0.5,-0.5) {$\vec{E}$};
 \end{tikzpicture}\\
 The flux through the spherical shell would be given by:
 \[ \Phi_E = \oint \vec{E} \cdot \vec{da} \]
@@ -437,17 +437,17 @@ As $\vec{E}$ is constant and is always perpendicular to the surface:
 \paragraph*{A charge in a cube}
 Consider a charge $q$ in the centre of a cubical surface of side $2a$:\\
 \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (-2,2,-2) -- (-2,2,2) -- cycle;
-        \filldraw[fill=gray!20] (2,-2,2) -- (2,-2,-2) -- (-2,-2,-2) -- (-2,-2,2) -- cycle;
-        \filldraw[fill=gray!20] (2,2,2) -- (2,-2,2) -- (-2,-2,2) -- (-2,2,2) -- cycle;
-        \filldraw[fill=gray!20] (2,2,-2) -- (2,-2,-2) -- (-2,-2,-2) -- (-2,2,-2) -- cycle;
-        \filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (2,-2,-2) -- (2,-2,2) -- cycle;
-        \filldraw[fill=gray!20] (-2,2,2) -- (-2,2,-2) -- (-2,-2,-2) -- (-2,-2,2) -- cycle;
-        \filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (-2,2,-2) -- (-2,2,2) -- cycle;
-        \filldraw[black] (0,0,0) circle (0.05);
-    \end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (-2,2,-2) -- (-2,2,2) -- cycle;
+		\filldraw[fill=gray!20] (2,-2,2) -- (2,-2,-2) -- (-2,-2,-2) -- (-2,-2,2) -- cycle;
+		\filldraw[fill=gray!20] (2,2,2) -- (2,-2,2) -- (-2,-2,2) -- (-2,2,2) -- cycle;
+		\filldraw[fill=gray!20] (2,2,-2) -- (2,-2,-2) -- (-2,-2,-2) -- (-2,2,-2) -- cycle;
+		\filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (2,-2,-2) -- (2,-2,2) -- cycle;
+		\filldraw[fill=gray!20] (-2,2,2) -- (-2,2,-2) -- (-2,-2,-2) -- (-2,-2,2) -- cycle;
+		\filldraw[fill=gray!20] (2,2,2) -- (2,2,-2) -- (-2,2,-2) -- (-2,2,2) -- cycle;
+		\filldraw[black] (0,0,0) circle (0.05);
+	\end{tikzpicture}
 \end{figure}
 Now, the flux through each of the individual surfaces is equal by symmetry.
 The flux through the surface is:
@@ -458,8 +458,8 @@ Flux through the entire surface is:
 \[ \Phi_E = \frac{q}{\epsilon_0} \]
 
 \paragraph{Gauss' Law}
-As seen with the above two examples of the electric flux through a closed surface, the electric flux through a closed surface is proportional to the charge enclosed by the surface. 
-This is known as Gauss' Law. 
+As seen with the above two examples of the electric flux through a closed surface, the electric flux through a closed surface is proportional to the charge enclosed by the surface.
+This is known as Gauss' Law.
 Mathematically, it is written as:
 \[\oint \vec{E} \cdot \vec{da} = \frac{Q_{enc}}{\epsilon_0}\]
 where $Q_{enc}$ is the charge enclosed by the surface.
@@ -483,90 +483,90 @@ taking the divergence of the above function
 \[\vec{\nabla}\cdot\frac{\hat{\gamma}}{\gamma^2} = 4 \pi \delta^3(\gamma)\]
 \[ \vec{\nabla} \cdot \vec{E} = \frac{1}{4 \pi \epsilon_0} \int 4 \pi \delta^3(r-r') \rho(r') d\tau' = \frac{1}{\epsilon_0} \rho(r)\]
 
-\subsubsection{Application of Gauss' Law} 
+\subsubsection{Application of Gauss' Law}
 
 \begin{itemize}
-    \item \textbf{Spherical Charge Distribution}
-Consider a spherical charge distribution of radius $\gamma$ and net charge $Q$. 
-To find the electric field at a point $r$:
-\begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \filldraw[color=black, fill=gray!20] (0,0) circle (2);
-        \filldraw[color=black, fill=black] (0,0) circle (0.05) node[anchor=south west] {$q$};
-        \draw[black, ->] (0,0) -- (2,0);
-        \node[anchor=north] at (1,0) {$\vec{r}$};
-    \end{tikzpicture}
-\end{figure}
-We know that flux through a sphere of radius $r$ is given by:
-\[\Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{q}{\epsilon_0}\]
-\[ E \int_{\text{surface}} da = \frac{q}{\epsilon_0} \]
-\[ E 4 \pi r^2 = \frac{q}{\epsilon_0} \]
-\[ \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r} \]
+	\item \textbf{Spherical Charge Distribution}
+	      Consider a spherical charge distribution of radius $\gamma$ and net charge $Q$.
+	      To find the electric field at a point $r$:
+	      \begin{figure}[H]
+		      \centering
+		      \begin{tikzpicture}
+			      \filldraw[color=black, fill=gray!20] (0,0) circle (2);
+			      \filldraw[color=black, fill=black] (0,0) circle (0.05) node[anchor=south west] {$q$};
+			      \draw[black, ->] (0,0) -- (2,0);
+			      \node[anchor=north] at (1,0) {$\vec{r}$};
+		      \end{tikzpicture}
+	      \end{figure}
+	      We know that flux through a sphere of radius $r$ is given by:
+	      \[\Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{q}{\epsilon_0}\]
+	      \[ E \int_{\text{surface}} da = \frac{q}{\epsilon_0} \]
+	      \[ E 4 \pi r^2 = \frac{q}{\epsilon_0} \]
+	      \[ \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r} \]
 
-\item \textbf{Infinitely Long Linear Charge Distribution}
-Consider an infinitely long linear charge distribution with charge density $\lambda$.
-To find the electric field at a radial point $r$ :
-\begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \draw[thick, <->] (0,0,-5) -- (0,0,5);
-        \draw[black] (0,0,2) circle (1);
-        \draw[black] (0,0,-2) circle (1);
-        \draw[black] (-0.707,0.707,2) -- (-0.707,0.707,-2);
-        \draw[black] (0.707,-0.707,2) -- (0.707,-0.707,-2);
-        \draw[black, <->] (0.8,-0.8,2) -- (0.8,-0.8,-2) node [anchor=south west] {$l$};
-        \draw[black] (0,0,2) -- (0.5,-0.5,2) node[anchor=south west] {$\vec{r}$};
-        \draw[black, ->] (0.5,-0.5,2) -- (0.707, -0.707, 2);
-    \end{tikzpicture} 
-\end{figure}
-Now, the flux through the cylinder is given by:
-\[\Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{\lambda l}{\epsilon_0}\]
-Also, the flux through the flat surface is zero as the field is perpendicular to the area at every point on the surface.
-Hence, the flux through the curved surface is equal to that of the cylinder
-\[ \Phi_E = \int_{\text{curved surface}} \vec{E}\cdot \vec{da} \]
-By symmetry, the electric field is constant and is always perpendicular to the surface.
-\[ \Phi_E = E \int_{\text{curved surface}} da = \frac{\lambda l}{\epsilon_0} \]
-\[ E 2 \pi r l = \frac{\lambda l}{\epsilon_0} \]
-\[ \vec{E} = \frac{1}{2 \pi \epsilon_0} \frac{\lambda}{r} \hat{r} \]
+	\item \textbf{Infinitely Long Linear Charge Distribution}
+	      Consider an infinitely long linear charge distribution with charge density $\lambda$.
+	      To find the electric field at a radial point $r$ :
+	      \begin{figure}[H]
+		      \centering
+		      \begin{tikzpicture}
+			      \draw[thick, <->] (0,0,-5) -- (0,0,5);
+			      \draw[black] (0,0,2) circle (1);
+			      \draw[black] (0,0,-2) circle (1);
+			      \draw[black] (-0.707,0.707,2) -- (-0.707,0.707,-2);
+			      \draw[black] (0.707,-0.707,2) -- (0.707,-0.707,-2);
+			      \draw[black, <->] (0.8,-0.8,2) -- (0.8,-0.8,-2) node [anchor=south west] {$l$};
+			      \draw[black] (0,0,2) -- (0.5,-0.5,2) node[anchor=south west] {$\vec{r}$};
+			      \draw[black, ->] (0.5,-0.5,2) -- (0.707, -0.707, 2);
+		      \end{tikzpicture}
+	      \end{figure}
+	      Now, the flux through the cylinder is given by:
+	      \[\Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{\lambda l}{\epsilon_0}\]
+	      Also, the flux through the flat surface is zero as the field is perpendicular to the area at every point on the surface.
+	      Hence, the flux through the curved surface is equal to that of the cylinder
+	      \[ \Phi_E = \int_{\text{curved surface}} \vec{E}\cdot \vec{da} \]
+	      By symmetry, the electric field is constant and is always perpendicular to the surface.
+	      \[ \Phi_E = E \int_{\text{curved surface}} da = \frac{\lambda l}{\epsilon_0} \]
+	      \[ E 2 \pi r l = \frac{\lambda l}{\epsilon_0} \]
+	      \[ \vec{E} = \frac{1}{2 \pi \epsilon_0} \frac{\lambda}{r} \hat{r} \]
 
-\item \textbf{Infinitely Large Surface Charge Distribution}
-Consider an infinitely large surface charge distribution with charge density $\sigma$.
-To find the electric field at a radial point $r$ :
-\begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \filldraw[gray!30] (3,0,3) -- (3,0,-3) -- (-3,0,-3) -- (-3,0,3) -- cycle;
-        \filldraw[gray!50] (1,-1,1) -- (1,-1,-1) -- (-1,-1,-1) -- (-1,-1,1) -- cycle;
-        \filldraw[gray!50] (1,1,1) -- (1,1,-1) -- (-1,1,-1) -- (-1,1,1) -- cycle;
-        \draw[black, <->] (0,0,0) -- (0,1,0);
-        \node[anchor=west] at (0,0.5,0) {$r$};
-        \draw[gray!70] (1,1,1) -- (1,-1,1);
-        \draw[gray!70] (1,1,-1) -- (1,-1,-1);
-        \draw[gray!70] (-1,1,-1) -- (-1,-1,-1);
-        \draw[gray!70] (-1,1,1) -- (-1,-1,1);
-    \end{tikzpicture}
-\end{figure}
-Now the flux through the cuboid is given by:
-\[ \Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{\sigma A}{\epsilon_0} \]
-As the electric field is always parallel to 4 of the surfaces, the flux through them is zero.
-As the electric field is constant and is always perpendicular to through the remaining surfaces:
-\[ \Phi_E = E \int_{\text{surface}} da = \frac{\sigma A}{\epsilon_0} \]
+	\item \textbf{Infinitely Large Surface Charge Distribution}
+	      Consider an infinitely large surface charge distribution with charge density $\sigma$.
+	      To find the electric field at a radial point $r$ :
+	      \begin{figure}[H]
+		      \centering
+		      \begin{tikzpicture}
+			      \filldraw[gray!30] (3,0,3) -- (3,0,-3) -- (-3,0,-3) -- (-3,0,3) -- cycle;
+			      \filldraw[gray!50] (1,-1,1) -- (1,-1,-1) -- (-1,-1,-1) -- (-1,-1,1) -- cycle;
+			      \filldraw[gray!50] (1,1,1) -- (1,1,-1) -- (-1,1,-1) -- (-1,1,1) -- cycle;
+			      \draw[black, <->] (0,0,0) -- (0,1,0);
+			      \node[anchor=west] at (0,0.5,0) {$r$};
+			      \draw[gray!70] (1,1,1) -- (1,-1,1);
+			      \draw[gray!70] (1,1,-1) -- (1,-1,-1);
+			      \draw[gray!70] (-1,1,-1) -- (-1,-1,-1);
+			      \draw[gray!70] (-1,1,1) -- (-1,-1,1);
+		      \end{tikzpicture}
+	      \end{figure}
+	      Now the flux through the cuboid is given by:
+	      \[ \Phi_E = \oint \vec{E} \cdot \vec{da} = \frac{\sigma A}{\epsilon_0} \]
+	      As the electric field is always parallel to 4 of the surfaces, the flux through them is zero.
+	      As the electric field is constant and is always perpendicular to through the remaining surfaces:
+	      \[ \Phi_E = E \int_{\text{surface}} da = \frac{\sigma A}{\epsilon_0} \]
 
-\[ E 2 A = \frac{\sigma A}{\epsilon_0} \]
-\[ \vec{E} = \frac{\sigma}{2 \epsilon_0} \hat{r} \]
+	      \[ E 2 A = \frac{\sigma A}{\epsilon_0} \]
+	      \[ \vec{E} = \frac{\sigma}{2 \epsilon_0} \hat{r} \]
 \end{itemize}
 \subsection{Curl of Electric Field}
 Let us consider a path $l$ and an electric field $\vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r}$ which exists in 3d space.\\
 
 \begin{tikzpicture}
-    \draw[->] (0,0,0) -- (0,0,5);
-    \draw[->] (0,0,0) -- (0,5,0);
-    \draw[->] (0,0,0) -- (5,0,0);
-    \draw[blue] (7,4,5) .. controls (3,4,2) and (4,5,3).. (5,4,6);
-    \draw[->] (0,0,0) -- (5,4,6) node[anchor=south west] {$\vec{b}$};
-    \draw[->] (0,0,0) -- (7,4,5) node[anchor=south west] {$\vec{a}$};
-    \node[anchor=south] at (4,4.3,3) {$l$};
+	\draw[->] (0,0,0) -- (0,0,5);
+	\draw[->] (0,0,0) -- (0,5,0);
+	\draw[->] (0,0,0) -- (5,0,0);
+	\draw[blue] (7,4,5) .. controls (3,4,2) and (4,5,3).. (5,4,6);
+	\draw[->] (0,0,0) -- (5,4,6) node[anchor=south west] {$\vec{b}$};
+	\draw[->] (0,0,0) -- (7,4,5) node[anchor=south west] {$\vec{a}$};
+	\node[anchor=south] at (4,4.3,3) {$l$};
 
 \end{tikzpicture}
 
@@ -592,24 +592,24 @@ Potential difference between two points $\vec{a}$ and $\vec{b}$ is given by:
 
 Now, from Fundamental Theorem of Gradients:
 \begin{align*}
-    V(\vec{b}) - V(\vec{a}) &= - \int_{a}^{b} \vec{E} \cdot \vec{dl} = \int_{a}^{b} \vec{\nabla} V \cdot \vec{dl} \\
-    - \vec{\nabla}V &= \vec{E}
+	V(\vec{b}) - V(\vec{a}) & = - \int_{a}^{b} \vec{E} \cdot \vec{dl} = \int_{a}^{b} \vec{\nabla} V \cdot \vec{dl} \\
+	- \vec{\nabla}V         & = \vec{E}
 \end{align*}
 
 Combining it with the differential form of Gauss' Law:
 \begin{align*}
-    \vec{\nabla} \cdot \left(\vec{\nabla}V\right) &= -\frac{\rho}{\epsilon_0} \\
-    \nabla^2 V &= -\frac{\rho}{\epsilon_0} 
+	\vec{\nabla} \cdot \left(\vec{\nabla}V\right) & = -\frac{\rho}{\epsilon_0} \\
+	\nabla^2 V                                    & = -\frac{\rho}{\epsilon_0}
 \end{align*}
 
 \subsection{Properties of Electric Potential}
 \begin{itemize}
-    \item Potential and Potential Energy are completely different. 
-    \item Working with a scalar (as in only one component) is simpler than working with three different components as in the case of Electric Field.
-    \item The reference point $O$ is arbitrary and changing it will only add a constant $k$ to the potential.
-    While Subtracting, the will get cancelled out.
-    \item Potential also obeys the Principle of Superposition
-    \item Unit: Joule per Coulomb a.k.a. Volt
+	\item Potential and Potential Energy are completely different.
+	\item Working with a scalar (as in only one component) is simpler than working with three different components as in the case of Electric Field.
+	\item The reference point $O$ is arbitrary and changing it will only add a constant $k$ to the potential.
+	      While Subtracting, the will get cancelled out.
+	\item Potential also obeys the Principle of Superposition
+	\item Unit: Joule per Coulomb a.k.a. Volt
 \end{itemize}
 
 \subsection{Electric Potential due to Continuous Charge distribution}
@@ -630,18 +630,18 @@ Consider a volume charge distribution $V$ with uniform charge distribution $\rho
 Consider a charge $q$ slowly move from point $a$ to point $b$ in an electric field $\vec{E}$.\\
 
 \begin{tikzpicture}
-    \draw[black!50, ->] (0,0) -- (5,0);
-    \draw[black!50, ->] (0,1) -- (5,1) node[anchor=west] {$\vec{E}$};
-    \draw[black!50, ->] (0,2) -- (5,2);
-    \filldraw (1.5,1.5)circle(0.05) node[anchor=south west] {$a$};
-    \filldraw (3.5,1.5)circle(0.05) node[anchor=south east] {$b$};
+	\draw[black!50, ->] (0,0) -- (5,0);
+	\draw[black!50, ->] (0,1) -- (5,1) node[anchor=west] {$\vec{E}$};
+	\draw[black!50, ->] (0,2) -- (5,2);
+	\filldraw (1.5,1.5)circle(0.05) node[anchor=south west] {$a$};
+	\filldraw (3.5,1.5)circle(0.05) node[anchor=south east] {$b$};
 \end{tikzpicture}
 
 The work done to move from $a$ to $b$ is given by:
 \begin{align*}
-    W &= \int_{a}^{b} \vec{F} \cdot \vec{dl} \\
-    W &= -q \int_{a}^{b} \vec{E} \cdot \vec{dl} \\
-    W &= -q \left[V(a) - V(b)\right]
+	W & = \int_{a}^{b} \vec{F} \cdot \vec{dl}    \\
+	W & = -q \int_{a}^{b} \vec{E} \cdot \vec{dl} \\
+	W & = -q \left[V(a) - V(b)\right]
 \end{align*}
 
 As shown above, the work done is independent of the path taken. Therefore, Electrostatic force is a conservative force.
@@ -649,17 +649,17 @@ As shown above, the work done is independent of the path taken. Therefore, Elect
 \subsection{Energy of a System of Charges}
 Consider a system of $n$ charges $q_1, q_2, q_3$ at points $\vec{r_1}, \vec{r_2}, \vec{r_3}$ respectively.\\
 \begin{tikzpicture}
-    \filldraw (2,4) circle (0.02) node[anchor=south west] {$q_1$};
-    \filldraw (4,1) circle (0.02) node[anchor=south west] {$q_2$};
-    \filldraw (4,3) circle (0.02) node[anchor=south west] {$q_3$};
-    \draw[->] (0,0) -- (5,0);
-    \draw[->] (0,0) -- (0,5);
-    \draw[->] (0,0) -- (2,4);
-    \node[anchor=east] at (1,2) {$\vec{r_1}$};
-    \draw[->] (0,0) -- (4,1);
-    \node[anchor=north] at (2,0.5) {$\vec{r_2}$};
-    \draw[->] (0,0) -- (4,3);
-    \node[anchor=north] at (2,1.5) {$\vec{r_3}$};
+	\filldraw (2,4) circle (0.02) node[anchor=south west] {$q_1$};
+	\filldraw (4,1) circle (0.02) node[anchor=south west] {$q_2$};
+	\filldraw (4,3) circle (0.02) node[anchor=south west] {$q_3$};
+	\draw[->] (0,0) -- (5,0);
+	\draw[->] (0,0) -- (0,5);
+	\draw[->] (0,0) -- (2,4);
+	\node[anchor=east] at (1,2) {$\vec{r_1}$};
+	\draw[->] (0,0) -- (4,1);
+	\node[anchor=north] at (2,0.5) {$\vec{r_2}$};
+	\draw[->] (0,0) -- (4,3);
+	\node[anchor=north] at (2,1.5) {$\vec{r_3}$};
 
 \end{tikzpicture}
 
@@ -677,135 +677,135 @@ If we apply this to all space, the surface integral vanishes and the Volume inte
 
 \paragraph{Example} To find the self energy of a sphere with radius $R$ and uniform $q$\\
 \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-        \filldraw[color=black, fill=gray!50] (0,0) circle (2);
-        \draw[->] (0,0) -- (1.73, 1);
-        \node[anchor=north west] at (0.866, 0.5) {$R$};
-        \node[anchor=center] at (-0.7, -0.7) {$q$};
-\end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\filldraw[color=black, fill=gray!50] (0,0) circle (2);
+		\draw[->] (0,0) -- (1.73, 1);
+		\node[anchor=north west] at (0.866, 0.5) {$R$};
+		\node[anchor=center] at (-0.7, -0.7) {$q$};
+	\end{tikzpicture}
 \end{figure}
 Let, $W$ be the self-energy of the given sphere, $\rho$ is the uniform charge density of the sphere.\\
 \begin{align*}
-    W &= \frac{\epsilon_0}{2} \int_{\text{all space}} E^2 d\tau\\
-    W &= \frac{\epsilon_0}{2} \int_{0}^{2\pi}\int_{0}^{\pi} \int_{0}^{\infty} E^2 r^2 \sin(\theta) dr d\theta d\phi\\
-    W &= \frac{4 \pi \epsilon_0}{2} \int_{0}^{\infty} E^2 r^2 dr \\
-    W &= \frac{4 \pi \epsilon_0}{2} \left[ \int_{R}^{\infty} \left( \frac{\rho 4 \pi R^3}{3\cdot 4 \pi \epsilon_0 r^2}\right)^2 r^2 dr + \int_{0}^{R} \left( \frac{\rho r}{3 \epsilon_0}\right)^2 r^2 dr \right]\\
-    W &= \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^4} r^2 dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^2\cdot r^2 dr \right]\\
-    W &= \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^2} dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^4 dr \right]\\
-    W &= \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \left. \frac{-1}{r} \right|_R^{\infty}+ \left. \frac{\rho^2}{3^2 \epsilon_0^2} \frac{r^5}{5} \right|_0^R  \right]\\
-    W &= \frac{4 \pi \epsilon_0}{2} \left[\frac{-\rho ^2 R^6}{3^2 \epsilon_0^2} (0 - \frac{1}{R}) + \frac{\rho^2}{3^2 \epsilon_0^2} \left( \frac{R^5}{5} -0\right)  \right]\\
-    W &= \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^5}{3^2 \epsilon_0^2} + \frac{\rho^2}{3^2 \epsilon_0^2} \frac{R^5}{5}\right]\\
-    W &= \frac{4 \pi \epsilon_0}{2} \frac{\rho^2 R^5}{3^2 \epsilon_0^2} \left(1 + \frac{1}{5}\right) \\
-    W &= \frac{4 \pi \epsilon_0}{2} \frac{q^2}{\frac{4^2}{3^2} \pi^2 R^6} \frac{R^5}{3^2 \epsilon_0^2} \frac{6}{5}\\
-    W &= \frac{3}{5} \frac{1}{4 \pi \epsilon_0} \frac{q^2}{R}
+	W & = \frac{\epsilon_0}{2} \int_{\text{all space}} E^2 d\tau                                                                                                                                                  \\
+	W & = \frac{\epsilon_0}{2} \int_{0}^{2\pi}\int_{0}^{\pi} \int_{0}^{\infty} E^2 r^2 \sin(\theta) dr d\theta d\phi                                                                                              \\
+	W & = \frac{4 \pi \epsilon_0}{2} \int_{0}^{\infty} E^2 r^2 dr                                                                                                                                                 \\
+	W & = \frac{4 \pi \epsilon_0}{2} \left[ \int_{R}^{\infty} \left( \frac{\rho 4 \pi R^3}{3\cdot 4 \pi \epsilon_0 r^2}\right)^2 r^2 dr + \int_{0}^{R} \left( \frac{\rho r}{3 \epsilon_0}\right)^2 r^2 dr \right] \\
+	W & = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^4} r^2 dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^2\cdot r^2 dr \right]                   \\
+	W & = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \int_{R}^{\infty}  \frac{1}{r^2} dr + \frac{\rho^2}{3^2 \epsilon_0^2} \int_{0}^{R} r^4 dr \right]                                \\
+	W & = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^6}{3^2 \epsilon_0^2} \left. \frac{-1}{r} \right|_R^{\infty}+ \left. \frac{\rho^2}{3^2 \epsilon_0^2} \frac{r^5}{5} \right|_0^R  \right]                \\
+	W & = \frac{4 \pi \epsilon_0}{2} \left[\frac{-\rho ^2 R^6}{3^2 \epsilon_0^2} (0 - \frac{1}{R}) + \frac{\rho^2}{3^2 \epsilon_0^2} \left( \frac{R^5}{5} -0\right)  \right]                                      \\
+	W & = \frac{4 \pi \epsilon_0}{2} \left[ \frac{\rho ^2 R^5}{3^2 \epsilon_0^2} + \frac{\rho^2}{3^2 \epsilon_0^2} \frac{R^5}{5}\right]                                                                           \\
+	W & = \frac{4 \pi \epsilon_0}{2} \frac{\rho^2 R^5}{3^2 \epsilon_0^2} \left(1 + \frac{1}{5}\right)                                                                                                             \\
+	W & = \frac{4 \pi \epsilon_0}{2} \frac{q^2}{\frac{4^2}{3^2} \pi^2 R^6} \frac{R^5}{3^2 \epsilon_0^2} \frac{6}{5}                                                                                               \\
+	W & = \frac{3}{5} \frac{1}{4 \pi \epsilon_0} \frac{q^2}{R}
 \end{align*}
 
 \section{Conductors}
 Properties of an ideal conductor:
 \begin{itemize}
-    \item \textbf{E=0 inside the conductor} If there was an electric field, the charges (electrons) inside the conductor would move such that there is a positive charge on one part of the conductor and negative charge on the other side of the conductor.
-    This would create an electric field opposite to that of the external field and we would get no net field in the bulk of the conductor
-        
-        \begin{figure}[H]
-            \centering 
-            \begin{tikzpicture}
-                \filldraw[fill=gray!50] (-1.5, -3.3) -- (-1.5, 3) -- (1.5, 3) -- (1.5, -3.3) -- cycle;
-                \node[anchor=north] at (-1.3, 2.9) {-};
-                \node[anchor=north] at (-1.3, 2.5) {-};
-                \node[anchor=north] at (-1.3, 2.1) {-};
-                \node[anchor=north] at (-1.3, 1.7) {-};
-                \node[anchor=north] at (-1.3, 1.3) {-};
-                \node[anchor=north] at (-1.3, 0.9) {-};
-                \node[anchor=north] at (-1.3, 0.5) {-};
-                \node[anchor=north] at (-1.3, 0.1) {-};
-                \node[anchor=north] at (-1.3, -0.3) {-};
-                \node[anchor=north] at (-1.3, -0.7) {-};
-                \node[anchor=north] at (-1.3, -1.1) {-};
-                \node[anchor=north] at (-1.3, -1.5) {-};
-                \node[anchor=north] at (-1.3, -1.9) {-};
-                \node[anchor=north] at (-1.3, -2.3) {-};
-                \node[anchor=north] at (-1.3, -2.7) {-};
-                \node[anchor=north] at (1.3, 2.9) {+};
-                \node[anchor=north] at (1.3, 2.5) {+};
-                \node[anchor=north] at (1.3, 2.1) {+};
-                \node[anchor=north] at (1.3, 1.7) {+};
-                \node[anchor=north] at (1.3, 1.3) {+};
-                \node[anchor=north] at (1.3, 0.9) {+};
-                \node[anchor=north] at (1.3, 0.5) {+};
-                \node[anchor=north] at (1.3, 0.1) {+};
-                \node[anchor=north] at (1.3, -0.3) {+};
-                \node[anchor=north] at (1.3, -0.7) {+};
-                \node[anchor=north] at (1.3, -1.1) {+};
-                \node[anchor=north] at (1.3, -1.5) {+};
-                \node[anchor=north] at (1.3, -1.9) {+};
-                \node[anchor=north] at (1.3, -2.3) {+};
-                \node[anchor=north] at (1.3, -2.7) {+};
-                \draw[->, thick] (-1.7, 3.3) -- (1.7, 3.3);
-                \draw[->, thick] (1,0) -- (-1,0);
-                \node[anchor=south] at (0, 3.3) {$\vec{E_0}$};
-                \node[anchor=south] at (0, 0) {$\vec{E_i}$};
-            \end{tikzpicture}
-        \end{figure} 
-        Here, $\vec{E_0}$ is the external field and $\vec{E_i}$ is the induced field.
-        \item \textbf{$\rho = 0$ inside the conductor} From Gauss' Law, if there is no field inside the conductor, then there is no charge inside the conductor.
-        \item \textbf{Any net charge resides on the surface} If there was a net charge inside the conductor, there would be an electric field inside the conductor. This would cause the charges to move until there is no net field inside the conductor.
-        \item \textbf{A conductor is equipotential} Consider two points in or on the surface of the conductor. \(V(b) - V(a) = \int_{a}^{b}-E\cdot dl = 0\). \(\therefore V(a) = V(b)\).
-        \item \textbf{$\vec{E}$ is perpendicular to the surface just outside the conductor}. If otherwise, charge will flow along the surface of the conductor and will nullify any tangential component of the electric field.
+	\item \textbf{E=0 inside the conductor} If there was an electric field, the charges (electrons) inside the conductor would move such that there is a positive charge on one part of the conductor and negative charge on the other side of the conductor.
+	      This would create an electric field opposite to that of the external field and we would get no net field in the bulk of the conductor
+
+	      \begin{figure}[H]
+		      \centering
+		      \begin{tikzpicture}
+			      \filldraw[fill=gray!50] (-1.5, -3.3) -- (-1.5, 3) -- (1.5, 3) -- (1.5, -3.3) -- cycle;
+			      \node[anchor=north] at (-1.3, 2.9) {-};
+			      \node[anchor=north] at (-1.3, 2.5) {-};
+			      \node[anchor=north] at (-1.3, 2.1) {-};
+			      \node[anchor=north] at (-1.3, 1.7) {-};
+			      \node[anchor=north] at (-1.3, 1.3) {-};
+			      \node[anchor=north] at (-1.3, 0.9) {-};
+			      \node[anchor=north] at (-1.3, 0.5) {-};
+			      \node[anchor=north] at (-1.3, 0.1) {-};
+			      \node[anchor=north] at (-1.3, -0.3) {-};
+			      \node[anchor=north] at (-1.3, -0.7) {-};
+			      \node[anchor=north] at (-1.3, -1.1) {-};
+			      \node[anchor=north] at (-1.3, -1.5) {-};
+			      \node[anchor=north] at (-1.3, -1.9) {-};
+			      \node[anchor=north] at (-1.3, -2.3) {-};
+			      \node[anchor=north] at (-1.3, -2.7) {-};
+			      \node[anchor=north] at (1.3, 2.9) {+};
+			      \node[anchor=north] at (1.3, 2.5) {+};
+			      \node[anchor=north] at (1.3, 2.1) {+};
+			      \node[anchor=north] at (1.3, 1.7) {+};
+			      \node[anchor=north] at (1.3, 1.3) {+};
+			      \node[anchor=north] at (1.3, 0.9) {+};
+			      \node[anchor=north] at (1.3, 0.5) {+};
+			      \node[anchor=north] at (1.3, 0.1) {+};
+			      \node[anchor=north] at (1.3, -0.3) {+};
+			      \node[anchor=north] at (1.3, -0.7) {+};
+			      \node[anchor=north] at (1.3, -1.1) {+};
+			      \node[anchor=north] at (1.3, -1.5) {+};
+			      \node[anchor=north] at (1.3, -1.9) {+};
+			      \node[anchor=north] at (1.3, -2.3) {+};
+			      \node[anchor=north] at (1.3, -2.7) {+};
+			      \draw[->, thick] (-1.7, 3.3) -- (1.7, 3.3);
+			      \draw[->, thick] (1,0) -- (-1,0);
+			      \node[anchor=south] at (0, 3.3) {$\vec{E_0}$};
+			      \node[anchor=south] at (0, 0) {$\vec{E_i}$};
+		      \end{tikzpicture}
+	      \end{figure}
+	      Here, $\vec{E_0}$ is the external field and $\vec{E_i}$ is the induced field.
+	\item \textbf{$\rho = 0$ inside the conductor} From Gauss' Law, if there is no field inside the conductor, then there is no charge inside the conductor.
+	\item \textbf{Any net charge resides on the surface} If there was a net charge inside the conductor, there would be an electric field inside the conductor. This would cause the charges to move until there is no net field inside the conductor.
+	\item \textbf{A conductor is equipotential} Consider two points in or on the surface of the conductor. \(V(b) - V(a) = \int_{a}^{b}-E\cdot dl = 0\). \(\therefore V(a) = V(b)\).
+	\item \textbf{$\vec{E}$ is perpendicular to the surface just outside the conductor}. If otherwise, charge will flow along the surface of the conductor and will nullify any tangential component of the electric field.
 \end{itemize}
 
-\subsection{Induced charges on a conductor} 
+\subsection{Induced charges on a conductor}
 If we hold a point charge $q$ near an uncharged conductor:
 
 \begin{tikzpicture}
-    \filldraw[fill=gray!50] (0,0) circle (2);
-    \node[anchor=center] at (0,0) {conductor};
-    \filldraw[fill=black] (-4,0) circle (0.05) node[anchor=south] {$q$};
-    \node[anchor=center] at (-1.8, 0) {$-$};
-    \node[anchor=center] at (-1.5, 1) {$-$};
-    \node[anchor=center] at (-1.5, -1) {$-$};
-    \node[anchor=center] at (-0.9, 1.6) {$-$};
-    \node[anchor=center] at (-0.9, -1.6) {$-$};
-    \node[anchor=center] at (1.8, 0) {$+$};
-    \node[anchor=center] at (1.5, 1) {$+$};
-    \node[anchor=center] at (1.5, -1) {$+$};
-    \node[anchor=center] at (0.9, 1.6) {$+$};
-    \node[anchor=center] at (0.9, -1.6) {$+$};
+	\filldraw[fill=gray!50] (0,0) circle (2);
+	\node[anchor=center] at (0,0) {conductor};
+	\filldraw[fill=black] (-4,0) circle (0.05) node[anchor=south] {$q$};
+	\node[anchor=center] at (-1.8, 0) {$-$};
+	\node[anchor=center] at (-1.5, 1) {$-$};
+	\node[anchor=center] at (-1.5, -1) {$-$};
+	\node[anchor=center] at (-0.9, 1.6) {$-$};
+	\node[anchor=center] at (-0.9, -1.6) {$-$};
+	\node[anchor=center] at (1.8, 0) {$+$};
+	\node[anchor=center] at (1.5, 1) {$+$};
+	\node[anchor=center] at (1.5, -1) {$+$};
+	\node[anchor=center] at (0.9, 1.6) {$+$};
+	\node[anchor=center] at (0.9, -1.6) {$+$};
 
 \end{tikzpicture}
 
-Since the negative charges are closer to the charge $q$, the conductor will get attracted to it. 
+Since the negative charges are closer to the charge $q$, the conductor will get attracted to it.
 
 If there is a cavity inside the conductor, then it will be electrically isolated from the outside of the conductor.
 Now, if we have a conductor with a cavity, and place a charge q inside the cavity:
 
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}
-    \filldraw[fill=gray!50] (0,0) circle (2.5);
-    \filldraw[fill=white] (0,0) circle (1);
-    \filldraw[fill=black] (0,0) circle (0.05);
-    \node[anchor=south] at (0,0) {$q$};
-    \node[anchor=center] at (1.2, 0) {$-$};
-    \node[anchor=center] at (-1.2, 0) {$-$};
-    \node[anchor=center] at (0.859, 0.859) {$-$};
-    \node[anchor=center] at (0, 1.2) {$-$};
-    \node[anchor=center] at (0, -1.2) {$-$};
-    \node[anchor=center] at (0.859, -0.859) {$-$};
-    \node[anchor=center] at (-0.859, -0.859) {$-$};
-    \node[anchor=center] at (-0.859, 0.859) {$-$};
-    \node[anchor=center] at (2.3, 0) {$+$};
-    \node[anchor=center] at (-2.3, 0) {$+$};
-    \node[anchor=center] at (0, -2.3) {$+$};
-    \node[anchor=center] at (0, 2.3) {$+$};
-    \node[anchor=center] at (1.63, 1.63) {$+$};
-    \node[anchor=center] at (-1.63, 1.63) {$+$};
-    \node[anchor=center] at (-1.63, -1.63) {$+$};
-    \node[anchor=center] at (1.63, -1.63) {$+$};
-    \node[anchor=center] at (0, -0.45) {$E \neq 0$};
-    \node[anchor=center] at (0, 1.7) {$E=0$};
+	\centering
+	\begin{tikzpicture}
+		\filldraw[fill=gray!50] (0,0) circle (2.5);
+		\filldraw[fill=white] (0,0) circle (1);
+		\filldraw[fill=black] (0,0) circle (0.05);
+		\node[anchor=south] at (0,0) {$q$};
+		\node[anchor=center] at (1.2, 0) {$-$};
+		\node[anchor=center] at (-1.2, 0) {$-$};
+		\node[anchor=center] at (0.859, 0.859) {$-$};
+		\node[anchor=center] at (0, 1.2) {$-$};
+		\node[anchor=center] at (0, -1.2) {$-$};
+		\node[anchor=center] at (0.859, -0.859) {$-$};
+		\node[anchor=center] at (-0.859, -0.859) {$-$};
+		\node[anchor=center] at (-0.859, 0.859) {$-$};
+		\node[anchor=center] at (2.3, 0) {$+$};
+		\node[anchor=center] at (-2.3, 0) {$+$};
+		\node[anchor=center] at (0, -2.3) {$+$};
+		\node[anchor=center] at (0, 2.3) {$+$};
+		\node[anchor=center] at (1.63, 1.63) {$+$};
+		\node[anchor=center] at (-1.63, 1.63) {$+$};
+		\node[anchor=center] at (-1.63, -1.63) {$+$};
+		\node[anchor=center] at (1.63, -1.63) {$+$};
+		\node[anchor=center] at (0, -0.45) {$E \neq 0$};
+		\node[anchor=center] at (0, 1.7) {$E=0$};
 
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{figure}
 
 \section{Capacitors}
@@ -814,28 +814,28 @@ When we have two conductors, and give a charge $+q$ to one and $-q$ to the other
 now, $E$ is proportional to $q$. Hence, $V$ is proportional to $q$.\\
 This proportionality constant is called capacitance $C$.
 \[ C = \frac{q}{V} \]
-$C$ depends completely on the geometry of the conductors and the medium between them. 
+$C$ depends completely on the geometry of the conductors and the medium between them.
 It is independent of the charge on the conductors.
 The SI unit of capacitance is Farad (F).\\
 \paragraph{Parallel Plate Capacitor:}
-Consider two conducting parallel parallel plates of area $A$ and separation $d$. 
+Consider two conducting parallel parallel plates of area $A$ and separation $d$.
 If we place a charge $+q$ on one plate and $-q$ on the other, the electric field between the plates is given by:
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}    
-    \draw (-0.5, 2.5) -- (-0.5, -2.5);
-    \draw (0.5, 2.5) -- (0.5, -2.5);
-    \draw[->] (-0.5, 0) -- (0.5, 0);
-    \node[anchor=south]at (0,0) {$\vec{E}$}; 
-    \foreach \y in {-2,-1.5,...,2}{
-        \node[anchor=center] at (-0.7, \y) {$+$};
-    }
-    \foreach \y in {-2,-1.5,...,2}{
-        \node[anchor=center] at (0.7, \y) {$-$};
-    }
-    \draw[<->] (-0.5, -2.7) -- (0.5, -2.7);
-    \node[anchor=north] at (0, -2.7) {$d$};
-\end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\draw (-0.5, 2.5) -- (-0.5, -2.5);
+		\draw (0.5, 2.5) -- (0.5, -2.5);
+		\draw[->] (-0.5, 0) -- (0.5, 0);
+		\node[anchor=south]at (0,0) {$\vec{E}$};
+		\foreach \y in {-2,-1.5,...,2}{
+				\node[anchor=center] at (-0.7, \y) {$+$};
+			}
+		\foreach \y in {-2,-1.5,...,2}{
+				\node[anchor=center] at (0.7, \y) {$-$};
+			}
+		\draw[<->] (-0.5, -2.7) -- (0.5, -2.7);
+		\node[anchor=north] at (0, -2.7) {$d$};
+	\end{tikzpicture}
 \end{figure}
 The field between the plates is uniform and is given by:
 \[ E = \frac{\sigma}{\epsilon_0} \]
@@ -858,8 +858,8 @@ If we take a region in space such that \( \rho = 0 \) (obviously not \(0\) every
 \[ V(x) = mx + b \]
 This is an equation of a straight line in One-dimension.
 \begin{itemize}
-\item It means that \(V(x)\) is the average of \(V(x-a)\) and \(V(x+a)\).
-\item \(V\) has no local minima or maxima
+	\item It means that \(V(x)\) is the average of \(V(x-a)\) and \(V(x+a)\).
+	\item \(V\) has no local minima or maxima
 \end{itemize}
 
 \subsection{Laplace's Equation in Two-dimension}
@@ -880,23 +880,23 @@ The solution to the Laplace's Equation in some volume $v$ is uniquely dereminabl
 \subsubsection*{Proof}
 Consider a closed figure and the potentials on its boundary is known:
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}
-    \draw[shade, black] (0,0) circle (2);
-    \shade[shading=radial, outer color=gray!80, inner color=gray!10] (0,0) circle (2);
-    \draw[<-] (-1.414, -1.414) -- (-4,-0.5) node[anchor=south] {$V$ on the surface};
-    \node[anchor=center] at (0,0) {$V$ to be found};
-\end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+		\draw[shade, black] (0,0) circle (2);
+		\shade[shading=radial, outer color=gray!80, inner color=gray!10] (0,0) circle (2);
+		\draw[<-] (-1.414, -1.414) -- (-4,-0.5) node[anchor=south] {$V$ on the surface};
+		\node[anchor=center] at (0,0) {$V$ to be found};
+	\end{tikzpicture}
 \end{figure}
 If there were 2 different solutions:\\
 \begin{align*}
-    \nabla^2 V_1 &= 0\\
-    \nabla^2 V_2 &= 0
+	\nabla^2 V_1 & = 0 \\
+	\nabla^2 V_2 & = 0
 \end{align*}
 taking their difference:
 \begin{align*}
-V_1 - V_2 &\equiv V_3 \\
-\nabla^2 V_3 &= 0 \\
+	V_1 - V_2    & \equiv V_3 \\
+	\nabla^2 V_3 & = 0        \\
 \end{align*}
 at the boundary of the figure:
 now, as by Laplace Equation, we can't have local extremum, the only solution is \(V_3 = 0\).
@@ -906,21 +906,21 @@ Hence, \(V_1 = V_2\)
 In a volume $v$ surrounded by conductor containing a specified charge density $\rho$, the electric field is uniquely determined if the total charge on each conductor is given.\\
 Proof is similar to the first uniqueness theorem.
 
-[There is a portion about dipole, quadrupole and octopoles, I am have not written that part cause its too boring]
+	[There is a portion about dipole, quadrupole and octopoles, I am have not written that part cause its too boring]
 
 \section{Polarization}
 \subsection{Dielectrics}
-In a dielectric, all electrons are attached/associated to a given atom or molecule. 
+In a dielectric, all electrons are attached/associated to a given atom or molecule.
 They can only move around in the given atom/molecule.
 Two mechanisms by which electric fields can distort a dielectric atom/molecule are stretching and rotating.
 
 These polarized atoms and molecules can also produce an electric field of their own, especially if many of them begin to point in the same direction.
 \subsection{Induced Dipoles}
 A neutral atom consists of a positively charged nucleus and a negatively charge electron cloud.
-When an atom is placed in an electric field, the nucleus experiences a force in the direction of the electric field, while the electron cloud experiences a force opposite to the electric field. 
+When an atom is placed in an electric field, the nucleus experiences a force in the direction of the electric field, while the electron cloud experiences a force opposite to the electric field.
 As equilibrium is established such that the center of the electron cloud is displaced from the nucleus.
 This makes the atom a polarized.
-[In principle, the electron could get separated from the nucleus if there is a large enough field. But this doesn't normally happen]\\
+	[In principle, the electron could get separated from the nucleus if there is a large enough field. But this doesn't normally happen]\\
 Now, the induced dipole moment is proportional to the electric field present:
 \[ \vec{p} = \alpha \vec{E} \]
 where $\alpha$ is the polarizability of the atom/molecule. $\alpha$ depends on the structure of the atom/molecule.
@@ -929,34 +929,34 @@ where $\alpha$ is the polarizability of the atom/molecule. $\alpha$ depends on t
 Some molecules in nature already have a dipole moment because of their structure and/or the atoms they are composed of.
 If such a molecule is placed in an uniform Electric field:\\
 \begin{figure}[H]
-\begin{tikzpicture}
-    \draw[->, color=gray] (-3,3) -- (3,3);
-    \node[anchor=south, color=gray] at (0,3) {$\vec{E}$};
-    \draw[->] (-1.414, -1.414) -- (1.414, 1.414);
-    \node[anchor=south east] at (0,0) {$\vec{p}$};
-    \node[anchor=north west] at (0,0) {$d$};
-    \filldraw[black] (-1.414, -1.414) circle (0.05) node[anchor=north] {$-q$};
-    \filldraw[black] (1.414, 1.414) circle (0.05) node[anchor=south] {$+q$};
-    \draw[->, color=gray] (-1.414, -1.414) -- (-2, -1.414) node[anchor=north] {$\vec{F_{-}}$};
-    \draw[->, color=gray] (1.414, 1.414) -- (2, 1.414) node[anchor=south] {$\vec{F_{+}}$};
-\end{tikzpicture}
+	\begin{tikzpicture}
+		\draw[->, color=gray] (-3,3) -- (3,3);
+		\node[anchor=south, color=gray] at (0,3) {$\vec{E}$};
+		\draw[->] (-1.414, -1.414) -- (1.414, 1.414);
+		\node[anchor=south east] at (0,0) {$\vec{p}$};
+		\node[anchor=north west] at (0,0) {$d$};
+		\filldraw[black] (-1.414, -1.414) circle (0.05) node[anchor=north] {$-q$};
+		\filldraw[black] (1.414, 1.414) circle (0.05) node[anchor=south] {$+q$};
+		\draw[->, color=gray] (-1.414, -1.414) -- (-2, -1.414) node[anchor=north] {$\vec{F_{-}}$};
+		\draw[->, color=gray] (1.414, 1.414) -- (2, 1.414) node[anchor=south] {$\vec{F_{+}}$};
+	\end{tikzpicture}
 \end{figure}
 Now, as the field is uniform, the net force on the molecule is zero.
 But, the molecule will experience a torque, $\tau$:
 \begin{align*}
-    \tau &= (r_+ \times \vec{F_+}) + (r_- \times \vec{F_-})\\
-    \tau &= [(d/2) \times q \vec{E}] + [(-d/2) \times -q \vec{E}]\\
-    \tau &= qd \vec{E}\\
-    \tau &= \vec{p} \times \vec{E}
+	\tau & = (r_+ \times \vec{F_+}) + (r_- \times \vec{F_-})       \\
+	\tau & = [(d/2) \times q \vec{E}] + [(-d/2) \times -q \vec{E}] \\
+	\tau & = qd \vec{E}                                            \\
+	\tau & = \vec{p} \times \vec{E}
 \end{align*}
 where, $\vec{p} = q \vec{d}$ is the dipole moment of the molecule.
 Hence the molecule will swing about and eventually rotate to align itself with the field. \\
 If the field is non uniform, the force on the molecule will be:
 \[ \vec{F} = F_+ + F_- = q(E_+ + E_-) = q (\Delta E)\]
 to approximate $\Delta E$:
-\begin{align*} 
-\Delta E &= \left(\vec{d} \cdot \vec{\nabla} \right) E \\
-\vec{F} &= \left(\vec{p} \cdot \vec{\nabla} \right) E
+\begin{align*}
+	\Delta E & = \left(\vec{d} \cdot \vec{\nabla} \right) E \\
+	\vec{F}  & = \left(\vec{p} \cdot \vec{\nabla} \right) E
 \end{align*}
 \subsection{The Field of a Polarized Object}
 Suppose we have a piece of polarized material. Its dipole moment per unit volume $P$ is given.
@@ -965,10 +965,10 @@ To find the field at a given point $r$. Now, its easier if we work witht he pote
 The total potential would be:
 \[ V = \frac{1}{4 \pi \epsilon_0}  \int_{\text{material}} \frac{P \cdot \hat{r}}{r^2} d\tau \]
 given that:
-\[ \nabla' \left(\frac{1}{r}\right) = \frac{\hat{r}}{r^2} \] 
+\[ \nabla' \left(\frac{1}{r}\right) = \frac{\hat{r}}{r^2} \]
 \begin{align*}
-    V &= \frac{1}{4 \pi \epsilon_0} \int_{\text{material}} P \cdot \nabla' \left(\frac{1}{r}\right) d\tau' \\
-    V &= \frac{1}{4 \pi \epsilon_0} \left[ \int_{\text{material}} \nabla '\cdot \left( \frac{P}{r}\right) d\tau ' - \int_{\text{material}} \frac{1}{r} \left( \nabla ' \cdot P \right) d \tau' \right] 
+	V & = \frac{1}{4 \pi \epsilon_0} \int_{\text{material}} P \cdot \nabla' \left(\frac{1}{r}\right) d\tau'                                                                                             \\
+	V & = \frac{1}{4 \pi \epsilon_0} \left[ \int_{\text{material}} \nabla '\cdot \left( \frac{P}{r}\right) d\tau ' - \int_{\text{material}} \frac{1}{r} \left( \nabla ' \cdot P \right) d \tau' \right]
 \end{align*}
 now, The first term is similar to that of a potential of a surface charge, $\sigma_b = P \cdot \hat{n}$.
 The second term is similar to the potential of a positive charge density, $\rho_b = - \nabla \cdot P$.
@@ -988,41 +988,41 @@ The net force on the particle would be:
 \subsubsection*{Cyclotron}
 Given below is a diagram of a cyclotron.\\
 \begin{figure}[H]
-%\centering
-\begin{tikzpicture}
-    \filldraw[color=black, fill=gray] (-0.5,-4) -- (-0.5, 4) arc (90:270:4) -- cycle;
-    \filldraw[color=black, fill=gray] (0.5,4) -- (0.5, -4) arc (-90:90:4) -- cycle;
-    \node[anchor=center] at (4,4) {$B \otimes$};
-    \node[anchor=center] at (0, 4.5) {$\sim E$};
-    \draw[->] (0,0) -- (-0.5, 0);
-    \draw[->] (-0.5,0) arc (90:270:0.5);,-0.5
-    \draw[->] (-0.5,-1) -- (0.5, -1);
-    \draw[->] (0.5, -1) arc (-90:90:1);
-    \draw[->] (0.5,1) -- (-0.5, 1);
-    \draw[->] (-0.5, 1) arc (90:270:2);
-    \draw[->] (-0.5,-3) -- (0.5, -3);
-    \draw[->] (0.5, -3) arc (-90:90:3);
-    \draw[->] (0.5,3) -- (-5, 3) node[anchor=south] {beam of} node[anchor=north] {charged particles};
+	%\centering
+	\begin{tikzpicture}
+		\filldraw[color=black, fill=gray] (-0.5,-4) -- (-0.5, 4) arc (90:270:4) -- cycle;
+		\filldraw[color=black, fill=gray] (0.5,4) -- (0.5, -4) arc (-90:90:4) -- cycle;
+		\node[anchor=center] at (4,4) {$B \otimes$};
+		\node[anchor=center] at (0, 4.5) {$\sim E$};
+		\draw[->] (0,0) -- (-0.5, 0);
+		\draw[->] (-0.5,0) arc (90:270:0.5);,-0.5
+		\draw[->] (-0.5,-1) -- (0.5, -1);
+		\draw[->] (0.5, -1) arc (-90:90:1);
+		\draw[->] (0.5,1) -- (-0.5, 1);
+		\draw[->] (-0.5, 1) arc (90:270:2);
+		\draw[->] (-0.5,-3) -- (0.5, -3);
+		\draw[->] (0.5, -3) arc (-90:90:3);
+		\draw[->] (0.5,3) -- (-5, 3) node[anchor=south] {beam of} node[anchor=north] {charged particles};
 
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{figure}
-The Electric field is present only between the two dees. 
-The magnetic field is present everywhere. 
-The charged particles are accelerated by the electric field and then enter the magnetic field. 
-The magnetic field causes the particles to move in a circle. 
+The Electric field is present only between the two dees.
+The magnetic field is present everywhere.
+The charged particles are accelerated by the electric field and then enter the magnetic field.
+The magnetic field causes the particles to move in a circle.
 The radius of the circle is given by: (the magnetic field is perpendicular to the velocity always)
 \begin{align*}
-    F = QvB &= m\frac{v^2}{r}\\
-    r &= \frac{mv}{Qb}
+	F = QvB & = m\frac{v^2}{r} \\
+	r       & = \frac{mv}{Qb}
 \end{align*}
 This is the principle behind the cyclotron.
 
 \subsection{Work done by Magnetic Field}
 The work done by the magnetic field on a particle is always zero.
 \begin{align*}
-    dW &= \vec{F} \cdot \vec{dl}\\
-    dW &= Q(v \times B) \cdot vdt\\
-    W &= 0
+	dW & = \vec{F} \cdot \vec{dl}  \\
+	dW & = Q(v \times B) \cdot vdt \\
+	W  & = 0
 \end{align*}
 
 \paragraph{Note: } In the case of two permanent magnets moving each other, the work done by magnetic field is still $0$.
@@ -1037,9 +1037,18 @@ A line charge $\lambda$ moving with velocity $v$ has a current:
 \subsubsection*{Magnetic Force on a Current Carrying Wire}
 The magnetic force on a segment of wire of length $dl$ carrying a current $I$ is given by:
 \begin{align*}
-    F_{\text{mag}} &= \int (v \times B) dq\\
-    F_{\text{mag}} &= \int (v \times B) \lambda dl\\
-    F_{\text{mag}} &= \int I (dl \times B)
+	F_{\text{mag}} & = \int (v \times B) dq         \\
+	F_{\text{mag}} & = \int (v \times B) \lambda dl \\
+	F_{\text{mag}} & = \int I (dl \times B)
 \end{align*}
 
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\draw (0,0) -- (2,0);
+		\draw (3,0) -- (5,0);
+		\draw (2.25, 0.25) -- (2.75, -0.25);
+		\draw (2.25, -0.25) -- (2.75, 0.25);
+	\end{tikzpicture}
+\end{figure}
 \end{document}
