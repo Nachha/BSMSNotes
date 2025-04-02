@@ -22,7 +22,7 @@
 \title{MT2213 - Group Theory}
 \author{Nachiketa Kulkarni}
 \pagenumbering{gobble}
-\setmainfont{Comic Neue}
+%\setmainfont{Comic Neue}
 
 \begin{document}
 \maketitle
@@ -261,5 +261,19 @@ We write \(N \trianglelefteq G\).
 If \(N \trianglelefteq G\), then the set of left cosets and right cosets of \(N\) in \(G\) are the same.
 Another way to define normal subgroups is, \( \forall x \in G\):
 \[ Nx = xN \Longleftrightarrow N = x^{-1} Nx \Longleftrightarrow N = N^x \]
+
+\paragraph{Trivial Normal Subgroups:} \(G\) and \( \{e\} \), where \{e\} is the identity are the trivial normal subgroups.
+\paragraph{Simple Normal:} For a group, \(G\) if its only normal subgroups are trivial, then it is said to be trivial.
+
+\subsubsection{Properties of Normal Subgroups:}
+\begin{itemize}
+	\item For every homomorphism \(\phi\) of \(G\), the image of any normal subgroup of \(G\) is normal in \(\phi\left(G\right)\).
+	\item The product and intersection of two normal subgroups of \(G\) are also normal in \(G\).
+	\item Let \(H\) be a subgroup of \(G\) and \(N\) be a normal subgroup of \(G\).
+	      Then \(H \cap N\) is normal in \(H\).
+	\item If \(H\) is a subgroup of \(G\).
+	      Then \[U_G = \bigcap\limits_{g \in G} U^g\]
+	\item Let \(X \subseteq G\). Then, \(\ev{X^G}\) is the smallest normal subgroup of \(G\) containing \(X\).
+\end{itemize}
 
 \end{document}
