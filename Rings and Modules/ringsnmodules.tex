@@ -1,0 +1,45 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{Rings and Modules}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Sans MS}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Introduction to Rings}
+\section{Definition of a Ring}
+A ring \(R\) is a set with two binary operations, \(+\) and \(\times\), satisfying the following conditions:
+\begin{itemize}
+    \item \(\left(R,+\right)\) is an abelian group.
+    \item \(\times\) is associative.
+    \item \(\times\) distributes over \(+\).
+\end{itemize}
+A Ring is said to be commutative if \(a \times b = b \times a\) for all \(a, b \in R\).\\
+A Ring is said to have a multiplicative identity if there exists an element \(1 \in R\) such that \(1 \times a = a \times 1 = a\) for all \(a \in R\).\\
+
+\subsection{Examples}
+\begin{itemize}
+    \item \textbf{Trivial Ring:} Take any abelian group \((G,+)\) and define multiplication as \(a \times b = 0\) for all \(a, b \in G\), where \(0\) is the identity of the group.
+    \item \textbf{Integers:} The set of integers \(\mathbb{Z}\) with usual addition and multiplication forms a ring.
+    Also, the quotient group \(\mathbb{Z}/n\mathbb{Z}\) is a ring for any integer \(n\).
+    \item \textbf{Hamiltonian Quaternions:} The set of quaternions \(\mathbb{H} = {1, i, j, k}\), where \(i^2 = j^2 = k^2 = -1\).
+    \item \textbf{Polynomial Rings:} 
+\end{itemize}
+\end{document}

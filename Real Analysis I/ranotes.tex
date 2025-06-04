@@ -16,7 +16,7 @@
 \title{MT2223 - Real Analysis I}
 \author{Nachiketa Kulkarni}
 \pagenumbering{gobble}
-\setmainfont{Comic Neue}
+\setmainfont{Comic Sans MS}
 
 \begin{document}
 \maketitle
@@ -240,6 +240,16 @@ As every term in the summation is non-negative:
 Finally, as \(B>0\):
 \[ AB \geq |C|^2\]
 
-\section{Topology of \(\mathbb{R}\)}
+\section{Construction of \(\mathbb{R}\) from \(\mathbb{Q}\)}
+\paragraph{Theorem:}There exists an ordered field \(\mathbb{R}\) which has the least upper bound property, and contains \(\mathbb{Q}\) as a subfield.
+\paragraph{Proof:} There will be multiple sections of the proof.
+\subsection{Dedikind Cuts}
+We define Cuts to be as follows:
+A cut is a set \(\alpha \subset \mathbb{Q}\) with the following properties:
+\begin{enumerate}
+	\item \(\alpha\) is not empty, and \(\alpha\) is not equal to \(\mathbb{Q}\).
+	\item If \(x \in \alpha\), \(y \in \mathbb{Q}\), and \(y<x\) then \(y \in \alpha\).
+	\item If \(x \in \alpha\), then there exists \(y \in \alpha\) such that \(y>x\).
+\end{enumerate}
 
 \end{document}
