@@ -31,8 +31,8 @@ A ring \(R\) is a set with two binary operations, \(+\) and \(\times\), satisfyi
     \item \(\times\) is associative.
     \item \(\times\) distributes over \(+\).
 \end{itemize}
-A Ring is said to be commutative if \(a \times b = b \times a\) for all \(a, b \in R\).\\
-A Ring is said to have a multiplicative identity if there exists an element \(1 \in R\) such that \(1 \times a = a \times 1 = a\) for all \(a \in R\).\\
+A Ring is said to be commutative if \(a \times b = b \times a\) for all \(a, b \in R\).
+A Ring is said to have a multiplicative identity if there exists an element \(1 \in R\) such that \(1 \times a = a \times 1 = a\) for all \(a \in R\).
 
 \paragraph{Subrings:} A subset \(S\) of a ring \(R\) is called a subring if:
 \begin{itemize}
@@ -118,4 +118,16 @@ For the second part, let \(\phi(\alpha) = 0\) and \(\phi(r) = a\).
     The right Ideal is similarly defined.
     \item If \(I\) is a botha left Ideal and right Ideal, then it is called an Ideal (two sided) of \(R\).
 \end{enumerate}
+
+\subsection{First Homomorphism Theorem}
+\paragraph{Theorem:}
+\begin{enumerate}
+    \item If \(\phi: R \rightarrow S\) is a ring homomorphism, then \(\ker(\phi)\) is an ideal of \(R\) and \(R/\ker(\phi) \cong \phi(R)\).
+    \item If \(I\) is an ideal of \(R\):
+    \[R \rightarrow R/I \hspace{15pt} \text{defined by} \hspace{15pt} r \rightarrowtail r + I\]
+    is a surjective ring homomorphism with the kernel being \(I\).
+    Thus every ideal is the kernel of a ring homomorphism and vice-versa.
+    This above homorphism is known as Natural Projection of \(R\) onto \(R/I\) 
+\end{enumerate}
+\paragraph{Proof:}
 \end{document}
