@@ -85,10 +85,11 @@ A \textbf{ring homomorphism} is a function \(\phi: R \to S\) such that:
 The kernel of a ring homomorphism \(\phi\), \(\ker (\phi)\), is the set of elements in \(R\) that map to \(0\) in \(S\).
 The Image of a ring homomorphism \(\phi\), \(\text{Im}(\phi)\), is the set of elements in \(S\) that are images of elements in \(R\).
 A bijective ring homomorphism is called a \textbf{ring isomorphism}, denoted by \(R \cong S\).
+The fiber of a homomorphism \(\phi\) of the element \(y \in S\) is the set of all pre-images of \(y\) in \(R\).
 
 \subsection{Properties of Ring Homomorphisms}
 Let \(R\) and \(S\) be rings and \(\phi: R \to S\) be a ring homomorphism.
-Image of \(\phi\) is denoted by \(\text{Im}(\phi)\) and kernel of \(\phi\) is denoted by \(\ker\).
+Image of \(\phi\) is denoted by \(\text{Im}(\phi)\) and kernel of \(\phi\) is denoted by \(\ker(\phi)\).
 \paragraph{Proposition:} \(\text{Im}(\phi)\) is a subring of \(S\).
 \paragraph{Proof:} \(\text{Im}(\phi)\) is a subring of \(S\) because:
 \begin{itemize}
@@ -116,7 +117,7 @@ For the second part, let \(\phi(\alpha) = 0\) and \(\phi(r) = a\).
         \item \(I\) is closed under left multiplication by elements from \(R\), i.e., \(rI \subseteq I\)
     \end{itemize}
     The right Ideal is similarly defined.
-    \item If \(I\) is a botha left Ideal and right Ideal, then it is called an Ideal (two sided) of \(R\).
+    \item If \(I\) is a both a left Ideal and right Ideal, then it is called an Ideal (two sided) of \(R\).
 \end{enumerate}
 
 \subsection{First Homomorphism Theorem}
@@ -127,7 +128,7 @@ For the second part, let \(\phi(\alpha) = 0\) and \(\phi(r) = a\).
     \[R \rightarrow R/I \hspace{15pt} \text{defined by} \hspace{15pt} r \rightarrowtail r + I\]
     is a surjective ring homomorphism with the kernel being \(I\).
     Thus every ideal is the kernel of a ring homomorphism and vice-versa.
-    This above homorphism is known as Natural Projection of \(R\) onto \(R/I\) 
+    This above homomorphism is known as Natural Projection of \(R\) onto \(R/I\).
 \end{enumerate}
 \paragraph{Proof:}
 \end{document}

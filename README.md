@@ -16,4 +16,3 @@ Logical errors may be reported on the Github page only
 any other complaints will be ignored
 
 Please refrain from attaching any political or religious affiliations to this repository
-
