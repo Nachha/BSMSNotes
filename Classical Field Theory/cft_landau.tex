@@ -1,0 +1,103 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{Classical Field Theory}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Sans MS}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+\pagenumbering{arabic}
+\chapter{Principle of Relativity}
+\paragraph{Intertial Frame of Reference:} A Frame of Reference such that a freely moving body, proceeds with constant velocity.
+\section{Velocity of Propagation of Interaction}
+The Velocity of Propagation of Interaction is the distance between two bodies divided by the interval by which the initial change in the first body reaches the second body.
+It is a finite value and, if it has a maxima, then the motion of the particles of the bodies cannot exceed this maximum.
+
+From Special Relativity, the maxima of the Velocity of Propagation is constant in all inertial frames and is the velocity of light in empty space.
+Principle of relativity and the finiteness of Velocity of Propagation is called Principle of Relativity of Einstien.
+
+In relativistic mechanics, time is not absolute.
+Meanwhile, the combination of velocities is the same as in classical mechanics, and is the vector sum of the velocities of the individual velocities.
+This is universal, and is applicable to the velocity of propagation of interaction.
+
+By Michelson Morley experiment, the velocity of propagation of light is the same regardless of direction of propagation.
+
+\section{Intervals}
+An event is described by the "place" and "time" at which it occurred.
+The place is described be its 3-dimensional coordinates for a particle.
+
+Consider two frames \(K\) and \(K'\).
+Now consider that an event has occurred at \((x_1,y_1,z_1)\) and at time, \(t_1\) in the \(K\) frame.
+The information of this event travels at the speed of light and reaches and observer at \(x_2,y_2,z_2\) at time \(t_2\), in the same frame.
+Then the distance between the event and the observer will be the distance covered by light in the time interval \((t_2 - t_1)\). Therefore:
+\[\left(x_2 - x_1\right)^2 + \left(y_2 - y_1\right)^2 + \left(z_2 - z_1\right)^2 - c^2\left(t_2 - t_1\right)^2 = 0 \]
+Now, if we consider the same event and observer in the frame \(K'\), the same relation will still hold true:
+\[\left(x_2' - x_1'\right)^2 + \left(y_2' - y_1'\right)^2 + \left(z_2' - z_1'\right)^2 - c^2\left(t_2' - t_1'\right)^2 = 0 \]
+Hence, if the position of any two events are \(ct_1, x_1, y_1, z_1\) and \(ct_2, x_2, y_2, z_2\), the "interval" between them is defined as:
+\[s_{12} = \left[ c^2(t_2 - t_1)^2 - (x_2 - x_1)^2 - (y_2 - y_1)^2 - (z_2 - z_1)^2 \right]^{1/2}\]
+Now, for two events infinitely close to each other:
+\[ds^2 = c^2 dt^2 - x^2 - y^2 - z^2\]
+Now, if in some other frame, \(K'\), the interval is \(ds'\), then the infinitesimals will be proportional:
+\[ds^2 = \alpha ds'^2\]
+where, \(\alpha\) can only depend on the relative velocity between the two frames.
+
+Now, let us consider three different frames of reference moving with corresponding relative velocities to each other, \(K, K_1, K_2\) and \(V_1, V_2\) being the relative velocities of \(K_1, K_2\) wrt \(K\).
+\begin{align*}
+ds^2 &= a(V_1)ds_1^2 &
+ds^2 &= a(V_2)ds_2^2 
+\end{align*} 
+Combining the two relations:
+\[\frac{a(V_2)}{a(V_1)} = a(V_{12})\]
+\(V_{12}\) does not only depend on the absolute value of \(V_1, V_2\), but also their directions.
+But there is no angle dependence of direction on the value of \(a\) as shown above.
+Therefore, \(a\) reduces to \(1\).
+
+This shows that the interval between two events is the same in all inertial frames of reference.
+This invarience shows that the velocity of light is constant (it is circular arguement, but ok). 
+
+\subsection{Space-like and Time-like Intervals}
+Now, consider two events in frame \(K\): \(t_1,x_1,y_1,z_1\) and \(t_2,x_2,y_2,z_2\).
+We introduce the following notations:
+\begin{align*}
+t_{21} &= t_1 - t_2 &
+l_{21}^2 &= (x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2
+\end{align*}
+Using this, the interval between the two events in \(K\) frame will be:
+\[s_{12}^2 = c^2t_{12}^2 - l_{12}^2\]
+Now, we will try to find a frame \(K'\) where the two events occur at the same point in space:
+\[s_{12}'^2 = c^2t_{12}'^2 - l_{12}'^2\]
+By invarience of the interval, we get the following relation:
+\[c^2t_{12}^2 - l_{12}^2 = c^2t_{12}'^2 - l_{12}'^2\]
+Here, \(l_{12}'^2 = 0\). Therefore:
+\[s_{12}^2 = c^2t_{12}^2 - l_{12}^2 = c^2t_{12}'^2 > 0 \]
+Therefore, the frame \(K'\) frame exists if the interval betweent the two events is a real number. Real intervals are said to be time-like.
+If the interval between two events is time-like, then there exists a frame of reference such that the two events occur at the same point in space.
+The time elapsed between the two events in the \(K'\) frame is as follows:
+\[t_{12}' = \frac{1}{c}\sqrt{c^2t_{12}^2 - l_{12}^2} = \frac{s_12}{c}\]
+If the event occurs in the same body, the interval is always time-like. 
+
+Now, let us try to find when the event occurs at the same time.
+Again, using the same method as before, we get:
+\[s_{12}^2 = -l_{12}'^2 < 0\]
+The above condition is only possible when the interval between the two events is imaginary.
+\section{Proper Time}
+ 
+\end{document}
