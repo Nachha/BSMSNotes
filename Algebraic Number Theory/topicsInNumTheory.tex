@@ -1,0 +1,44 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{MT3434 - Topics in Number Theory}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Sans MS}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Basics}
+\section{Arithmetic Functions}
+An Arithmetical function is any function defined as \(f: \mathbb{N} \rightarrow \mathbb{C}\).
+\paragraph{Additive Arithmetic Funtion:} An Arithmetic function is Additive if for all relatively primes \(m,n \in \mathbb{N}\):
+\[f(m \cdot n) = f(m) + f(n)\]
+If the above function holds for all \(m,n \in \mathbb{N}\) then \(f\) is completely additive.
+
+\paragraph{Multiplicative Arithmetic Funtion:} An Arithmetic function is Multiplicative if for all relatively primes \(m,n \in \mathbb{N}\):
+\[f(m \cdot n) = f(m) \cdot f(n)\]
+If the above function holds for all \(m,n \in \mathbb{N}\) then \(f\) is completely multiplicative.
+\subsection{Examples:}
+\begin{enumerate}
+	\item \(\omega(x) =\) No. of distinct Prime divisors of x.\\
+	\(\Rightarrow\) Additive, but not completely.
+	\item \(\Omega(x) =\) No. of Prime divisors of x, counted with multiplicity.\\
+	\(\Rightarrow\) Completely Additive.
+
+\end{enumerate}
+\end{document}
