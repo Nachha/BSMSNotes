@@ -1,0 +1,50 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{MT3244 - Calculus on Manifolds}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Sans MS}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Parameterized Curves and Surfaces (in \(\mathbb{R}^n\))}
+\section{Paramterized Curves}
+\paragraph{Definition} A paramterized curve is a continiuous function
+\[f: I \rightarrow  \mathbb{R}^n \]
+where \(I\) is an open set in \(\mathbb{R}\).
+
+\subsection{Examples}
+\begin{enumerate}
+	\item Straight line: \(f: \mathbb{R} \rightarrow \mathbb{R}^2 \) defined as \(f(\alpha) = (\alpha, m\alpha + c)\) where \(m\) and \(c\) are constants.
+	\item Parabola: \(f: \mathbb{R} \rightarrow \mathbb{R}^2 \) defined as \(f(\alpha) = (\alpha, m\alpha^2)\) where \(m\) is a constant.
+	\item Circle: \(f: \mathbb{R} \rightarrow \mathbb{R}^2 \) defined as \(f(\alpha) = (\cos\alpha, \sin\alpha)\).
+	\begin{itemize}
+		\item Function is bounded.
+		\item There is no polynomial paramterization of this curve.
+		\item Rational Parameterizations exists:
+		\[f(t) = \left(\frac{t^2-1}{t+1}, \frac{2t}{t+1}\right)\]
+	\end{itemize}
+	\item Not involving Modulus: \(f: \mathbb{R} \rightarrow \mathbb{R}^2 \) defined as \(f(\alpha) = (\alpha^3, \alpha^2)\).
+\end{enumerate}
+\subsection{Differentiation Curves:}
+A function \(f\) which is differentiable for a \(t \in I\) is called a Parameterized Differentiable Curves [for all possible paramterizations].
+Let \(f(t) = (f_1(t), f_2(t), \dots, f_n(t))\), then its derivative is defined as: \(f'(t) = (f'_1(t), f'_2(t), \dots, f'_n(t))\).
+This is used to define the direction of the tangent at a point \(f(t)\) as \(f'(t)\).
+
+\end{document}

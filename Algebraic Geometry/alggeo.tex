@@ -1,0 +1,82 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{MT4214 - Algebraic Geometry}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Sans MS}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Motivation - Cayley–Hamilton theorem}
+\paragraph{Statement:} Every Square Matrix over a commutative ring satisfies its own Charectoristic Polynomial.
+
+\paragraph{Proof:} Step 1: Let \(A\) be a diagonal matrix with \(\{\lambda_1, \lambda_2, \dots, \lambda_n\}\) as the diagonal elements.
+Trivially, we can show that the Charecteristic Polynomial will be evaluated as follows:
+\begin{align*}
+	\chi_A (x) &= \det(A - xI_n)\\
+	&= (\lambda_1 - x)(\lambda_2 - x)\dots(\lambda_n - x)\\
+	&= 0
+\end{align*}
+Step 2: \(A\) is diagonalizable.
+Then there exists matrices \(B, D\) such that \(A = BDB^{-1}\).
+A property that will be used is as follows: \(\chi_A(x) = \chi_D(x)\).
+Now, if we calculate the Charecteristic Polynomial for A:
+\begin{align*}
+	\chi_A (A) &= \det(A - xI_n)\\
+	&= \chi_D(A)\\
+	&= B \chi_D (D) B^{-1}\\
+	&= 0
+\end{align*}
+Step 3: General A.
+We know that diagonalizable matrices are dense in \(M_{n\times n}(\mathbb{C})\).
+
+Consider the following function:
+\[\phi : M_{n\times n}(\mathbb{C}) \rightarrow M_{n\times n}(\mathbb{C})\]
+such that \(\phi(A) = \chi_A(A) = 0 \: \forall A \in \text{Diagonal Matrices}\).
+The above function is a continuous function [Trust me bro].
+Now, \(\{0\}\) is a closed set.
+Therefore the pullback of a closed set will have to be a closed set as well.
+But diagonal elements are dense in \(M_{n\times n}(\mathbb{C})\).
+Therefore we use this to extend this to the entire topological space, \(M_{n\times n}(\mathbb{C})\).
+\[\phi(A) = 0 \: \forall \: A\]
+But this above arguement only for fields which are Cauchy Complete.
+What about the charecteristic \(p\) fields.
+There is no obvious topology, and hence no dense set.
+
+\section{Zariski Topology on \(K^n\)}
+Let \(K\) be an algebraicaly closed field. We want to define a topology on \(K^n\).
+
+Define a ring \(A = K[X_1, X_2, \dots, X_n]\) is the ring of polynomial in \(n\) variables.
+Now, choose an element \(f \in A\).
+\[f:K^n \rightarrow K \text{ where } (a_1, a_2, \dots, a_n) \rightarrow f(a_1, a_2, \dots, a_n) \]
+Now, we define a set function as follows:
+\[Z(f) = \{(a_1, a_2, \dots, a_n) \: \vline \: f(a_1, a_2, \dots, a_n) = 0\}\]
+Here, \(Z(f)\) can be empty.
+Extending this to multiple functions:
+\[Z(f_1, f_2, \dots, f_m) = \bigcap_{1 \leq i \leq m} Z(f_i)\]
+Let \(I \subseteq A\) be an ideal.
+\[f(I) = \bigcap_{p \in I} Z(p)\]
+
+\paragraph{Noetherian Ring:} Let \(R\) be a commutative ring with unity.
+\(R\) is Noetherian if every ideal of \(R\) is finitely generated.
+\begin{center}
+OR
+\end{center}
+\(R\) is Noetherian if every increasing sequence \(I_1 \subseteq I_2 \subseteq I_3 \subseteq \dots \) of ideals has a largest element.
+\end{document}

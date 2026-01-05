@@ -1,0 +1,45 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\DeclarePairedDelimiter{\bra}{\langle}{|}
+\DeclarePairedDelimiter{\ket}{|}{\rangle}
+
+\makeatother
+
+\predate{}
+\postdate{}
+\date{}
+\title{Quantum Mechanics 2}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Sans MS}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Harmonic Oscilator}
+Harmonic Oscilator is one of the few problems which is completely solvable in QM.
+It is used to approximate a function at a minima.
+
+The potential is as follows:
+\[ V(x) = \frac{1}{2} m \omega^2 x^2 \]
+In classical mechanics, the general solution for a harmonic oscilator is as follows:
+\[x(t) = A \cos \omega t + \sin \omega t \]
+We can differentiate accordingly and find the momentum of the particle.
+The entire system is defined by the initial condition of the particle.
+
+Now, coming to quantum mechanics, we will assume a wavefunction, \(\ket{\psi}\).
+The corresponding Hamiltonian, \(H\) will be as follows:
+\[H = \frac{p^2}{2m} + \frac{1}{2} m \omega^2 x^2\]
+
+
+\end{document}
