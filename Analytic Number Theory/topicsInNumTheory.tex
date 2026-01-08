@@ -39,6 +39,22 @@ If the above function holds for all \(m,n \in \mathbb{N}\) then \(f\) is complet
 	\(\Rightarrow\) Additive, but not completely.
 	\item \(\Omega(x) =\) No. of Prime divisors of x, counted with multiplicity.\\
 	\(\Rightarrow\) Completely Additive.
-
+	\item \(\mu(x) = \begin{cases}
+		(-1)^k &, \text{ if } x = p_1 \cdot p_2 \cdots p_n \text{ are distinct primes} \\
+		0 &, \text{ otherwise, i.e., x is not a sqaure-free}
+	\end{cases}\)\\
+	\(Rightarrow\) Multiplicative, but not completely.
+	\item \(I: \mathbb{N} \rightarrow \mathbb{C}\) such that: \(I(N) = \lfloor \frac{1}{N}\rfloor\)
+	\paragraph{Theorem:} If \(n \geq 1\):
+	\[\sum_{d|n} \mu(d) = I(n)\]
+	\paragraph{Proof:} Case 1: \(n=1\): \(\mu(1) = 1 = I(n)\), trivially.\\
+	Case 2: \(n>1\). Let \(n = p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdots p_m^{\alpha_m} \cdot \). Observe that \(\mu(d)\) is zero for all non-sqaure-free divisors.
+	Therefore:
+	\begin{align*}
+		\sum_{d|n} \mu(d) &= \sum_{d|n \;\&\; d\text{ is square-free}} \mu(d)\\
+		&= \sum_{d|N} \mu(d) & \left[N = p_1 \cdot p_2 \cdots p_m\right]\\
+		&= 1 + \sum_{} 
+	\end{align*}
+	
 \end{enumerate}
 \end{document}
