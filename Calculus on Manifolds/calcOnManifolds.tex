@@ -25,8 +25,8 @@
 \mainmatter
 \chapter{Parameterized Curves and Surfaces (in \(\mathbb{R}^n\))}
 \section{Paramterized Curves}
-\paragraph{Definition} A paramterized curve is a continiuous function
-\[f: I \rightarrow  \mathbb{R}^n \]
+\paragraph{Definition} A parameterized curve is a continiuous function
+\[f: I \rightarrow  \mathbb{R}^n\]
 where \(I\) is an open set in \(\mathbb{R}\).
 
 \subsection{Examples}
@@ -49,4 +49,24 @@ This is used to define the direction of the tangent at a point \(f(t)\) as \(f'(
 \paragraph{Regular Curve:} A differentiable curve such that the tangent vector is non-zero for all \(t\in I\)
 
 \section{Paramterized Surfaces}
+\paragraph{Definition} A parameterized curve is a continuous function
+\[f: I \rightarrow \mathbb{R}^n\]
+where \(I\) is an open set in \(\mathbb{R}^2\).
+In our case, \(n = 3\).
+\subsection{Examples}
+\begin{enumerate}
+	\item Affine Linear Transformation: \(f: \mathbb{R}^2\ \rightarrow \mathbb{R}^3\) defined as \(f(u,v) = (p_1 + q_1 u + r_1 v, p_2 + q_2 u + r_2 v, p_3 + q_3 u + r_3 v)\).
+	Let \(q = (q_1, q_2, q_3)\) and \(r = (r_1, r_2, r_3)\) are:
+	\begin{itemize}
+		\item \(0\): The space is a fixed point.
+		\item Linearly Dependent: The space is a line.
+		\item Linearly Independent: The space is a plane.
+	\end{itemize}
+	\item Sphere: \(f: \mathbb{R}^2 \rightarrow \mathbb{R}^3\) defined as \(f(u,v) = (\cos u \cos v, \cos u \sin v, \sin u)\).
+	There is no polynomial parameterization to a sphere.
+	\item Cone: \(f: \mathbb{R}^2 \rightarrow \mathbb{R}^3\) defined as \(f(u,v) = (v \cos u, v \sin u, v)\).
+	Polynomial Parameterization exists as follows:
+	\[(u,v) \rightarrow (u^2 -v^2, 2v, u^2 + v^2)\]
+\end{enumerate}
+\subsection{Differentiable Surfaces}
 \end{document}

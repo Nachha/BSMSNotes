@@ -2,6 +2,7 @@
 \usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
 \usepackage{tikz, caption, subcaption, enumitem, polyglossia}
 \usepackage{tikz-3dplot, float, etoolbox, enumitem}
+\usepackage[mathrm=sym]{unicode-math}
 \usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
 %\usepackage{showframe}
 
@@ -9,6 +10,8 @@
 \patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
 \patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
 \DeclarePairedDelimiter{\spanset}{\langle}{\rangle}
+\DeclareMathOperator{\Hom}{\mathrm{Hom}}
+\DeclareMathOperator{\ob}{\mathrm{ob}}
 \makeatother
 
 \predate{}
@@ -74,13 +77,6 @@ Extending this to multiple functions:
 Let \(I \subseteq A\) be an ideal.
 \[f(I) = \bigcap_{p \in I} Z(p)\]
 
-\paragraph{Noetherian Ring:} Let \(R\) be a commutative ring with unity.
-\(R\) is Noetherian if every ideal of \(R\) is finitely generated.
-\begin{center}
-OR
-\end{center}
-\(R\) is Noetherian if every increasing sequence \(I_1 \subseteq I_2 \subseteq I_3 \subseteq \dots \) of ideals has a largest element.
-
 \paragraph{Lemma:} Let \(I \subseteq A\) be an ideal of A generated as follows: \(I = \spanset{f_1, f_2, \dots, f_n}\).
 Then:
 \begin{align*}
@@ -142,6 +138,86 @@ Therefore, \(Z(I)\) forms a topology on \(K^n\).
 \paragraph{Exercise:} Let \(X\) be a Compact Hausdorff Topological Space.
 \[C(X) = \{f: X \rightarrow \mathbb{R} \; \vline \; f \text{ is continuous.}\}\]
 Show that \(C(X)\) is an \(\mathbb{R}\)-Algebra on \(X\) and that it forms a Commutative Ring.
+
+\subsection{Category Theory}
+\paragraph{Definition:} A Category \(C\) is a collection of objects \(\ob(C)\) and the following conditions:
+\begin{enumerate}
+	\item For any two elements \(x_1, y_1 \in \ob(C)\), there is a set of morphisms \(\Hom_C(x_1, y_1)\).
+	(We can think of \(\ob(C)\) as dots and \(\Hom_C(x_1, y_1)\) an arrow (could be bidirectional) from \(x_1\) to \(y_1\)).
+	\item Composition of Morphisms is defined as follows: For any \(x, y, z \in \ob(C)\)
+	\begin{align*}
+		\Hom(x,y) \times \Hom(y,z) &\rightarrow \Hom(x,z)\\
+		f \times g &\mapsto g \circ f
+	\end{align*}
+\end{enumerate}
+Which follow these axioms:
+\begin{enumerate}
+	\item If \(x, x', y, y' \in \ob(C)\), and \(x \neq x'\), \(y \neq y'\), then \(f \in \Hom(x,y)\) does not belong to \(\Hom(x', y')\).
+	\item For any \(x,y,z \in ob(C)\), \(x \circ (y \circ z) = (x \circ y) \circ z\).
+	\item For all \(x \in \ob(C)\), there exists identity map \(I_x \in \Hom(x,x)\) such that:
+\end{enumerate}
+with the following properties:
+\begin{enumerate}
+	\item If \(x \neq x'\) or \(y \neq y'\), then:
+	\[\Hom_C (x,y) \cap \Hom_C (x',y') = \varnothing \]
+	\item Composition is associative:
+	\[(f \circ (g \circ h)) = ((f \circ g) \circ h) = (f \circ g \circ h)\]
+	\item Identity maps: for every \(x,y \in \ob(C)\), there exist \(I_x(x,x) \in \Hom_C(x,x)\) and \(I_y(y,y) \in \Hom_C(y,y)\):
+	\[f \circ I_x = f \text{ and } I_y \circ f = f\]
+	And \(I_x \circ f\) doesn't make any sense as the set maps don't align.
+\end{enumerate}
+\paragraph{Example:} Groups, Rings, \(k\)-Algebra, \(C_{\mathrm{opp}}\).\\
+\(C_{\mathrm{opp}}\) is constructed as:
+\begin{itemize}
+	\item Consider a Category \(C\).
+	\item \(C_{\mathrm{opp}}\) contains the same points a \(C\).
+	\item \(\Hom_{C_{\mathrm{opp}}(y,x)} = \Hom_C(x,y)\)
+\end{itemize}
+
+\subsection{Commutative Algebra}
+
+\paragraph{Noetherian Ring:} Let \(R\) be a commutative ring with unity.
+\(R\) is Noetherian if every ideal of \(R\) is finitely generated.
+\begin{center}
+OR
+\end{center}
+\(R\) is Noetherian if every increasing sequence \(I_1 \subseteq I_2 \subseteq I_3 \subseteq \dots \) of ideals has a largest element.
+
+\paragraph{Theroem:} Show that the two definitions of a Noetherian Ring are equivalent.
+I.e., If \(R\) has Ascending Chain Condition \(\Leftrightarrow\) All ideals of \(R\) are finitely generated.
+
+\begin{enumerate}[label=Part \arabic*:, leftmargin=25pt, itemindent=\parindent, listparindent=\parindent]
+	\item Consider a Commutative Ring \(R\) with a \(1\) and the Ascending Chain Condition.
+	Let \(I\) be an Ideal which is not finitely generated.
+	We can form the following chain:
+	\begin{align*}
+		I_0 &= 0 \\
+		I_1 &= \spanset{f_1} \qquad& f_1 \in I \smallsetminus I_0 \\ 
+		I_2 &= \spanset{f_1, f_2} \qquad& f_2 \in I \smallsetminus I_1 \\		
+		\vdots\\
+		I_n &= \spanset{f_1, f_2, \dots, f_n} \qquad& f_n \in I \smallsetminus I_n 
+	\end{align*}
+	\[I_0 \subsetneq I_1 \subsetneq I_2 \subsetneq \dots \subsetneq I_n \subsetneq \dots\]
+	Now, as \(R\) has Ascending Chain Condition, \(I_n\) stabilizes, i.e., there will be no \(f\) to pick from \(I \smallsetminus I_m\) for some finite \(m\).
+	Therefore, \(I\) is finitely generated.
+	\item Consider a Commutative Ring \(R\) with a \(1\) and every ideal in \(R\) is finitely generated.
+	Let there exist an Infinite Ascending Chain of Ideals, which does not stabilize:
+	\[I_0 \subsetneq I_1 \subsetneq I_2 \subsetneq \dots \subsetneq I_n \subsetneq \dots\]
+	As every ideal is finitely generated, consider the ideal:
+	\[I = \bigcup_{n=0}^{\infty} I_n\]
+	Let \(I\) be generated by \(\{f_1, f_2, \dots, f_m\}\).
+	As each \(f_i \in I\), there exists a \(N_i\) such that \(f_i \in I_{N_i}\).
+	Let \(N = \max(N_1, N_2, \dots, N_m)\).
+	Then, for all \(i\), \(f_i \in I_N\).
+	Therefore, \(I \subseteq I_N\).
+	But, by construction, \(I_N \subseteq I\).
+	Hence, \(I = I_N\).
+	But, as the chain is strictly increasing, there exists a \(I_{N+1}\) such that \(I_N \subsetneq I_{N+1} \subseteq I\).
+	This is a contradiction.
+	Therefore, the chain stabilizes.
+\end{enumerate}
+\paragraph{Hilbert Basis Theorem:} Let \(R\) be a Noetherian Ring.
+Then, the Polynomial Ring \(R[X]\) is also Noetherian.
 
 \end{document}
 use small k for fields instead of Capital K
