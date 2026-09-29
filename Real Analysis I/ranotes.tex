@@ -1,9 +1,11 @@
 \documentclass[12pt, oneside]{book}
-\usepackage{amsmath, amssymb, amssymb, mathtools, graphicx, hyperref, titling}
+\usepackage{amsmath, amssymb, amssymb, amsthm, mathtools, graphicx, hyperref, titling}
 \usepackage{tikz, caption, subcaption, enumitem, polyglossia}
 \usepackage{tikz-3dplot, float, etoolbox, enumitem}
 \usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
 %\usepackage{showframe}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
 
 \makeatletter
 \patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
@@ -50,7 +52,7 @@ testChange
 \section{Real Numbers}
 We can see that the set of Rational Numbers is incomplete.
 There is no Rational Number whose square is \(2\).
-\paragraph{Proof:} Consider a rational number whose square is \(2\).
+\begin{proof} Consider a rational number whose square is \(2\).
 \[ \left(\frac{p}{q}\right)^2 = 2 \]
 Here, \(p\) and \(q\) are both integers and co-prime.
 \begin{align*}
@@ -67,6 +69,7 @@ Now, as \(q^2\) is even, \(q\) must be even.
 
 But this contradicts the fact that \(p\) and \(q\) are co-prime.
 Hence, by proof of contradiction, there is no Rational Number whose square is \(2\).
+\end{proof}
 
 \paragraph{Question:} \(A = \left\{ p \in \mathbb{Q} \; | \; p^2 < 2 \right\}\).
 Can we find a number \(q \in A\) such that \( p \leq q, \forall p \in A \)?
@@ -240,16 +243,20 @@ As every term in the summation is non-negative:
 Finally, as \(B>0\):
 \[ AB \geq |C|^2\]
 
-\section{Construction of \(\mathbb{R}\) from \(\mathbb{Q}\)}
-\paragraph{Theorem:}There exists an ordered field \(\mathbb{R}\) which has the least upper bound property, and contains \(\mathbb{Q}\) as a subfield.
-\paragraph{Proof:} There will be multiple sections of the proof.
-\subsection{Dedikind Cuts}
-We define Cuts to be as follows:
-A cut is a set \(\alpha \subset \mathbb{Q}\) with the following properties:
-\begin{enumerate}
-	\item \(\alpha\) is not empty, and \(\alpha\) is not equal to \(\mathbb{Q}\).
-	\item If \(x \in \alpha\), \(y \in \mathbb{Q}\), and \(y<x\) then \(y \in \alpha\).
-	\item If \(x \in \alpha\), then there exists \(y \in \alpha\) such that \(y>x\).
-\end{enumerate}
-
+\chapter{Basic Topology}
+\section{Finite, Countable and Uncountable Sets}
+\begin{definition}[Function, Domain and Range]
+Consider two sets \(A\) and \(B\).
+Suppose \(x\) is an object of \(A\) and associated to it, there is an unique object \(f(x)\) in \(B\).
+Then, \(f\) is called a function from \(A\) to \(B\), denoted as \(f: A \to B\).
+The set \(A\) is called the domain of \(f\) and the set \(B\) is called the codomain of \(f\).
+The set of all objects in \(B\) which are of the form \(f(x)\) for some \(x \in A\) is called the range of \(f\).
+\end{definition}
+\begin{definition}[One-to-One and Onto Function]
+	Let \(f: A \to B\) be a function.
+	\begin{enumerate}
+	    \item \(f\) is said to be one-to-one or injective if \(f(x_1) = f(x_2) \implies x_1 = x_2\).
+        \item \(f\) is said to be onto or surjective if for every \(y \in B\), there exists \(x \in A\) such that \(f(x) = y\).
+    \end{enumerate}
+\end{definition}
 \end{document}

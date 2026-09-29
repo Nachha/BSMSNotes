@@ -1,0 +1,94 @@
+\documentclass[12pt, oneside]{book}
+\usepackage{amsmath, amssymb, amssymb, amsthm, mathtools, graphicx, hyperref, titling}
+\usepackage{tikz, caption, subcaption, enumitem, polyglossia}
+\usepackage{tikz-3dplot, float, etoolbox, enumitem, tcolorbox}
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+%\usepackage{showframe}
+
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter head
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}% Removes space above \chapter* head
+\makeatother
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\predate{}
+\postdate{}
+\date{}
+\title{MT3144 - Ordinary Differential Equations}
+\author{Nachiketa Kulkarni}
+\pagenumbering{gobble}
+\setmainfont{Comic Sans MS}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\pagenumbering{arabic}
+\chapter{Introduction}
+Ordinary differential equations (ODEs) are a mathematical model for Dynamics.
+Examples:
+\begin{itemize}
+	\item Positive Feedback: \(\frac{dx}{dt} = kx, k > 0\)
+	\item Negative Feedback: \(\frac{dx}{dt} = -kx, k > 0\)
+	\item Hooke's Law: \(\frac{d^2x}{dt^2} = -kx, k > 0\)
+	\item Law of Gravity: \(\frac{d^2x}{dt^2} = -\frac{kx}{|x|^3}\)
+	\item Lotka-Volterra Equations: \(\frac{dx}{dt} = kx - xy, \frac{dy}{dt} = -ky + xy\)
+\end{itemize}
+\section{Most Important ODE - \(x'(t) = f(t)\)}
+Domain of \(f, u\) is \(\mathbb{R}\) (or an interval of \(\mathbb{R}\)).
+We will consider the initial value problem (IVP) for this ODE:
+\begin{align*}
+	x'(t) &= f(t) \\
+	x(t_0) &= x_0
+\end{align*}
+\begin{theorem}
+	\(u: I \rightarrow \mathbb{R}\), \(u\) is differentiable on \(I\) and \(u'(t) = f(t)\) for all \(t \in I\).
+	Then there exists a unique solution \(u\) to the IVP on \(I\):
+	\begin{equation}
+		u(t) = x_0 + \int_{t_0}^{t} f(s) ds
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	\textbf{Existence:} The existance of the solution is guaranteed by the Fundamental Theorem of Calculus.\\
+	\textbf{Uniqueness:} Suppose \(v: I \rightarrow \mathbb{R}\) is another solution to the IVP.
+	Let \(w(t) = u(t) - v(t)\).
+	Then \(w'(t) = u'(t) - v'(t) = f(t) - f(t) = 0\).
+	Therefore, \(w(t) = C\) for some constant \(C\).
+	Since \(w(t_0) = u(t_0) - v(t_0) = x_0 - x_0 = 0\), we have \(C = 0\).
+	Thus, \(w(t) = 0\) for all \(t \in I\), which implies \(u(t) = v(t)\) for all \(t \in I\).
+	Hence, the solution is unique.
+\end{proof}
+\section{Quadratic First Order ODEs}
+Consider the IVP:
+\begin{align*}
+	(x'(t))^2 &= t \\
+	x(0) &= 1
+\end{align*}
+
+The solution to this IVP is done by taking multiple cases:
+\begin{itemize}
+	\item Case 1: \(x'(t) = \sqrt{t}\)
+	\begin{align*}
+		x(t) &= \int \sqrt{t} dt \\
+		&= \frac{2}{3} t^{3/2} + C
+	\end{align*}
+	Using the initial condition \(x(0) = 1\), we find \(C = 1\). Therefore, the solution for Case 1 is:
+	\begin{equation}
+		x(t) = \frac{2}{3} t^{3/2} + 1
+	\end{equation}
+	\item Case 2: \(x'(t) = -\sqrt{t}\)
+	\begin{align*}
+		x(t) &= \int -\sqrt{t} dt \\
+		&= -\frac{2}{3} t^{3/2} + C
+	\end{align*}
+	Using the initial condition \(x(0) = 1\), we find \(C = 1\). Therefore, the solution for Case 2 is:
+	\begin{equation}
+		x(t) = -\frac{2}{3} t^{3/2} + 1
+	\end{equation}
+\end{itemize}
+\end{document}
